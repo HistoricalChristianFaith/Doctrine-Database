@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><!-- Doctrine Name --></title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1><!-- Doctrine Name --></h1>
+
+<!-- Optional 1–3 sentence orientation: what the doctrine is and the main axes on which views differ. -->
+<p><!-- orientation --></p>
+
+<h2>Timeline</h2>
+<!-- One block per person, EARLIEST YEAR FIRST. Every claim ends in a footnote.
+     Link the person's name to their detail page. Keep each block to 2–5 sentences. -->
+
+<h3><!-- Person Name --> (c. <!-- year -->)</h3>
+<p><a href="<doctrine-slug>/<person-slug>.html"><!-- Person Name --></a> held that …<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup> He also …<sup id="fnref:<person-slug>-2"><a class="footnote-ref" href="#fn:<person-slug>-2">2</a></sup></p>
+
+<h3><!-- Next Person --> (<!-- year -->)</h3>
+<p>…<sup id="fnref:<next-person-slug>-1"><a class="footnote-ref" href="#fn:<next-person-slug>-1">3</a></sup></p>
+
+<h2>Arguments &amp; cruxes</h2>
+<!-- Off-timeline sub-claims (argument pages), each with its one-line assessment. -->
+<ul>
+<li><a href="<doctrine-slug>/arguments/<arg-slug>.html"><!-- argument name --></a> — assessment: <strong><!-- sound|plausible|contested|weak|unsupported --></strong> (<!-- one-line gloss, core first -->).</li>
+</ul>
+
+<h2>Sources</h2>
+<!-- One <li> per footnote, ordered by first appearance above. Visible numbers are sequential;
+     ids use the person-slug. Target priority: primary historicalchristian.faith URL > the
+     person-detail page > (for unverified) the secondary work + an inline ⚠ unverified on the claim. -->
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:<person-slug>-1">
+<p><a href="<source URL>">source title</a>&#160;<a class="footnote-backref" href="#fnref:<person-slug>-1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:<person-slug>-2">
+<p><a href="<source URL>">source title</a> — ⚠ unverified.&#160;<a class="footnote-backref" href="#fnref:<person-slug>-2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+</body>
+</html>

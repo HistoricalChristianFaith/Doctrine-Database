@@ -1,0 +1,173 @@
+# CLAUDE.md — operating schema for the Doctrine Across Time wiki
+
+This is the terse, load-every-session rule sheet. For the full concept and rationale, read
+[`project.md`](project.md) once.
+
+## What this wiki is
+For each Christian **doctrine**, a timeline page showing how belief developed across time,
+**earliest person first**, where **every claim is footnoted to a source**. The wiki is a set of
+**hand-authored static HTML files** under `docs/`, served as-is by GitHub Pages (no build step,
+no Markdown, no Jekyll). You edit the `.html` directly.
+
+## Layout
+```
+docs/                          the published site (GitHub Pages source = /docs)
+  index.html                   catalog of every page (the reader's home page)
+  .nojekyll                    serve raw HTML; do not Jekyll-process
+  doctrines/<slug>.html              summary timeline (1 footnoted block/person)
+  doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
+  doctrines/<slug>/arguments/<arg>.html   argument/crux page (one sub-claim → assessment; OFF-timeline)
+
+project.md   full brief        CLAUDE.md   this file        templates/   HTML page skeletons
+log.md       append-only history            TODO.md     pending-leads queue (pending only)
+people.md    non-DB people dates/slugs       llm-wiki.md  the general pattern
+```
+Meta files (this file, `project.md`, `log.md`, `TODO.md`, `people.md`, `templates/`, `README.md`)
+live at the repo root and are **not** part of the published site — only `docs/` is served.
+
+Three page types: **doctrine** (summary timeline), **person-doctrine** (a witness's detail page,
+slotted on the timeline by year), and **argument** (a single sub-claim adduced for a reading —
+proof-text, parallel, or historical thesis — weighed adversarially and given an `assessment` of the
+*interpretation* it serves; it cuts *across* the timeline, so it lives in the summary's "Arguments &
+cruxes" section, **not** the chronological list, and has no year).
+
+## Source databases (prefer over web, but still use web)
+- `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
+  (`quote`, `source_url`, `source_title`). Verse-oriented.
+  - ⚠ A verse may live in a **range-named** file (`Book 3_18-19.toml`), not just `Book 3_19.toml`.
+    To survey a verse, glob the range too (e.g. `*/"1 Peter 3_1*.toml"`) — exact-name globbing undercounts.
+- `~/Desktop/Writings-Database/<Father>/<Work>.html` → full texts; `metadata.toml` has
+  `default_year` (timeline anchor) + `wiki`.
+- Verse URL: `https://historicalchristian.faith/<book>/<ch>/<vs>` (book = lowercased, no spaces).
+- Work URL: `https://historicalchristian.faith/by_father.php?file=<Father>%2F<Work>.html`
+  → maps to `Writings-Database/<Father>/<Work>.html` (decode `%2F`→`/`, `%2520`→space).
+  - ⚠ **Read the text from the local `Writings-Database` file, never by fetching this URL** (the
+    `by_father.php` page doesn't serve the work body to a fetcher). The URL exists only so published
+    pages can *link* a local source we can't otherwise hyperlink — build it from the local path.
+- Book name spellings: `Commentaries-Database/book_names.json`.
+- **Work outside our corpus?** (e.g. a father's work absent from `Writings-Database`) — **search the web
+  for it** rather than dropping it as an "open lead"; cite the online source on the page like any other
+  (don't tell the reader it's "outside our corpus" — that's internal, not reader-facing).
+
+## HTML conventions
+- **Document wrapper** (every page): copy the skeletons in [`templates/`](templates/).
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><Page title></title>
+  <link rel="stylesheet" href="<…/>style.css">
+  </head>
+  <body>
+  …
+  </body>
+  </html>
+  ```
+  The `<link>` href is **depth-relative** to `docs/style.css`: `style.css` (index), `../style.css`
+  (summary), `../../style.css` (person-detail), `../../../style.css` (argument). Root-absolute
+  `/style.css` would break — the site is published under `…github.io/Doctrine-Database/`.
+- **One shared stylesheet** — `docs/style.css`, a single dark, minimal sheet (constrained reading
+  column, default serif fonts, styled links/quotes/footnotes). Every page links it (see wrapper
+  above). No per-page CSS and no JS — keep styling in that one file unless asked otherwise.
+- **Metadata is path- and content-derived, not hidden frontmatter:**
+  - *type* ← the path; *doctrine slug* ← the path; *person-slug* ← the filename.
+  - *year* (for ordering) ← the visible `<strong>Dates:</strong> c. <year>` line on the person page;
+    the summary timeline order is maintained **by hand**.
+  - *verified?* ← presence/absence of `⚠ unverified` markers on claims (and the index annotation).
+  - *assessment* (argument) ← the visible `<strong>Assessment:</strong> …` line.
+  - history/recency ← [`log.md`](log.md) (there is no per-page `updated` field).
+- **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
+  `../<slug>.html`; argument→detail `../<person>.html`; argument→summary `../../<slug>.html`.
+- **Footnotes** use this exact markup (matches every existing page) so numbering and back-links work:
+  - Inline ref (visible `<n>` is sequential **by first appearance** on the page; the id uses the
+    person-slug): `<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup>`
+  - Sources block at the bottom of the page (one `<li>` per note, ordered by first appearance):
+    ```html
+    <h2>Sources</h2>
+    <div class="footnote">
+    <hr>
+    <ol>
+    <li id="fn:<person-slug>-1">
+    <p><a href="<source URL>">source title</a>&#160;<a class="footnote-backref" href="#fnref:<person-slug>-1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+    </li>
+    </ol>
+    </div>
+    ```
+
+## Hard rules
+1. Summary pages list people **earliest year first** (order maintained by hand on insert).
+2. **Every** claim on a summary page ends in a footnote (the `<sup>` markup above).
+3. Quotes on detail pages are **verbatim** — never paraphrase inside `<blockquote>`.
+4. Firsthand quote found → cite the primary URL (page counts as *verified*). Only a secondary
+   report → mark the claim `⚠ unverified` inline, cite the secondary work, add a `TODO.md` row.
+5. `person-slug` = lowercased full name, spaces→hyphens (mirrors the `Writings-Database` folder)
+   and is the page's filename.
+6. Appending to an existing detail page → **append/merge**, don't overwrite.
+7. Use the real current date for `log.md` entries.
+8. **Never mention `TODO.md` in a published page** (summary / person-detail / argument) — it's
+   internal bookkeeping. On the page, mark an unsourced claim `⚠ unverified` (or call it an "open
+   lead" / "not yet sourced") and cite the secondary work only; still add the backlog row per
+   rule 4. Referencing `TODO.md` is fine only in meta files (this file, `project.md`, `log.md`).
+
+## Importing & the TODO queue
+- **`TODO.md` is a queue of not-yet-executed leads — pending items only.** It never holds
+  "done"/"resolved" entries: when a lead is executed, **delete its row** and record the outcome in
+  `log.md` (that is the history). Process rows **one at a time, top-down**; each row must carry enough
+  context to be actioned without re-reading the source it came from.
+- **"Import X"** (X = a local file or URL) means **extract every lead from X and add a row to
+  `TODO.md` for each** — it is *not* a request to author pages on the spot. Mine X for
+  `(person/claim, source)` pairs and open cruxes, queue them below, then stop. The leads get
+  processed one-by-one in later passes (or when the user says to work the queue).
+- Two row types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
+  per rule 4) and **crux** (a sub-claim needing adversarial adjudication → resolve into an argument
+  page with an `assessment`). Both end the same way: execute, then delete the row + log it.
+
+## Authoring checklist (see project.md §7 for detail)
+1. Identify doctrine(s) + slug + key verses; extract every `(person, claim)`.
+2. Date each person (DB `metadata.toml` `default_year`, or research → `people.md`).
+3. Verify each claim against the DBs (commentary files by key verse / writings HTML).
+4. Write/append the person-detail page `docs/doctrines/<slug>/<person-slug>.html` (full quotes,
+   context, links). Copy [`templates/person-detail.html`](templates/person-detail.html).
+5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
+   chronological order; add the matching `<li>` footnotes to its Sources block.
+6. Bookkeep: add a line to `docs/index.html`, append `log.md`, update `TODO.md`.
+
+If a `(person, claim)` is really a **crux** (interest = "does the argument hold?" not "who held it?"):
+skip the timeline — write an **argument page** instead (`arguments/<slug>.html`,
+[`templates/argument.html`](templates/argument.html)), weigh it adversarially → `assessment`, surface
+it in the summary's + index's "Arguments & cruxes" section, and flag any of the proponent's
+overstatements on their detail page. See project.md §4/§7.
+
+## Assessments (argument pages)
+The `assessment` rates the **interpretation** the argument serves — *not* whichever proponent we
+happened to ingest first. `assessment` ∈ {`sound`, `plausible`, `contested`, `weak`, `unsupported`}:
+*sound* = holds up — mainstream / near-consensus, or well-grounded and unrefuted; *plausible* =
+coherent and not ruled out, but short of majority support; *contested* = genuinely disputed, no clear
+winner (often strong by one discipline's lights, weak by another's); *weak* = does not hold on its
+best available case; *unsupported* = no real basis. (There is deliberately **no `mixed`** — that old
+value blended the *interpretation's* strength with the *proponent's* framing; rate only the
+interpretation, and keep framing problems in the prose and on the proponent's page.) Within these,
+distinguish **plausible** (coherent, not ruled out) from **probable** (more likely than not). Frame a
+proponent's overreach as a *less-probable reading* or *conjecture beyond the evidence*, not as
+"wrong/false" — reserve falsity language for genuinely false claims (e.g. a factual misstatement), and
+keep wording-precision issues separate from probability judgments.
+
+**State the finding, don't rebut a label.** Assess the interpretation on its own evidence — plausible,
+probable, overstated, with caveats. Do **not** frame the assessment as overturning a label
+(especially one *we* assigned: "often called the shakiest claim … but actually," "not a mere
+apologetic inference"). Setting up a label only to knock it down reads as dishonest and editorial.
+Drop the label; just say what the evidence shows.
+
+**Steelman before you weigh.** The assessment adjudicates the *interpretation*, not the modern
+proponent's particular wording of it. When the proponent we're ingesting misstates, overstates, or
+rests the reading on a weak or wrong-camp source, but a stronger case for the *same* reading exists
+(a better proof-text, a sounder mechanism, a fitter witness in the DBs), reconstruct that strongest
+version and judge **that**. Keep two questions separate and answer both: is the proponent's stated
+argument sound, and is the interpretation sound on its *best available* case? Flag the proponent's
+misstep on their page (always, whatever the assessment) — but title the argument page for the
+**interpretation** (not the proponent), and let the assessment track the steelman, not the stumble.
+So a reading can stand even where the proponent's prop for it fails, and a page that began as "does
+X's argument work?" should be reframed to "is the interpretation true?" once the stronger case is in
+view.

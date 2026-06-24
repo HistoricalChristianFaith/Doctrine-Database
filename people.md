@@ -1,0 +1,36 @@
+# People registry
+
+Canonical name, slug, year, and bio link for figures appearing in the wiki. Purpose: keep dating
+and slugs **consistent** across pages.
+
+- For figures **in the local databases**, the authoritative date is `default_year` in
+  `~/Desktop/Writings-Database/<Name>/metadata.toml` — you don't have to list them here, but add
+  a row if it helps. The `Writings-Database` folder name is the canonical full name; `person_slug`
+  is that name lowercased with spaces→hyphens.
+- For figures **not** in the databases (Aquinas, Luther, Calvin, modern theologians), research the
+  date **once** and record it here so every page agrees.
+
+`year` is the integer used for earliest-first sorting (typically death/floruit). Use `c.` in prose
+when uncertain.
+
+| Person | person_slug | year | in DB? | wiki |
+|--------|-------------|------|--------|------|
+| Tertullian | tertullian | 220 | yes | https://en.wikipedia.org/wiki/Tertullian |
+| Aphrahat the Persian Sage | aphrahat-the-persian-sage | 345 | yes | https://en.wikipedia.org/wiki/Aphrahat |
+| Athenagoras of Athens | athenagoras-of-athens | 177 | yes | https://en.wikipedia.org/wiki/Athenagoras_of_Athens |
+| Commodian | commodian | 250 | yes | https://en.wikipedia.org/wiki/Commodian |
+| Lactantius | lucius-caecilius-firmianus-lactantius | 310 | yes | https://en.wikipedia.org/wiki/Lactantius |
+| Thomas Aquinas | thomas-aquinas | 1274 | yes | https://en.wikipedia.org/wiki/Thomas_Aquinas |
+| Fr. Stephen De Young | stephen-de-young | 2018 | no | https://www.ancientfaith.com/contributors/stephen_de_young |
+| Fr. Andrew Stephen Damick | andrew-stephen-damick | 2020 | no | https://www.ancientfaith.com/contributors/andrew_stephen_damick |
+| George Syncellus | george-syncellus | 810 | no | https://en.wikipedia.org/wiki/George_Syncellus |
+| Doug Wilson | doug-wilson | 2021 | no | https://en.wikipedia.org/wiki/Douglas_Wilson_(theologian) |
+| The Westminster Confession | westminster-confession | 1646 | no | https://en.wikipedia.org/wiki/Westminster_Confession_of_Faith |
+| Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
+| N. T. Wright | n-t-wright | 2008 | no | https://en.wikipedia.org/wiki/N._T._Wright |
+| 2 Maccabees | 2-maccabees | -124 | no | https://en.wikipedia.org/wiki/2_Maccabees |
+| The Wisdom of Solomon | wisdom-of-solomon | -50 | no | https://en.wikipedia.org/wiki/Book_of_Wisdom |
+
+<!-- Example non-DB row:
+| Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
+-->

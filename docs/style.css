@@ -1,0 +1,29 @@
+:root { color-scheme: dark; }
+html { background: #181818; }
+body {
+  max-width: 42em;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  line-height: 1.6;
+  color: #e4e4e4;
+  background: #181818;
+  /* default serif font kept, per "minimal touch-up" */
+}
+h1, h2, h3 { line-height: 1.25; color: #f4f4f4; }
+h1 { font-size: 1.7rem; }
+h2 { font-size: 1.3rem; margin-top: 2rem; }
+a { color: #8ab4f8; }
+a:visited { color: #c58af9; }
+blockquote {
+  margin: 1rem 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid #444;
+  color: #c6c6c6;
+}
+code { background: #2a2a2a; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
+hr { border: none; border-top: 1px solid #333; }
+.footnote { font-size: 0.9rem; color: #aaa; margin-top: 2rem; }
+.footnote-ref, .footnote-backref { text-decoration: none; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #333; padding: 0.3rem 0.6rem; }
+img { max-width: 100%; height: auto; }
