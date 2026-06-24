@@ -32,8 +32,8 @@ date), and **argument** (a single sub-claim adduced for a reading — proof-text
 thesis — weighed adversarially and given an `assessment` of the interpretation; it cuts *across* the
 timeline, so it lives in the summary's "Arguments & cruxes" section rather than the chronological list).
 Two or more argument pages sharing a proof-text, mechanism, or theme may be grouped into a named
-**complex** — a grouping convention surfaced on the summary, index, and member breadcrumbs, not a fourth
-page type.
+**complex** — a grouping convention (internally *complex*; shown to readers as **"Related cruxes"**)
+surfaced on the summary, index, and member breadcrumbs, not a fourth page type.
 
 See the worked example: the nephilim doctrine — [`docs/doctrines/nephilim.html`](docs/doctrines/nephilim.html)
 (summary timeline), its detail pages under [`docs/doctrines/nephilim/`](docs/doctrines/nephilim/), and its

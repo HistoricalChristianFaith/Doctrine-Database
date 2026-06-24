@@ -111,12 +111,14 @@ docs/doctrines/
   witness's verified status. Skeleton: [`templates/argument.html`](templates/argument.html).
 - **Complex** = a *grouping convention* over two or more argument pages that share a single proof-text,
   mechanism, or theme and are best read as a set. It is **not** a new page type, has **no year**, and
-  has **no file of its own** — nothing new on disk. A complex is realized purely in visible content, in
-  three places: (1) a wrapping `<h3 id="complex-<slug>">` + framing `<p>` placed **first** in the home
-  summary's "Arguments & cruxes" section (above the standalone `<h3>` cruxes, matching the index), with
-  the members demoted from `<h3>` to `<h4>`; (2) an `<h4>` group in
-  the index above a trailing unheaded `<ul>` of standalone cruxes; (3) a `Complex:` breadcrumb on each
-  member page linking the home-summary anchor and the sibling members. An argument has at most one home
+  has **no file of its own** — nothing new on disk. *"Complex" is the internal term only* (slug, anchor
+  `id="complex-<slug>"`, these meta files); the **reader-facing label is "Related cruxes"** — the group
+  heading reads `Related cruxes — <theme>` and the breadcrumb label is `Related cruxes:`. A complex is
+  realized purely in visible content, in three places: (1) a wrapping `<h3 id="complex-<slug>">` + framing
+  `<p>` placed **first** in the home summary's "Arguments & cruxes" section (above the standalone `<h3>`
+  cruxes, matching the index), with the members demoted from `<h3>` to `<h4>`; (2) an `<h4>` group in
+  the index above a trailing unheaded `<ul>` of standalone cruxes; (3) a `Related cruxes:` breadcrumb on
+  each member page linking the home-summary anchor and the sibling members. An argument has at most one home
   complex (relations to others are `see also` links, not double-grouping); a one-member-per-side
   cross-doctrine pairing stays a `see also` pattern rather than a heading group. See `CLAUDE.md`
   ("Complexes") for the full rules.
@@ -213,10 +215,11 @@ TODO crux produces one of these (with an assessment), not a flipped verified sta
 
 **When a new crux shares a proof-text, mechanism, or theme with existing cruxes**, file it into that
 **complex** rather than leaving it standalone: group it with its siblings under the
-`<h3 id="complex-<slug>">` heading on the summary and the `<h4>` group in the index, and add the
-`Complex:` breadcrumb (linking the home-summary anchor + siblings) to it and to the siblings. If the
-shared theme has only just reached **two** members, promote it from standalone cruxes to a complex
-(coin a slug + display name, wrap both members, re-sequence footnotes by first appearance). One home
+`<h3 id="complex-<slug>">` heading on the summary and the `<h4>` group in the index (both labelled
+`Related cruxes — <theme>`), and add the `Related cruxes:` breadcrumb (linking the home-summary anchor +
+siblings) to it and to the siblings. If the shared theme has only just reached **two** members, promote
+it from standalone cruxes to a complex (coin a slug + reader-facing display name, wrap both members,
+re-sequence footnotes by first appearance). One home
 complex per argument; cross-complex relations are `see also` links, not double-grouping.
 
 ### Query — answering a question against the wiki
@@ -232,7 +235,7 @@ assessment; is linked from both the summary's and the index's "Arguments & cruxe
 timeline); any proponent overstatement is reflected as a flag on that proponent's detail page; and it
 carries **no year/date** on the timeline. For **complexes**: every grouped complex has ≥ 2 members on
 its home summary, and each member appears under exactly **one** `<h3 id="complex-…">` group (no
-double-grouping); each grouped member carries a `Complex:` breadcrumb whose anchor
+double-grouping); each grouped member carries a `Related cruxes:` breadcrumb whose anchor
 (`../../<doctrine>.html#complex-<slug>`) resolves to an existing `<h3 id="complex-<slug>">` and whose
 sibling links all resolve; summary and index **agree on membership** (same args grouped the same way);
 footnote `<sup>`↔`<li>` integrity holds after any re-sequencing; and no standalone crux is silently

@@ -31,8 +31,9 @@ proof-text, parallel, or historical thesis — weighed adversarially and given a
 *interpretation* it serves; it cuts *across* the timeline, so it lives in the summary's "Arguments &
 cruxes" section, **not** the chronological list, and has no year). Two or more argument pages that share
 a proof-text, mechanism, or theme may be grouped into a named **complex** — a grouping convention
-realized in visible content (a sub-heading on the summary + index and a `Complex:` breadcrumb on each
-member), **not** a fourth page type and **not** a new file. See "Complexes" under Assessments below.
+realized in visible content (a sub-heading on the summary + index and a `Related cruxes:` breadcrumb on
+each member), **not** a fourth page type and **not** a new file. ("Complex" is the internal term only;
+the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessments below.
 
 ## Source databases (prefer over web, but still use web)
 - `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
@@ -84,8 +85,9 @@ member), **not** a fourth page type and **not** a new file. See "Complexes" unde
 - **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
   `../<slug>.html`; argument→detail `../<person>.html`; argument→summary `../../<slug>.html`.
   Members of a **complex** are additionally grouped under a shared `<h3 id="complex-<slug>">` heading on
-  the summary and an `<h4>` group in the index, and each member page carries a `Complex:` breadcrumb
-  linking the home-summary anchor (`../../<slug>.html#complex-<slug>`) and its sibling members.
+  the summary and an `<h4>` group in the index (both labelled `Related cruxes — <theme>`), and each member
+  page carries a `Related cruxes:` breadcrumb linking the home-summary anchor
+  (`../../<slug>.html#complex-<slug>`) and its sibling members.
 - **Footnotes** use this exact markup (matches every existing page) so numbering and back-links work:
   - Inline ref (visible `<n>` is sequential **by first appearance** on the page; the id uses the
     person-slug): `<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup>`
@@ -183,9 +185,17 @@ A **complex** is a named cluster of **two or more argument/crux pages** (within 
 occasionally across two) that share a single proof-text, mechanism, or theme and are best read as a set.
 It is a **grouping convention, not a page type**: it has no file of its own and adds no `docs/` entry. A
 complex is realized in visible content in three places — a grouped sub-heading in the summary's and
-index's "Arguments & cruxes" sections, and a `Complex:` breadcrumb on each member page that names the
-complex and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
-frontmatter. Five rules:
+index's "Arguments & cruxes" sections, and a `Related cruxes:` breadcrumb on each member page that names
+the group and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
+frontmatter.
+
+**Naming — internal term vs. reader-facing label.** The convention is called a *complex* in the plumbing
+only: the kebab-case slug (`descent`), the anchor `id="complex-<slug>"`, and these meta files. The reader
+never sees the word "complex". Every visible surface is labelled **"Related cruxes"** — the group heading
+reads `Related cruxes — <theme>` (summary `<h3>`, index `<h4>`) and the member breadcrumb label is
+`Related cruxes:` with the bare theme as its link text (e.g. `the descent`). (NB: "complex" also appears
+legitimately in argument *prose* in its religious-studies sense — a "ritual/cultural complex" — which is
+content, not this label, and is left as written.) Five rules:
 
 1. **Membership ≥ 2.** A single crux is never a complex; a theme with one member stays a standalone crux.
 2. **One home complex per argument.** An argument is *grouped* under at most one home complex (never
@@ -196,8 +206,9 @@ frontmatter. Five rules:
    with one member per side is realized via breadcrumb + `see also` links only — no `<h3>` group (e.g.
    the 1 Peter 3:19 identity crux on `nephilim` ↔ the content-of-the-proclamation crux on
    `intermediate-state`, whose home complex is `descent`).
-4. **Slug + display name + anchor.** Each complex has a kebab-case slug (`descent`), a display name
-   ("The descent complex"), and a stable anchor on its home summary: `<h3 id="complex-<slug>">`. Member
+4. **Slug + display name + anchor.** Each complex has a kebab-case slug (`descent`), a reader-facing
+   display name ("Related cruxes — the descent"), and a stable anchor on its home summary:
+   `<h3 id="complex-<slug>">`. Member
    breadcrumbs link to `../../<doctrine>.html#complex-<slug>`; on the summary the members demote from
    `<h3>` to `<h4>` under a framing `<p>`; in the index they form an `<h4>` group above a trailing
    unheaded `<ul>` of standalone cruxes. **Complex groups lead the "Arguments & cruxes" section on the
