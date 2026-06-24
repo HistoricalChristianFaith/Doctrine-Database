@@ -41,6 +41,7 @@ when uncertain.
 | Melito of Sardis | melito-of-sardis | 170 | yes | https://en.wikipedia.org/wiki/Melito_of_Sardis |
 | An Ancient Homily on Holy Saturday | holy-saturday-homily | 300 | no | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
 | Cyril of Alexandria | cyril-of-alexandria | 444 | yes | https://en.wikipedia.org/wiki/Cyril_of_Alexandria |
+| The Gospel of Nicodemus (Acts of Pilate) | gospel-of-nicodemus | 450 | no | https://en.wikipedia.org/wiki/Gospel_of_Nicodemus |
 
 <!-- NB Eusebius (intermediate-state descent witness, c. 324 = Church History) and Ambrose (c. 380 = Aurora Lucis Rutilat hymn,
      attribution traditional) also appear on the nephilim timeline at different work-dates (c. 339 / c. 397). The year above is
