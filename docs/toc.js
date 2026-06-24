@@ -16,8 +16,9 @@
   }
 
   function build() {
-    // Headings in document order, excluding the title (h1) and the Sources/footnote block.
-    var all = Array.prototype.slice.call(document.querySelectorAll("h2, h3, h4"));
+    // Headings in document order, excluding the Sources/footnote block. The page h1 leads
+    // the list (top-level, styled as the title); h2–h4 nest beneath it.
+    var all = Array.prototype.slice.call(document.querySelectorAll("h1, h2, h3, h4"));
     var headings = all.filter(function (h) {
       if (h.closest(".footnote")) return false;
       var t = (h.textContent || "").trim();
@@ -33,11 +34,30 @@
     var details = document.createElement("details");
     details.className = "toc";
     details.id = "toc";
-    details.open = true;
+
+    // Default open when floating in the side gutter, collapsed when inline at the top.
+    // The query MUST match the float breakpoint in style.css (.toc @media min-width).
+    // Re-applies when the viewport crosses the breakpoint, unless the user has toggled it.
+    var sideMode = window.matchMedia ? window.matchMedia("(min-width: 78.5em)") : null;
+    var userToggled = false, suppressToggle = false;
+    details.open = sideMode ? sideMode.matches : true;
+    details.addEventListener("toggle", function () {
+      if (!suppressToggle) userToggled = true;
+    });
+    if (sideMode && sideMode.addEventListener) {
+      sideMode.addEventListener("change", function () {
+        if (userToggled) return;
+        suppressToggle = true;
+        details.open = sideMode.matches;
+        suppressToggle = false;
+      });
+    }
 
     var summary = document.createElement("summary");
     summary.className = "toc-title";
-    summary.textContent = "Contents";
+    var summaryText = document.createElement("span");
+    summaryText.textContent = "Table of Contents";
+    summary.appendChild(summaryText); // span lets us gap the text off the disclosure marker
     details.appendChild(summary);
 
     var nav = document.createElement("nav");

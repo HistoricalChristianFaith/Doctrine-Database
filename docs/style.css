@@ -47,9 +47,11 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.04em;
   font-size: 0.72rem;
 }
+.toc-title span { margin-left: 0.4rem; } /* gap between the disclosure marker and the label */
 .toc nav { margin-top: 0.5rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
 .toc li { margin: 0.18rem 0; line-height: 1.35; }
+.toc li.toc-h1 { font-weight: bold; font-size: 1.08em; margin-bottom: 0.3rem; } /* page title, no indent */
 .toc li.toc-h3 { padding-left: 1.1rem; font-size: 0.96em; }
 .toc li.toc-h4 { padding-left: 2.2rem; font-size: 0.92em; }
 .toc a { color: #9aa7b8; text-decoration: none; }
