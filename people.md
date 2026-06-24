@@ -38,6 +38,9 @@ when uncertain.
 | Athanasius of Alexandria | athanasius-of-alexandria | 371 | yes | https://en.wikipedia.org/wiki/Athanasius_of_Alexandria |
 | Ambrose of Milan | ambrose-of-milan | 380 | yes | https://en.wikipedia.org/wiki/Ambrose |
 | Leo the Great | leo-the-great | 447 | yes | https://en.wikipedia.org/wiki/Pope_Leo_I |
+| Melito of Sardis | melito-of-sardis | 170 | yes | https://en.wikipedia.org/wiki/Melito_of_Sardis |
+| An Ancient Homily on Holy Saturday | holy-saturday-homily | 300 | no | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
+| Cyril of Alexandria | cyril-of-alexandria | 444 | yes | https://en.wikipedia.org/wiki/Cyril_of_Alexandria |
 
 <!-- NB Eusebius (intermediate-state descent witness, c. 324 = Church History) and Ambrose (c. 380 = Aurora Lucis Rutilat hymn,
      attribution traditional) also appear on the nephilim timeline at different work-dates (c. 339 / c. 397). The year above is
