@@ -30,6 +30,19 @@ when uncertain.
 | N. T. Wright | n-t-wright | 2008 | no | https://en.wikipedia.org/wiki/N._T._Wright |
 | 2 Maccabees | 2-maccabees | -124 | no | https://en.wikipedia.org/wiki/2_Maccabees |
 | The Wisdom of Solomon | wisdom-of-solomon | -50 | no | https://en.wikipedia.org/wiki/Book_of_Wisdom |
+| Ignatius of Antioch | ignatius-of-antioch | 107 | yes | https://en.wikipedia.org/wiki/Ignatius_of_Antioch |
+| Polycarp of Smyrna | polycarp-of-smyrna | 125 | yes | https://en.wikipedia.org/wiki/Polycarp |
+| The Odes of Solomon | odes-of-solomon | 125 | yes | https://en.wikipedia.org/wiki/Odes_of_Solomon |
+| The Shepherd of Hermas | shepherd-of-hermas | 150 | yes | https://en.wikipedia.org/wiki/The_Shepherd_of_Hermas |
+| Eusebius of Caesarea | eusebius-of-caesarea | 324 | yes | https://en.wikipedia.org/wiki/Eusebius |
+| Athanasius of Alexandria | athanasius-of-alexandria | 371 | yes | https://en.wikipedia.org/wiki/Athanasius_of_Alexandria |
+| Ambrose of Milan | ambrose-of-milan | 380 | yes | https://en.wikipedia.org/wiki/Ambrose |
+| Leo the Great | leo-the-great | 447 | yes | https://en.wikipedia.org/wiki/Pope_Leo_I |
+
+<!-- NB Eusebius (intermediate-state descent witness, c. 324 = Church History) and Ambrose (c. 380 = Aurora Lucis Rutilat hymn,
+     attribution traditional) also appear on the nephilim timeline at different work-dates (c. 339 / c. 397). The year above is
+     each one's descent/intermediate-state testimony date; dating is ultimately per-page (the visible "Dates:" line). -->
+
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
