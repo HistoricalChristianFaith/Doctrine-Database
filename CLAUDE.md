@@ -29,7 +29,10 @@ Three page types: **doctrine** (summary timeline), **person-doctrine** (a witnes
 slotted on the timeline by year), and **argument** (a single sub-claim adduced for a reading —
 proof-text, parallel, or historical thesis — weighed adversarially and given an `assessment` of the
 *interpretation* it serves; it cuts *across* the timeline, so it lives in the summary's "Arguments &
-cruxes" section, **not** the chronological list, and has no year).
+cruxes" section, **not** the chronological list, and has no year). Two or more argument pages that share
+a proof-text, mechanism, or theme may be grouped into a named **complex** — a grouping convention
+realized in visible content (a sub-heading on the summary + index and a `Complex:` breadcrumb on each
+member), **not** a fourth page type and **not** a new file. See "Complexes" under Assessments below.
 
 ## Source databases (prefer over web, but still use web)
 - `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
@@ -80,6 +83,9 @@ cruxes" section, **not** the chronological list, and has no year).
   - history/recency ← [`log.md`](log.md) (there is no per-page `updated` field).
 - **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
   `../<slug>.html`; argument→detail `../<person>.html`; argument→summary `../../<slug>.html`.
+  Members of a **complex** are additionally grouped under a shared `<h3 id="complex-<slug>">` heading on
+  the summary and an `<h4>` group in the index, and each member page carries a `Complex:` breadcrumb
+  linking the home-summary anchor (`../../<slug>.html#complex-<slug>`) and its sibling members.
 - **Footnotes** use this exact markup (matches every existing page) so numbering and back-links work:
   - Inline ref (visible `<n>` is sequential **by first appearance** on the page; the id uses the
     person-slug): `<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup>`
@@ -171,3 +177,31 @@ misstep on their page (always, whatever the assessment) — but title the argume
 So a reading can stand even where the proponent's prop for it fails, and a page that began as "does
 X's argument work?" should be reframed to "is the interpretation true?" once the stronger case is in
 view.
+
+## Complexes (grouping argument pages)
+A **complex** is a named cluster of **two or more argument/crux pages** (within one doctrine, or
+occasionally across two) that share a single proof-text, mechanism, or theme and are best read as a set.
+It is a **grouping convention, not a page type**: it has no file of its own and adds no `docs/` entry. A
+complex is realized in visible content in three places — a grouped sub-heading in the summary's and
+index's "Arguments & cruxes" sections, and a `Complex:` breadcrumb on each member page that names the
+complex and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
+frontmatter. Five rules:
+
+1. **Membership ≥ 2.** A single crux is never a complex; a theme with one member stays a standalone crux.
+2. **One home complex per argument.** An argument is *grouped* under at most one home complex (never
+   listed twice in a summary/index). Relationships to other complexes are `see also` cross-links, not
+   double-grouping.
+3. **Grouped surfacing needs ≥ 2 members in that summary.** A complex renders as an `<h3>` group on a
+   doctrine summary only where that summary holds two or more of its members. A cross-doctrine pairing
+   with one member per side is realized via breadcrumb + `see also` links only — no `<h3>` group (e.g.
+   the 1 Peter 3:19 identity crux on `nephilim` ↔ the content-of-the-proclamation crux on
+   `intermediate-state`, whose home complex is `descent`).
+4. **Slug + display name + anchor.** Each complex has a kebab-case slug (`descent`), a display name
+   ("The descent complex"), and a stable anchor on its home summary: `<h3 id="complex-<slug>">`. Member
+   breadcrumbs link to `../../<doctrine>.html#complex-<slug>`; on the summary the members demote from
+   `<h3>` to `<h4>` under a framing `<p>`; in the index they form an `<h4>` group above a trailing
+   unheaded `<ul>` of standalone cruxes. **Complex groups lead the "Arguments & cruxes" section on the
+   summary as well as the index** — the complex `<h3 id="complex-<slug>">` group first, the standalone
+   `<h3>` cruxes after — so summary and index order agree. Re-sequence footnotes after any reorder
+   (numbers are sequential by first appearance).
+5. **Standalone cruxes are unchanged.** Cruxes in no complex keep their flat `<h3>` / `<ul>` presentation.
