@@ -27,6 +27,7 @@ when uncertain.
 | Doug Wilson | doug-wilson | 2021 | no | https://en.wikipedia.org/wiki/Douglas_Wilson_(theologian) |
 | The Westminster Confession | westminster-confession | 1646 | no | https://en.wikipedia.org/wiki/Westminster_Confession_of_Faith |
 | Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
+| The Formula of Concord | formula-of-concord | 1577 | no | https://en.wikipedia.org/wiki/Formula_of_Concord |
 | N. T. Wright | n-t-wright | 2008 | no | https://en.wikipedia.org/wiki/N._T._Wright |
 | 2 Maccabees | 2-maccabees | -124 | no | https://en.wikipedia.org/wiki/2_Maccabees |
 | The Wisdom of Solomon | wisdom-of-solomon | -50 | no | https://en.wikipedia.org/wiki/Book_of_Wisdom |
