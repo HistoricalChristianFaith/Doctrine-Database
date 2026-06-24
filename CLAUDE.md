@@ -63,18 +63,25 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><Page title></title>
   <link rel="stylesheet" href="<…/>style.css">
+  <script defer src="<…/>toc.js"></script>
   </head>
   <body>
   …
   </body>
   </html>
   ```
-  The `<link>` href is **depth-relative** to `docs/style.css`: `style.css` (index), `../style.css`
-  (summary), `../../style.css` (person-detail), `../../../style.css` (argument). Root-absolute
-  `/style.css` would break — the site is published under `…github.io/Doctrine-Database/`.
+  Both the `<link>` href and the `<script src>` are **depth-relative** to `docs/`: `style.css`/`toc.js`
+  (index), `../` (summary), `../../` (person-detail), `../../../` (argument). Root-absolute `/style.css`
+  would break — the site is published under `…github.io/Doctrine-Database/`.
 - **One shared stylesheet** — `docs/style.css`, a single dark, minimal sheet (constrained reading
   column, default serif fonts, styled links/quotes/footnotes). Every page links it (see wrapper
-  above). No per-page CSS and no JS — keep styling in that one file unless asked otherwise.
+  above). No per-page CSS — keep styling in that one file.
+- **One shared script** — `docs/toc.js`, the only JS on the site. Every page loads it (`<script defer
+  src="<…/>toc.js">` in the wrapper); it builds a collapsible, Wikipedia-style **table of contents**
+  from the page's `h2`–`h4` at view time (skips the `h1` and `Sources`; bails on pages with < 3
+  headings) and floats it in the left gutter on wide viewports, scroll-spy included. The TOC is
+  generated, **not** authored into the HTML — write normal headings and it appears. TOC styling lives
+  in `style.css` (the `.toc*` rules). Keep JS in this one file unless asked otherwise.
 - **Metadata is path- and content-derived, not hidden frontmatter:**
   - *type* ← the path; *doctrine slug* ← the path; *person-slug* ← the filename.
   - *year* (for ordering) ← the visible `<strong>Dates:</strong> c. <year>` line on the person page;

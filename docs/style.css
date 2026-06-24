@@ -27,3 +27,64 @@ hr { border: none; border-top: 1px solid #333; }
 table { border-collapse: collapse; }
 td, th { border: 1px solid #333; padding: 0.3rem 0.6rem; }
 img { max-width: 100%; height: auto; }
+
+/* Table of contents — built client-side by toc.js. Collapsible block by default;
+   floats in the left gutter when the viewport is wide enough to hold it. */
+.toc {
+  box-sizing: border-box; /* so the float's width calc is the whole box, gutter math included */
+  font-size: 0.85rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #1e1e1e;
+  padding: 0.4rem 0.8rem 0.6rem;
+  margin: 1.5rem 0;
+}
+.toc-title {
+  cursor: pointer;
+  color: #f4f4f4;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+}
+.toc nav { margin-top: 0.5rem; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0.18rem 0; line-height: 1.35; }
+.toc li.toc-h3 { padding-left: 1.1rem; font-size: 0.96em; }
+.toc li.toc-h4 { padding-left: 2.2rem; font-size: 0.92em; }
+.toc a { color: #9aa7b8; text-decoration: none; }
+.toc a:visited { color: #9aa7b8; }
+.toc a:hover { color: #8ab4f8; text-decoration: underline; }
+.toc a.toc-active { color: #8ab4f8; font-weight: bold; }
+
+/* The float is dynamic: its right edge is pinned a constant 2.5rem left of the centered
+   content column, and it grows leftward to fill the gutter — down to a 1.5rem margin from
+   the viewport edge — capped at 24rem wide. The breakpoint is derived from the geometry:
+   the gutter is (100vw − 44.5rem)/2, so it holds the 13rem minimum width plus both gaps
+   (1.5 + 2.5) exactly at 78.5em. Below that the float never applies and the TOC stays
+   inline at the top (base rules above). Change the four constants together: min width 13,
+   edge 1.5, gap 2.5, breakpoint 78.5 = 44.5 + 2·(13 + 1.5 + 2.5). */
+@media (min-width: 78.5em) {
+  .toc {
+    position: fixed;
+    top: 2.5rem;
+    right: calc((100vw + 44.5rem) / 2 + 2.5rem); /* pin right edge 2.5rem from the content column */
+    width: calc((100vw - 44.5rem) / 2 - 4rem);   /* fill the gutter minus 1.5rem edge + 2.5rem gap */
+    max-width: 24rem;
+    max-height: calc(100vh - 5rem);
+    margin: 0;
+    padding-top: 0; /* the sticky title provides the top spacing */
+    overflow-y: auto; /* the whole box scrolls; hover it to scroll, else the page scrolls */
+    overscroll-behavior: contain; /* don't chain wheel scroll to the page */
+  }
+  .toc-title {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #1e1e1e;
+    margin: 0 -0.8rem; /* span the full width so scrolled links hide cleanly behind it */
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid #333;
+  }
+  .toc nav { margin-top: 0; }
+}
