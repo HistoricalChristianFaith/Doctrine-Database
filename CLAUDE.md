@@ -52,6 +52,12 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
 - **Work outside our corpus?** (e.g. a father's work absent from `Writings-Database`) — **search the web
   for it** rather than dropping it as an "open lead"; cite the online source on the page like any other
   (don't tell the reader it's "outside our corpus" — that's internal, not reader-facing).
+- **Source-DB gaps → open a GitHub issue.** When research surfaces a fixable gap in the upstream repos —
+  a missing work in [`Writings-Database`](https://github.com/HistoricalChristianFaith/Writings-Database),
+  a missing import/verse in [`Commentaries-Database`](https://github.com/HistoricalChristianFaith/Commentaries-Database),
+  or an OCR/transcription error in either — **file a concise issue on that repo** (`gh issue create`)
+  describing the gap and (if known) the correct source/text. Keep doing the wiki work from the web in the
+  meantime; the issue just flags the upstream fix.
 
 ## HTML conventions
 - **Document wrapper** (every page): copy the skeletons in [`templates/`](templates/).
