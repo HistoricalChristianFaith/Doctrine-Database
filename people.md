@@ -57,6 +57,7 @@ when uncertain.
 
 
 | Tractate Megillah (b. Megillah 9a) | tractate-megillah | 200 | no | https://en.wikipedia.org/wiki/Megillah_(Talmud) |
+| Philoxenus of Mabbug | philoxenus-of-mabbug | 523 | no | https://en.wikipedia.org/wiki/Philoxenus_of_Mabbug |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
