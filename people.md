@@ -43,6 +43,10 @@ when uncertain.
 | An Ancient Homily on Holy Saturday | holy-saturday-homily | 300 | no | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
 | Cyril of Alexandria | cyril-of-alexandria | 444 | yes | https://en.wikipedia.org/wiki/Cyril_of_Alexandria |
 | The Gospel of Nicodemus (Acts of Pilate) | gospel-of-nicodemus | 450 | no | https://en.wikipedia.org/wiki/Gospel_of_Nicodemus |
+| Cyprian of Carthage | cyprian | 253 | yes | https://en.wikipedia.org/wiki/Cyprian |
+| Epiphanius of Salamis | epiphanius-of-salamis | 375 | partial (Weights & Measures only) | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
+| Ambrosiaster | ambrosiaster | 380 | yes (Commentaries-DB) | https://en.wikipedia.org/wiki/Ambrosiaster |
+| Caesarius of Arles | caesarius-of-arles | 520 | no | https://en.wikipedia.org/wiki/Caesarius_of_Arles |
 
 <!-- NB Eusebius (intermediate-state descent witness, c. 324 = Church History) and Ambrose (c. 380 = Aurora Lucis Rutilat hymn,
      attribution traditional) also appear on the nephilim timeline at different work-dates (c. 339 / c. 397). The year above is
