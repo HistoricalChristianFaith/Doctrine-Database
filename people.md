@@ -60,6 +60,7 @@ when uncertain.
 | Philoxenus of Mabbug | philoxenus-of-mabbug | 523 | no | https://en.wikipedia.org/wiki/Philoxenus_of_Mabbug |
 | Moses bar Kepha | moses-bar-kepha | 903 | no | https://en.wikipedia.org/wiki/Moses_Bar_Kepha |
 | The Letter of Aristeas | aristeas | -130 | no | https://en.wikipedia.org/wiki/Letter_of_Aristeas |
+| Isidore of Seville | isidore-of-seville | 636 | yes (Chronicon only; Etymologies not in corpus) | https://en.wikipedia.org/wiki/Isidore_of_Seville |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
