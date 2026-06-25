@@ -62,6 +62,7 @@ when uncertain.
 | The Letter of Aristeas | aristeas | -130 | no | https://en.wikipedia.org/wiki/Letter_of_Aristeas |
 | Isidore of Seville | isidore-of-seville | 636 | yes (Chronicon only; Etymologies not in corpus) | https://en.wikipedia.org/wiki/Isidore_of_Seville |
 | Julian of Toledo | julian-of-toledo | 686 | no (De comprobatione aetatis sextae not in corpus; cited from PL 96 via Latin Wikisource) | https://en.wikipedia.org/wiki/Julian_of_Toledo |
+| Hrabanus Maurus | hrabanus-maurus | 845 | no (De rerum naturis / De Universo not in corpus; cited from PL 111 via Documenta Catholica Omnia) | https://en.wikipedia.org/wiki/Rabanus_Maurus |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
