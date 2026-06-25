@@ -29,6 +29,8 @@ when uncertain.
 | Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
 | The Formula of Concord | formula-of-concord | 1577 | no | https://en.wikipedia.org/wiki/Formula_of_Concord |
 | The Acts of Paul and Thecla | acts-of-paul-and-thecla | 160 | no | https://en.wikipedia.org/wiki/Acts_of_Paul_and_Thecla |
+| Abercius (Epitaph of) | abercius | 190 | yes (meta only) | https://en.wikipedia.org/wiki/Inscription_of_Abercius |
+| Perpetua (Passion of) | perpetua | 203 | yes | https://en.wikipedia.org/wiki/Passion_of_Saints_Perpetua_and_Felicity |
 | N. T. Wright | n-t-wright | 2008 | no | https://en.wikipedia.org/wiki/N._T._Wright |
 | 2 Maccabees | 2-maccabees | -124 | no | https://en.wikipedia.org/wiki/2_Maccabees |
 | The Wisdom of Solomon | wisdom-of-solomon | -50 | no | https://en.wikipedia.org/wiki/Book_of_Wisdom |
