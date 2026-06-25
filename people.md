@@ -23,7 +23,7 @@ when uncertain.
 | Thomas Aquinas | thomas-aquinas | 1274 | yes | https://en.wikipedia.org/wiki/Thomas_Aquinas |
 | Fr. Stephen De Young | stephen-de-young | 2018 | no | https://www.ancientfaith.com/contributors/stephen_de_young |
 | Fr. Andrew Stephen Damick | andrew-stephen-damick | 2020 | no | https://www.ancientfaith.com/contributors/andrew_stephen_damick |
-| George Syncellus | george-syncellus | 810 | no | https://en.wikipedia.org/wiki/George_Syncellus |
+| George Syncellus | george-syncellus | 810 | no (Ecloga Chronographica not in corpus; cited from Adler & Tuffin's 2002 Oxford translation, archive.org PDF) | https://en.wikipedia.org/wiki/George_Syncellus |
 | Doug Wilson | doug-wilson | 2021 | no | https://en.wikipedia.org/wiki/Douglas_Wilson_(theologian) |
 | The Westminster Confession | westminster-confession | 1646 | no | https://en.wikipedia.org/wiki/Westminster_Confession_of_Faith |
 | Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
@@ -64,6 +64,8 @@ when uncertain.
 | Julian of Toledo | julian-of-toledo | 686 | no (De comprobatione aetatis sextae not in corpus; cited from PL 96 via Latin Wikisource) | https://en.wikipedia.org/wiki/Julian_of_Toledo |
 | Hrabanus Maurus | hrabanus-maurus | 845 | no (De rerum naturis / De Universo not in corpus; cited from PL 111 via Documenta Catholica Omnia) | https://en.wikipedia.org/wiki/Rabanus_Maurus |
 | Agapius of Hierapolis | agapius-of-hierapolis | 942 | no (Kitāb al-ʿUnwān / Universal History not in corpus; cited from the English translation of Vasiliev's PO edition at tertullian.org) | https://en.wikipedia.org/wiki/Agapius_of_Hierapolis |
+| Jacob of Edessa | jacob-of-edessa | 692 | no (Genesis scholion not in corpus; cited via Assemani's Bibliotheca Orientalis I.65–66 + Adler's Time Immemorial, as reproduced in Smith's ABR "Setting the Record Straight, Part 2"; ⚠ attribution historically confused with Ephraem) | https://en.wikipedia.org/wiki/Jacob_of_Edessa |
+| Bar Hebraeus | bar-hebraeus | 1286 | no (Chronography not in corpus; cited from Budge's 1932 English translation at archive.org) | https://en.wikipedia.org/wiki/Bar_Hebraeus |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
