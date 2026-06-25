@@ -12,7 +12,8 @@ no Markdown, no Jekyll). You edit the `.html` directly.
 ## Layout
 ```
 docs/                          the published site (GitHub Pages source = /docs)
-  index.html                   catalog of every page (the reader's home page)
+  index.html                   the reader's home page: doctrine summaries + the cruxes catalog
+                                 (NOT a person-page list — witnesses are cataloged on their timeline)
   .nojekyll                    serve raw HTML; do not Jekyll-process
   doctrines/<slug>.html              summary timeline (1 footnoted block/person)
   doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
@@ -92,7 +93,7 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
   - *type* ← the path; *doctrine slug* ← the path; *person-slug* ← the filename.
   - *year* (for ordering) ← the visible `<strong>Dates:</strong> c. <year>` line on the person page;
     the summary timeline order is maintained **by hand**.
-  - *verified?* ← presence/absence of `⚠ unverified` markers on claims (and the index annotation).
+  - *verified?* ← presence/absence of `⚠ unverified` markers on claims (the index does not track this).
   - *assessment* (argument) ← the visible `<strong>Assessment:</strong> …` line.
   - history/recency ← [`log.md`](log.md) (there is no per-page `updated` field).
 - **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
@@ -153,7 +154,10 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
    context, links). Copy [`templates/person-detail.html`](templates/person-detail.html).
 5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
    chronological order; add the matching `<li>` footnotes to its Sources block.
-6. Bookkeep: add a line to `docs/index.html`, append `log.md`, update `TODO.md`.
+6. Bookkeep: append `log.md`, update `TODO.md`. Touch `docs/index.html` **only** for a new doctrine
+   (a row in "Doctrines", with its people count) or a new crux (a row in "Arguments & cruxes") — a new
+   *witness* needs no index edit (the index no longer lists person pages; bump the doctrine's people
+   count, though). Keep the doctrine row's count current.
 
 If a `(person, claim)` is really a **crux** (interest = "does the argument hold?" not "who held it?"):
 skip the timeline — write an **argument page** instead (`arguments/<slug>.html`,
