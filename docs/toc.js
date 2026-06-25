@@ -131,9 +131,32 @@
     headings.forEach(function (h) { io.observe(h); });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", build);
-  } else {
+  // Announce this page's path to a parent viewer shell (historicalchristian.faith
+  // /doctrine), so it can mirror the location in its address bar for deep-linking.
+  // No-ops when the page is viewed standalone on GitHub Pages (parent === self), and
+  // the pinned targetOrigin means the message reaches only that one shell.
+  function postLocationToParent() {
+    if (window.parent === window) return; // not framed
+    var base = "/Doctrine-Database/"; // GitHub Pages repo root
+    var path = location.pathname;
+    var rel =
+      path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\/+/, "");
+    window.parent.postMessage(
+      { type: "doctrine-nav", page: rel + location.search, hash: location.hash },
+      "https://historicalchristian.faith"
+    );
+  }
+
+  function init() {
     build();
+    postLocationToParent();
+  }
+
+  window.addEventListener("hashchange", postLocationToParent);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
 })();
