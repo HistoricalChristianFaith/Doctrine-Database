@@ -15,7 +15,35 @@
       .slice(0, 60) || "section";
   }
 
+  // A "home" link back to the site root (index.html). The href reuses the page's own
+  // depth-relative stylesheet prefix (style.css → index.html), so it is correct at any
+  // depth without counting path segments. Returns null on the root page (empty prefix)
+  // or if no stylesheet is found.
+  function makeHome() {
+    var links = document.querySelectorAll('link[rel~="stylesheet"]');
+    var prefix = null;
+    for (var i = 0; i < links.length; i++) {
+      var href = links[i].getAttribute("href") || "";
+      var m = href.match(/^(.*?)style\.css(?:[?#].*)?$/);
+      if (m) { prefix = m[1]; break; }
+    }
+    if (!prefix) return null; // no stylesheet, or already at the root
+    var a = document.createElement("a");
+    a.className = "toc-home";
+    a.href = prefix + "index.html";
+    a.textContent = "⌂ Doctrine Across Time";
+    return a;
+  }
+
+  function insertAfterH1(node) {
+    var h1 = document.querySelector("h1");
+    if (h1 && h1.parentNode) h1.parentNode.insertBefore(node, h1.nextSibling);
+    else document.body.insertBefore(node, document.body.firstChild);
+  }
+
   function build() {
+    var home = makeHome();
+
     // Headings in document order, excluding the Sources/footnote block. The page h1 leads
     // the list (top-level, styled as the title); h2–h4 nest beneath it.
     var all = Array.prototype.slice.call(document.querySelectorAll("h1, h2, h3, h4"));
@@ -25,7 +53,12 @@
       return t.toLowerCase() !== "sources";
     });
 
-    if (headings.length < 3) return; // too short to be worth a TOC
+    if (headings.length < 3) {
+      // Too short for a TOC, but the home link still belongs on the page — drop it in
+      // standalone (inline at the top) so every page can get back to the root.
+      if (home) { home.classList.add("toc-home--solo"); insertAfterH1(home); }
+      return;
+    }
 
     // Ensure every target has a unique id (without clobbering existing footnote ids).
     var used = {};
@@ -90,13 +123,10 @@
     nav.appendChild(ul);
     details.appendChild(nav);
 
-    // Insert after the page h1 if present, else at the top of <body>.
-    var h1 = document.querySelector("h1");
-    if (h1 && h1.parentNode) {
-      h1.parentNode.insertBefore(details, h1.nextSibling);
-    } else {
-      document.body.insertBefore(details, document.body.firstChild);
-    }
+    // Home link rides at the top of the TOC box, above the "Table of Contents" toggle.
+    if (home) details.insertBefore(home, details.firstChild);
+
+    insertAfterH1(details);
 
     setupScrollSpy(headings, byId, details, summary);
   }

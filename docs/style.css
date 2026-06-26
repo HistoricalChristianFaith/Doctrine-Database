@@ -39,6 +39,26 @@ img { max-width: 100%; height: auto; }
   padding: 0.4rem 0.8rem 0.6rem;
   margin: 1.5rem 0;
 }
+/* Home link to the site root — sits at the top of the TOC box, above the toggle.
+   Full-bleed (negative margins) so its divider spans the box like the title's. */
+.toc-home {
+  display: block;
+  margin: -0.4rem -0.8rem 0; /* cancel the box's top/side padding to go edge-to-edge */
+  padding: 0.45rem 0.8rem;
+  border-bottom: 1px solid #333;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #8ab4f8;
+  text-decoration: none;
+}
+.toc-home:visited { color: #8ab4f8; }
+.toc-home:hover { color: #aecbfa; text-decoration: underline; }
+/* Standalone variant on pages with no TOC: a plain inline link at the top, no box. */
+.toc-home--solo {
+  margin: 1rem 0;
+  padding: 0;
+  border: none;
+}
 .toc-title {
   cursor: pointer;
   color: #f4f4f4;
@@ -79,6 +99,7 @@ img { max-width: 100%; height: auto; }
     overflow-y: auto; /* the whole box scrolls; hover it to scroll, else the page scrolls */
     overscroll-behavior: contain; /* don't chain wheel scroll to the page */
   }
+  .toc-home { margin-top: 0; } /* no box top-padding to cancel in float mode */
   .toc-title {
     position: sticky;
     top: 0;
