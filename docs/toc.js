@@ -165,16 +165,29 @@
   // /doctrine), so it can mirror the location in its address bar for deep-linking.
   // No-ops when the page is viewed standalone on GitHub Pages (parent === self), and
   // the pinned targetOrigin means the message reaches only that one shell.
+  var DEBUG_NAV = true; // TEMP: toc.js→parent postMessage diagnostics
   function postLocationToParent() {
-    if (window.parent === window) return; // not framed
+    if (window.parent === window) {
+      if (DEBUG_NAV) console.log("[doctrine-nav] not framed (parent === self) — skipping");
+      return; // not framed
+    }
     var base = "/Doctrine-Database/"; // GitHub Pages repo root
     var path = location.pathname;
     var rel =
       path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\/+/, "");
-    window.parent.postMessage(
-      { type: "doctrine-nav", page: rel + location.search, hash: location.hash },
-      "https://historicalchristian.faith"
-    );
+    var msg = { type: "doctrine-nav", page: rel + location.search, hash: location.hash };
+    var targetOrigin = "https://historicalchristian.faith";
+    if (DEBUG_NAV) {
+      console.log("[doctrine-nav] posting to parent", {
+        msg: msg,
+        targetOrigin: targetOrigin,
+        myOrigin: location.origin,
+        ancestorOrigins: window.location.ancestorOrigins
+          ? Array.prototype.slice.call(window.location.ancestorOrigins)
+          : "(unavailable)"
+      });
+    }
+    window.parent.postMessage(msg, targetOrigin);
   }
 
   function init() {
