@@ -31,7 +31,9 @@ log.md       append-only history            TODO.md     pending-leads queue (pen
 people.md    non-DB people dates/slugs       llm-wiki.md  the general pattern
 ```
 Meta files (this file, `project.md`, `log.md`, `TODO.md`, `people.md`, `templates/`, `README.md`)
-live at the repo root and are **not** part of the published site — only `docs/` is served.
+live at the repo root and are **not** part of the published site — only `docs/` is served. Note:
+`TODO.md` and `log.md` are intentionally **git-ignored** (operator bookkeeping) — edit them on disk
+as usual, but they won't appear in `git status` and are never part of a commit.
 
 Three page types: **doctrine** (summary timeline), **person-doctrine** (a witness's detail page,
 slotted on the timeline by year), and **argument** (a single sub-claim adduced for a reading —
