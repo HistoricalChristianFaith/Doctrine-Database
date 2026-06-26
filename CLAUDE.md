@@ -9,6 +9,13 @@ For each Christian **doctrine**, a timeline page showing how belief developed ac
 **hand-authored static HTML files** under `docs/`, served as-is by GitHub Pages (no build step,
 no Markdown, no Jekyll). You edit the `.html` directly.
 
+The same `docs/` is published **two ways**: standalone on GitHub Pages, and embedded at
+**historicalchristian.faith/doctrine** — a thin PHP viewer shell (`doctrine.php`, in the sibling
+`Website-Interface`/Commentaries-Interface repo) that wraps the GitHub Pages site in an iframe under
+the main site's shared header, defaulting to `index.html`. So **every `docs/` page is reader-facing**:
+write for the reader, never the operator (see Hard rule 9). `index.html` is both that reader landing
+page and the LLM catalog — keep its intro reader-facing; operator guidance lives in an HTML comment.
+
 ## Layout
 ```
 docs/                          the published site (GitHub Pages source = /docs)
@@ -88,7 +95,11 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
   from the page's `h2`–`h4` at view time (skips the `h1` and `Sources`; bails on pages with < 3
   headings) and floats it in the left gutter on wide viewports, scroll-spy included. The TOC is
   generated, **not** authored into the HTML — write normal headings and it appears. TOC styling lives
-  in `style.css` (the `.toc*` rules). Keep JS in this one file unless asked otherwise.
+  in `style.css` (the `.toc*` rules). Keep JS in this one file unless asked otherwise. It also
+  `postMessage`s the page's path up to the parent viewer frame (targeted to historicalchristian.faith)
+  so the `/doctrine` shell can mirror the location in its address bar (`?page=…`); no-ops when viewed
+  standalone. Cross-repo contract — message shape `{type:'doctrine-nav', page, hash}` — paired with the
+  receiver in `doctrine.php` (Website-Interface repo); changing one side means changing the other.
 - **Metadata is path- and content-derived, not hidden frontmatter:**
   - *type* ← the path; *doctrine slug* ← the path; *person-slug* ← the filename.
   - *year* (for ordering) ← the visible `<strong>Dates:</strong> c. <year>` line on the person page;
@@ -132,8 +143,12 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
    internal bookkeeping. On the page, mark an unsourced claim `⚠ unverified` (or call it an "open
    lead" / "not yet sourced") and cite the secondary work only; still add the backlog row per
    rule 4. Referencing `TODO.md` is fine only in meta files (this file, `project.md`, `log.md`).
-
-## Importing & the TODO queue
+9. **No internal plumbing in reader-facing pages** (index / summary / person / argument — i.e. all of
+   `docs/`; extends rule 8). Don't name the source DBs *as* infrastructure ("our corpus", "the
+   database", "the writings corpus") or the meta files (`project.md`, `log.md`, `CLAUDE.md`,
+   `people.md`) — cite the actual work/edition instead, and scope a negative claim as "surveyed here,"
+   not "in the database." Keep the provenance (which edition/translation a quote is from); drop only the
+   corpus-membership framing. Operator notes go in HTML comments or meta files.
 - **`TODO.md` is a queue of not-yet-executed leads — pending items only.** It never holds
   "done"/"resolved" entries: when a lead is executed, **delete its row** and record the outcome in
   `log.md` (that is the history). Process rows **one at a time, top-down**; each row must carry enough
