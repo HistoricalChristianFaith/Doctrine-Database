@@ -66,6 +66,7 @@ when uncertain.
 | Agapius of Hierapolis | agapius-of-hierapolis | 942 | no (Kitāb al-ʿUnwān / Universal History not in corpus; cited from the English translation of Vasiliev's PO edition at tertullian.org) | https://en.wikipedia.org/wiki/Agapius_of_Hierapolis |
 | Jacob of Edessa | jacob-of-edessa | 692 | no (Genesis scholion not in corpus; cited via Assemani's Bibliotheca Orientalis I.65–66 + Adler's Time Immemorial, as reproduced in Smith's ABR "Setting the Record Straight, Part 2"; ⚠ attribution historically confused with Ephraem) | https://en.wikipedia.org/wiki/Jacob_of_Edessa |
 | Bar Hebraeus | bar-hebraeus | 1286 | no (Chronography not in corpus; cited from Budge's 1932 English translation at archive.org) | https://en.wikipedia.org/wiki/Bar_Hebraeus |
+| Rufinus of Aquileia (Tyrannius Rufinus) | tyrannius-rufinus | 411 | yes (Apology of Rufinus in Writings-DB; slug mirrors folder "Tyrannius Rufinus"; Apology written c. 401, cited from New Advent / NPNF) | https://en.wikipedia.org/wiki/Tyrannius_Rufinus |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
