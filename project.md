@@ -100,28 +100,28 @@ docs/doctrines/
 - **Person-detail page** = the evidence. Full quotes (verbatim from the DBs) in `<blockquote>`,
   surrounding context, every `source_url`/`source_title`, and the reasoning for each claim. One page
   per `(doctrine, person)` pair.
-- **Argument / crux page** (`docs/doctrines/<slug>/arguments/<arg-slug>.html`) = a single *sub-claim*
+- **Argument page** (`docs/doctrines/<slug>/arguments/<arg-slug>.html`) = a single *sub-claim*
   adduced in support of a main interpretation — a proof-text (e.g. 1 Peter 3:19), an
   archaeological/literary parallel (e.g. Og's bed ≅ Marduk's bed), or a historical thesis — weighed
   *adversarially* and given an `assessment` of the *interpretation* it serves. It cuts **across** the
   timeline rather than sitting at one date, so it has **no year** and is **not** in the chronological
-  list; instead it appears in an "Arguments & cruxes" section on the summary page and an "Arguments &
-  cruxes" group in the index. Use it when a claim's interest is "does this argument hold up?" rather
-  than "who held this, when?" Resolving a TODO *crux* produces one of these pages (with the assessment), as opposed to flipping a
+  list; instead it appears in an "Arguments" section on the summary page and an "Arguments"
+  group in the index. Use it when a claim's interest is "does this argument hold up?" rather
+  than "who held this, when?" Resolving a TODO *argument* produces one of these pages (with the assessment), as opposed to flipping a
   witness's verified status. Skeleton: [`templates/argument.html`](templates/argument.html).
-- **Complex** = a *grouping convention* over two or more argument pages that share a single proof-text,
+- **Argument group** = a *grouping convention* over two or more argument pages that share a single proof-text,
   mechanism, or theme and are best read as a set. It is **not** a new page type, has **no year**, and
-  has **no file of its own** — nothing new on disk. *"Complex" is the internal term only* (slug, anchor
-  `id="complex-<slug>"`, these meta files); the **reader-facing label is "Related cruxes"** — the group
-  heading reads `Related cruxes — <theme>` and the breadcrumb label is `Related cruxes:`. A complex is
-  realized purely in visible content, in three places: (1) a wrapping `<h3 id="complex-<slug>">` + framing
-  `<p>` placed **first** in the home summary's "Arguments & cruxes" section (above the standalone `<h3>`
-  cruxes, matching the index), with the members demoted from `<h3>` to `<h4>`; (2) an `<h4>` group in
-  the index above a trailing unheaded `<ul>` of standalone cruxes; (3) a `Related cruxes:` breadcrumb on
+  has **no file of its own** — nothing new on disk. *"Argument group" is the internal term* (slug, anchor
+  `id="group-<slug>"`, these meta files); the **reader-facing label is "Related arguments"** — the group
+  heading reads `Related arguments — <theme>` and the breadcrumb label is `Related arguments:`. An argument group is
+  realized purely in visible content, in three places: (1) a wrapping `<h3 id="group-<slug>">` + framing
+  `<p>` placed **first** in the home summary's "Arguments" section (above the standalone `<h3>`
+  arguments, matching the index), with the members demoted from `<h3>` to `<h4>`; (2) an `<h4>` group in
+  the index above a trailing unheaded `<ul>` of standalone arguments; (3) a `Related arguments:` breadcrumb on
   each member page linking the home-summary anchor and the sibling members. An argument has at most one home
-  complex (relations to others are `see also` links, not double-grouping); a one-member-per-side
+  group (relations to others are `see also` links, not double-grouping); a one-member-per-side
   cross-doctrine pairing stays a `see also` pattern rather than a heading group. See `CLAUDE.md`
-  ("Complexes") for the full rules.
+  ("Argument groups") for the full rules.
 
 Copy the shape of the skeletons in [`templates/`](templates/); for a full, real worked example see the
 nephilim doctrine — `docs/doctrines/nephilim.html` (summary timeline), its person-detail pages under
@@ -143,7 +143,7 @@ metadata lives in the **path** and the **visible content**:
   The visible `c. <year>` is the sort key; the summary timeline order is maintained **by hand**.
 - **Argument head line** carries the assessment and proponent:
   ```html
-  <p><strong>Type:</strong> supporting argument / crux (off-timeline) · <strong>Assessment:</strong> sound · …</p>
+  <p><strong>Type:</strong> supporting argument (off-timeline) · <strong>Assessment:</strong> sound · …</p>
   ```
 
 **Citations.** Footnotes use the standard markup the existing pages already use (so numbering and
@@ -204,23 +204,23 @@ the fathers said on X", **(c)** an ad-hoc topic prompt.
 6. **Bookkeep** — add a line to `docs/index.html`; append a line to [`log.md`](log.md)
    (`## [YYYY-MM-DD] ingest | <source title>`); update [`TODO.md`](TODO.md).
 
-**When a (person, claim) is really a *crux*** — a sub-claim whose interest is "does this argument hold
+**When a (person, claim) is really an *argument*** — a sub-claim whose interest is "does this argument hold
 up?" rather than "who held it, when?" — don't force it onto the timeline. Instead write an **argument
 page** (`docs/doctrines/<slug>/arguments/<arg-slug>.html`, skeleton
 [`templates/argument.html`](templates/argument.html)): state the claim and its proponent-lineage,
 marshal the strongest case, weigh it adversarially, and render an `assessment` of the interpretation.
-Then surface it in the summary's "Arguments & cruxes" section + the index's "Arguments & cruxes" group
+Then surface it in the summary's "Arguments" section + the index's "Arguments" group
 (not the timeline), and flag any part the proponent overstates on their own detail page. Resolving a
-TODO crux produces one of these (with an assessment), not a flipped verified status.
+TODO argument produces one of these (with an assessment), not a flipped verified status.
 
-**When a new crux shares a proof-text, mechanism, or theme with existing cruxes**, file it into that
-**complex** rather than leaving it standalone: group it with its siblings under the
-`<h3 id="complex-<slug>">` heading on the summary and the `<h4>` group in the index (both labelled
-`Related cruxes — <theme>`), and add the `Related cruxes:` breadcrumb (linking the home-summary anchor +
+**When a new argument shares a proof-text, mechanism, or theme with existing arguments**, file it into that
+**argument group** rather than leaving it standalone: group it with its siblings under the
+`<h3 id="group-<slug>">` heading on the summary and the `<h4>` group in the index (both labelled
+`Related arguments — <theme>`), and add the `Related arguments:` breadcrumb (linking the home-summary anchor +
 siblings) to it and to the siblings. If the shared theme has only just reached **two** members, promote
-it from standalone cruxes to a complex (coin a slug + reader-facing display name, wrap both members,
+it from standalone arguments to an argument group (coin a slug + reader-facing display name, wrap both members,
 re-sequence footnotes by first appearance). One home
-complex per argument; cross-complex relations are `see also` links, not double-grouping.
+group per argument; cross-group relations are `see also` links, not double-grouping.
 
 ### Query — answering a question against the wiki
 Read `docs/index.html` → open the relevant doctrine page(s) → synthesize a cited answer. Good
@@ -231,14 +231,14 @@ Look for: claims on summary pages **missing footnotes**; broken footnote `<sup>`
 contradictions between pages; people in detail pages **missing from the summary timeline** (or out of
 date order); orphan detail pages with no inbound link; relative links that 404; unverified items
 lingering in `TODO.md`; doctrines that should exist but don't. For **argument pages**: each has an
-assessment; is linked from both the summary's and the index's "Arguments & cruxes" section (not the
+assessment; is linked from both the summary's and the index's "Arguments" section (not the
 timeline); any proponent overstatement is reflected as a flag on that proponent's detail page; and it
-carries **no year/date** on the timeline. For **complexes**: every grouped complex has ≥ 2 members on
-its home summary, and each member appears under exactly **one** `<h3 id="complex-…">` group (no
-double-grouping); each grouped member carries a `Related cruxes:` breadcrumb whose anchor
-(`../../<doctrine>.html#complex-<slug>`) resolves to an existing `<h3 id="complex-<slug>">` and whose
+carries **no year/date** on the timeline. For **argument groups**: every grouped argument group has ≥ 2 members on
+its home summary, and each member appears under exactly **one** `<h3 id="group-…">` group (no
+double-grouping); each grouped member carries a `Related arguments:` breadcrumb whose anchor
+(`../../<doctrine>.html#group-<slug>`) resolves to an existing `<h3 id="group-<slug>">` and whose
 sibling links all resolve; summary and index **agree on membership** (same args grouped the same way);
-footnote `<sup>`↔`<li>` integrity holds after any re-sequencing; and no standalone crux is silently
+footnote `<sup>`↔`<li>` integrity holds after any re-sequencing; and no standalone argument is silently
 dropped from a summary or the index.
 
 ## 8. Glossary of conventions (quick reference)

@@ -19,12 +19,12 @@ page and the LLM catalog — keep its intro reader-facing; operator guidance liv
 ## Layout
 ```
 docs/                          the published site (GitHub Pages source = /docs)
-  index.html                   the reader's home page: doctrine summaries + the cruxes catalog
+  index.html                   the reader's home page: doctrine summaries + the arguments catalog
                                  (NOT a person-page list — witnesses are cataloged on their timeline)
   .nojekyll                    serve raw HTML; do not Jekyll-process
   doctrines/<slug>.html              summary timeline (1 footnoted block/person)
   doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
-  doctrines/<slug>/arguments/<arg>.html   argument/crux page (one sub-claim → assessment; OFF-timeline)
+  doctrines/<slug>/arguments/<arg>.html   argument page (one sub-claim → assessment; OFF-timeline)
 
 project.md   full brief        CLAUDE.md   this file        templates/   HTML page skeletons
 log.md       append-only history            TODO.md     pending-leads queue (pending only)
@@ -38,12 +38,12 @@ as usual, but they won't appear in `git status` and are never part of a commit.
 Three page types: **doctrine** (summary timeline), **person-doctrine** (a witness's detail page,
 slotted on the timeline by year), and **argument** (a single sub-claim adduced for a reading —
 proof-text, parallel, or historical thesis — weighed adversarially and given an `assessment` of the
-*interpretation* it serves; it cuts *across* the timeline, so it lives in the summary's "Arguments &
-cruxes" section, **not** the chronological list, and has no year). Two or more argument pages that share
-a proof-text, mechanism, or theme may be grouped into a named **complex** — a grouping convention
-realized in visible content (a sub-heading on the summary + index and a `Related cruxes:` breadcrumb on
-each member), **not** a fourth page type and **not** a new file. ("Complex" is the internal term only;
-the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessments below.
+*interpretation* it serves; it cuts *across* the timeline, so it lives in the summary's "Arguments"
+section, **not** the chronological list, and has no year). Two or more argument pages that share
+a proof-text, mechanism, or theme may be grouped into a named **argument group** — a grouping convention
+realized in visible content (a sub-heading on the summary + index and a `Related arguments:` breadcrumb on
+each member), **not** a fourth page type and **not** a new file. ("Argument group" is the internal term;
+the reader-facing label is **"Related arguments"**.) See "Argument groups" under Assessments below.
 
 ## Source databases (prefer over web, but still use web)
 - `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
@@ -111,10 +111,10 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
   - history/recency ← [`log.md`](log.md) (there is no per-page `updated` field).
 - **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
   `../<slug>.html`; argument→detail `../<person>.html`; argument→summary `../../<slug>.html`.
-  Members of a **complex** are additionally grouped under a shared `<h3 id="complex-<slug>">` heading on
-  the summary and an `<h4>` group in the index (both labelled `Related cruxes — <theme>`), and each member
-  page carries a `Related cruxes:` breadcrumb linking the home-summary anchor
-  (`../../<slug>.html#complex-<slug>`) and its sibling members.
+  Members of an **argument group** are additionally grouped under a shared `<h3 id="group-<slug>">` heading on
+  the summary and an `<h4>` group in the index (both labelled `Related arguments — <theme>`), and each member
+  page carries a `Related arguments:` breadcrumb linking the home-summary anchor
+  (`../../<slug>.html#group-<slug>`) and its sibling members.
 - **Footnotes** use this exact markup (matches every existing page) so numbering and back-links work:
   - Inline ref (visible `<n>` is sequential **by first appearance** on the page; the id uses the
     person-slug): `<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup>`
@@ -167,10 +167,10 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
   context to be actioned without re-reading the source it came from.
 - **"Import X"** (X = a local file or URL) means **extract every lead from X and add a row to
   `TODO.md` for each** — it is *not* a request to author pages on the spot. Mine X for
-  `(person/claim, source)` pairs and open cruxes, queue them below, then stop. The leads get
+  `(person/claim, source)` pairs and open arguments, queue them below, then stop. The leads get
   processed one-by-one in later passes (or when the user says to work the queue).
 - Two row types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
-  per rule 4) and **crux** (a sub-claim needing adversarial adjudication → resolve into an argument
+  per rule 4) and **argument** (a sub-claim needing adversarial adjudication → resolve into an argument
   page with an `assessment`). Both end the same way: execute, then delete the row + log it.
 
 ## Authoring checklist (see project.md §7 for detail)
@@ -182,14 +182,14 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
 5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
    chronological order; add the matching `<li>` footnotes to its Sources block.
 6. Bookkeep: append `log.md`, update `TODO.md`. Touch `docs/index.html` **only** for a new doctrine
-   (a row in "Doctrines", with its people count) or a new crux (a row in "Arguments & cruxes") — a new
+   (a row in "Doctrines", with its people count) or a new argument (a row in "Arguments") — a new
    *witness* needs no index edit (the index no longer lists person pages; bump the doctrine's people
    count, though). Keep the doctrine row's count current.
 
-If a `(person, claim)` is really a **crux** (interest = "does the argument hold?" not "who held it?"):
+If a `(person, claim)` is really an **argument** (interest = "does the argument hold?" not "who held it?"):
 skip the timeline — write an **argument page** instead (`arguments/<slug>.html`,
 [`templates/argument.html`](templates/argument.html)), weigh it adversarially → `assessment`, surface
-it in the summary's + index's "Arguments & cruxes" section, and flag any of the proponent's
+it in the summary's + index's "Arguments" section, and flag any of the proponent's
 overstatements on their detail page. See project.md §4/§7.
 
 ## Assessments (argument pages)
@@ -224,39 +224,39 @@ So a reading can stand even where the proponent's prop for it fails, and a page 
 X's argument work?" should be reframed to "is the interpretation true?" once the stronger case is in
 view.
 
-## Complexes (grouping argument pages)
-A **complex** is a named cluster of **two or more argument/crux pages** (within one doctrine, or
+## Argument groups (grouping argument pages)
+An **argument group** is a named cluster of **two or more argument pages** (within one doctrine, or
 occasionally across two) that share a single proof-text, mechanism, or theme and are best read as a set.
-It is a **grouping convention, not a page type**: it has no file of its own and adds no `docs/` entry. A
-complex is realized in visible content in three places — a grouped sub-heading in the summary's and
-index's "Arguments & cruxes" sections, and a `Related cruxes:` breadcrumb on each member page that names
+It is a **grouping convention, not a page type**: it has no file of its own and adds no `docs/` entry. An
+argument group is realized in visible content in three places — a grouped sub-heading in the summary's and
+index's "Arguments" sections, and a `Related arguments:` breadcrumb on each member page that names
 the group and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
 frontmatter.
 
-**Naming — internal term vs. reader-facing label.** The convention is called a *complex* in the plumbing
-only: the kebab-case slug (`descent`), the anchor `id="complex-<slug>"`, and these meta files. The reader
-never sees the word "complex". Every visible surface is labelled **"Related cruxes"** — the group heading
-reads `Related cruxes — <theme>` (summary `<h3>`, index `<h4>`) and the member breadcrumb label is
-`Related cruxes:` with the bare theme as its link text (e.g. `the descent`). (NB: "complex" also appears
-legitimately in argument *prose* in its religious-studies sense — a "ritual/cultural complex" — which is
-content, not this label, and is left as written.) Five rules:
+**Naming — internal term vs. reader-facing label.** The convention is called an *argument group* in the
+plumbing: the kebab-case slug (`descent`), the anchor `id="group-<slug>"`, and these meta files. The
+reader-facing surface is labelled **"Related arguments"** — the group heading reads `Related arguments —
+<theme>` (summary `<h3>`, index `<h4>`) and the member breadcrumb label is `Related arguments:` with the
+bare theme as its link text (e.g. `the descent`). (NB: the bare word "complex" still appears legitimately
+in argument *prose* in its religious-studies sense — a "ritual/cultural complex" — which is content,
+unrelated to this grouping convention, and is left as written.) Five rules:
 
-1. **Membership ≥ 2.** A single crux is never a complex; a theme with one member stays a standalone crux.
-2. **One home complex per argument.** An argument is *grouped* under at most one home complex (never
-   listed twice in a summary/index). Relationships to other complexes are `see also` cross-links, not
+1. **Membership ≥ 2.** A single argument is never a group; a theme with one member stays a standalone argument.
+2. **One home group per argument.** An argument is *grouped* under at most one home group (never
+   listed twice in a summary/index). Relationships to other groups are `see also` cross-links, not
    double-grouping.
-3. **Grouped surfacing needs ≥ 2 members in that summary.** A complex renders as an `<h3>` group on a
+3. **Grouped surfacing needs ≥ 2 members in that summary.** An argument group renders as an `<h3>` group on a
    doctrine summary only where that summary holds two or more of its members. A cross-doctrine pairing
    with one member per side is realized via breadcrumb + `see also` links only — no `<h3>` group (e.g.
-   the 1 Peter 3:19 identity crux on `nephilim` ↔ the content-of-the-proclamation crux on
-   `intermediate-state`, whose home complex is `descent`).
-4. **Slug + display name + anchor.** Each complex has a kebab-case slug (`descent`), a reader-facing
-   display name ("Related cruxes — the descent"), and a stable anchor on its home summary:
-   `<h3 id="complex-<slug>">`. Member
-   breadcrumbs link to `../../<doctrine>.html#complex-<slug>`; on the summary the members demote from
+   the 1 Peter 3:19 identity argument on `nephilim` ↔ the content-of-the-proclamation argument on
+   `intermediate-state`, whose home group is `descent`).
+4. **Slug + display name + anchor.** Each argument group has a kebab-case slug (`descent`), a reader-facing
+   display name ("Related arguments — the descent"), and a stable anchor on its home summary:
+   `<h3 id="group-<slug>">`. Member
+   breadcrumbs link to `../../<doctrine>.html#group-<slug>`; on the summary the members demote from
    `<h3>` to `<h4>` under a framing `<p>`; in the index they form an `<h4>` group above a trailing
-   unheaded `<ul>` of standalone cruxes. **Complex groups lead the "Arguments & cruxes" section on the
-   summary as well as the index** — the complex `<h3 id="complex-<slug>">` group first, the standalone
-   `<h3>` cruxes after — so summary and index order agree. Re-sequence footnotes after any reorder
+   unheaded `<ul>` of standalone arguments. **Argument groups lead the "Arguments" section on the
+   summary as well as the index** — the `<h3 id="group-<slug>">` group first, the standalone
+   `<h3>` arguments after — so summary and index order agree. Re-sequence footnotes after any reorder
    (numbers are sequential by first appearance).
-5. **Standalone cruxes are unchanged.** Cruxes in no complex keep their flat `<h3>` / `<ul>` presentation.
+5. **Standalone arguments are unchanged.** Arguments in no group keep their flat `<h3>` / `<ul>` presentation.

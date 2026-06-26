@@ -22,7 +22,7 @@ docs/                                   the published site (GitHub Pages source 
   index.html                            catalog of all pages
   doctrines/<slug>.html                 summary timeline (1 footnoted block per person)
   doctrines/<slug>/<person>.html        detail page (full quotes + context + links)
-  doctrines/<slug>/arguments/<arg>.html argument/crux page (one sub-claim → assessment; off-timeline)
+  doctrines/<slug>/arguments/<arg>.html argument page (one sub-claim → assessment; off-timeline)
 templates/                              HTML page skeletons
 log.md  TODO.md  people.md              meta files (not served)
 ```
@@ -30,9 +30,9 @@ log.md  TODO.md  people.md              meta files (not served)
 Three page types: **doctrine** (the timeline), **person-doctrine** (a witness's detail page, placed by
 date), and **argument** (a single sub-claim adduced for a reading — proof-text, parallel, or historical
 thesis — weighed adversarially and given an `assessment` of the interpretation; it cuts *across* the
-timeline, so it lives in the summary's "Arguments & cruxes" section rather than the chronological list).
+timeline, so it lives in the summary's "Arguments" section rather than the chronological list).
 Two or more argument pages sharing a proof-text, mechanism, or theme may be grouped into a named
-**complex** — a grouping convention (internally *complex*; shown to readers as **"Related cruxes"**)
+**argument group** — a grouping convention (shown to readers as **"Related arguments"**)
 surfaced on the summary, index, and member breadcrumbs, not a fourth page type.
 
 See the worked example: the nephilim doctrine — [`docs/doctrines/nephilim.html`](docs/doctrines/nephilim.html)
