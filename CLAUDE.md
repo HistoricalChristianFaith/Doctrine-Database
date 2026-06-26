@@ -151,6 +151,16 @@ the reader-facing label is **"Related cruxes"**.) See "Complexes" under Assessme
    `people.md`) — cite the actual work/edition instead, and scope a negative claim as "surveyed here,"
    not "in the database." Keep the provenance (which edition/translation a quote is from); drop only the
    corpus-membership framing. Operator notes go in HTML comments or meta files.
+10. **Link every citation you have a URL for — scholarship included.** We find most references during
+    online research (often a free full copy on archive.org, Google Books, a journal, or a digitized
+    edition); whenever a reference has a URL we've seen, **hyperlink the citation directly** in the
+    footnote so the reader can verify the claim at the source — including modern scholarship (Metzger,
+    Bruce, et al.), not just primary fathers. Prefer the most specific stable target (a page/section
+    anchor, e.g. an archive.org page link, over a bare landing page). Only omit the link for a **really
+    good reason** — no findable online copy, paywalled with no stable URL, or a deep-link too unstable to
+    trust — and a bare bibliographic citation (author, title, publisher, year, page) is the fallback,
+    never the default. Don't dress an *unverified* page number as if linked: if you cite a page you
+    didn't actually open, don't imply otherwise.
 - **`TODO.md` is a queue of not-yet-executed leads — pending items only.** It never holds
   "done"/"resolved" entries: when a lead is executed, **delete its row** and record the outcome in
   `log.md` (that is the history). Process rows **one at a time, top-down**; each row must carry enough
