@@ -22,6 +22,7 @@ when uncertain.
 | Commodian | commodian | 250 | yes | https://en.wikipedia.org/wiki/Commodian |
 | Methodius of Olympus | methodius-of-olympus | 290 | no | https://en.wikipedia.org/wiki/Methodius_of_Olympus |
 | Lactantius | lactantius | 310 | yes | https://en.wikipedia.org/wiki/Lactantius |
+| Alexander of Alexandria | alexander-of-alexandria | 321 | yes | https://en.wikipedia.org/wiki/Alexander_of_Alexandria |
 | Thomas Aquinas | thomas-aquinas | 1274 | yes | https://en.wikipedia.org/wiki/Thomas_Aquinas |
 | Fr. Stephen De Young | stephen-de-young | 2018 | no | https://www.ancientfaith.com/contributors/stephen_de_young |
 | Fr. Andrew Stephen Damick | andrew-stephen-damick | 2020 | no | https://www.ancientfaith.com/contributors/andrew_stephen_damick |
