@@ -227,6 +227,16 @@ So a reading can stand even where the proponent's prop for it fails, and a page 
 X's argument work?" should be reframed to "is the interpretation true?" once the stronger case is in
 view.
 
+**Don't rule out the supernatural a priori.** This wiki takes miracles and the supernatural as
+genuinely possible — a claim is **not** weak merely because it requires one, and "no natural process
+allows it" is not by itself a refutation (that begs the question the miracle claim openly concedes).
+Weigh a miracle claim on its *evidence* — attestation, dating, independence, internal coherence — not
+on a naturalistic premise. Keep two things distinct: that God *could* act here does not establish that
+He *did* (possibility ≠ proof), so a late, poorly-attested, or self-contradictory miracle story can
+still be weak — on the evidence, not on the metaphysics. Reserve "impossible" for what fails *even
+granting* the supernatural: a conflation of distinct named persons, a demonstrable chronological or
+etymological error, a logical contradiction — not for the bare fact of a miracle.
+
 ## Argument groups (grouping argument pages)
 An **argument group** is a named cluster of **two or more argument pages** (within one doctrine, or
 occasionally across two) that share a single proof-text, mechanism, or theme and are best read as a set.
