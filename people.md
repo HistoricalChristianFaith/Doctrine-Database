@@ -36,6 +36,7 @@ when uncertain.
 | 2 Maccabees | 2-maccabees | -124 | no | https://en.wikipedia.org/wiki/2_Maccabees |
 | The Wisdom of Solomon | wisdom-of-solomon | -50 | no | https://en.wikipedia.org/wiki/Book_of_Wisdom |
 | Ignatius of Antioch | ignatius-of-antioch | 107 | yes | https://en.wikipedia.org/wiki/Ignatius_of_Antioch |
+| The Didache (Teaching of the Twelve Apostles) | didache | 100 | no (anonymous document, not a person; compiled c. AD 100, range c. 50&#8211;150; moral section is a Christian recension of the Jewish "Two Ways") | https://en.wikipedia.org/wiki/Didache |
 | Polycarp of Smyrna | polycarp-of-smyrna | 125 | yes | https://en.wikipedia.org/wiki/Polycarp |
 | The Odes of Solomon | odes-of-solomon | 125 | yes | https://en.wikipedia.org/wiki/Odes_of_Solomon |
 | The Shepherd of Hermas | shepherd-of-hermas | 150 | yes | https://en.wikipedia.org/wiki/The_Shepherd_of_Hermas |
