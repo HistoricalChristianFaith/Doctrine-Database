@@ -20,6 +20,7 @@ when uncertain.
 | Athenagoras of Athens | athenagoras-of-athens | 177 | yes | https://en.wikipedia.org/wiki/Athenagoras_of_Athens |
 | Aerius of Sebaste | aerius | 355 | no (lone ancient denier of prayer for the dead; floruit fixed by his break with Eustathius of Sebaste, bp. c. 355; known only through Epiphanius, Panarion 75, and Augustine, De Haeresibus 53) | https://en.wikipedia.org/wiki/Aerius_of_Sebaste |
 | Commodian | commodian | 250 | yes | https://en.wikipedia.org/wiki/Commodian |
+| Methodius of Olympus | methodius-of-olympus | 290 | no | https://en.wikipedia.org/wiki/Methodius_of_Olympus |
 | Lactantius | lactantius | 310 | yes | https://en.wikipedia.org/wiki/Lactantius |
 | Thomas Aquinas | thomas-aquinas | 1274 | yes | https://en.wikipedia.org/wiki/Thomas_Aquinas |
 | Fr. Stephen De Young | stephen-de-young | 2018 | no | https://www.ancientfaith.com/contributors/stephen_de_young |
