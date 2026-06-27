@@ -171,7 +171,7 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 - **"Import X"** (X = a local file or URL) means **extract every lead from X and add a `todo/` file for
   each** — it is *not* a request to author pages on the spot. Mine X for `(person/claim, source)` pairs
   and open arguments, drop a file per lead, then stop. The leads get processed one-by-one in later passes
-  (or when the user says to work the queue). Vital to include source links from where you found the items (local file paths, external urls) for the agents to tap into later when attributing sources, if necessary.
+  (or when the user says to work the queue). Vital to include source links from where you found the items (local file paths, external urls) for the agents to tap into later when attributing sources, if necessary. Do not explicitly specify the exact edits the agent needs to make - make it clear that the agent should investigate the sources and where our wiki is at, and determine that for itself.
 - Two lead types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
   per rule 4) and **argument** (a sub-claim needing adversarial adjudication → resolve into an argument
   page with an `assessment`). Both end the same way: execute, then delete the file + log it.
