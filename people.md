@@ -22,6 +22,7 @@ when uncertain.
 | Aerius of Sebaste | aerius | 355 | no (lone ancient denier of prayer for the dead; floruit fixed by his break with Eustathius of Sebaste, bp. c. 355; known only through Epiphanius, Panarion 75, and Augustine, De Haeresibus 53) | https://en.wikipedia.org/wiki/Aerius_of_Sebaste |
 | Commodian | commodian | 250 | yes | https://en.wikipedia.org/wiki/Commodian |
 | Methodius of Olympus | methodius-of-olympus | 290 | no | https://en.wikipedia.org/wiki/Methodius_of_Olympus |
+| Cyril of Jerusalem | cyril-of-jerusalem | 350 | yes (DB default_year=386; prayer-to-saints page uses c. 350 for the *Mystagogical Catecheses* 5.9, whose Cyril-vs-John-of-Jerusalem authorship is disputed — a 380s/390s date is defensible) | https://en.wikipedia.org/wiki/Cyril_of_Jerusalem |
 | Lactantius | lactantius | 310 | yes | https://en.wikipedia.org/wiki/Lactantius |
 | Alexander of Alexandria | alexander-of-alexandria | 321 | yes | https://en.wikipedia.org/wiki/Alexander_of_Alexandria |
 | Thomas Aquinas | thomas-aquinas | 1274 | yes | https://en.wikipedia.org/wiki/Thomas_Aquinas |
