@@ -72,6 +72,16 @@ when uncertain.
 | The Muratorian Fragment | muratorian-fragment | 170 | no (a document, not a person; majority 2nd-c. Roman date per Metzger/Tregelles; Sundberg–Hahneman 4th-c. redating a minority view; text + trans. at bible-researcher.com) | https://en.wikipedia.org/wiki/Muratorian_fragment |
 | The Council of Nicaea | council-of-nicaea | 325 | no (first ecumenical council; OT-canon witness only for the Jerome/Judith report — no canon-decree; adjudication on canon/arguments/nicaea-counted-judith.html) | https://en.wikipedia.org/wiki/First_Council_of_Nicaea |
 | The Council of Florence | council-of-florence | 1442 | no (17th ecumenical council; bull Cantate Domino, 4 Feb 1442 — first ecumenical enumeration of the full deuterocanon, a century before Trent) | https://en.wikipedia.org/wiki/Bull_of_Union_with_the_Copts |
+| Hilary of Poitiers | hilary-of-poitiers | 360 | research (OT-canon witness; canon-list in *Tractatus super Psalmos* prol. §15, via bible-researcher.com/hilary.html) | https://en.wikipedia.org/wiki/Hilary_of_Poitiers |
+| The Cheltenham List (Mommsen Catalogue) | cheltenham-list | 360 | no (anonymous Latin canon-list, c. 359–365; bible-researcher.com/cheltenham.html) | https://en.wikipedia.org/wiki/Cheltenham_Canon |
+| Amphilochius of Iconium | amphilochius-of-iconium | 380 | no (*Iambics for Seleucus*; bible-researcher.com/amphilocius.html) | https://en.wikipedia.org/wiki/Amphilochius_of_Iconium |
+| The Apostolic Canons | apostolic-canons | 380 | no (canon 85, appended to the Apostolic Constitutions; bible-researcher.com/apostolic.html) | https://en.wikipedia.org/wiki/Apostolic_Canons |
+| Gregory of Nazianzus | gregory-of-nazianzus | 389 | no (canon-poem *Concerning the Genuine Books of Divinely Inspired Scripture*; bible-researcher.com/gregory.html) | https://en.wikipedia.org/wiki/Gregory_of_Nazianzus |
+| The Catalogue of Codex Claromontanus | codex-claromontanus | 400 | no (stichometric list, c. 300–400, copied into the 6th-c. Codex D; bible-researcher.com/claromontanus.html) | https://en.wikipedia.org/wiki/Codex_Claromontanus |
+| Synopsis Scripturae Sacrae (pseudo-Athanasius) | synopsis-scripturae-sacrae | 550 | no (pseudo-Athanasian handbook; bible-researcher.com/sss.html) | https://en.wikipedia.org/wiki/Synopsis_Scripturae_Sacrae |
+| Codex Amiatinus | codex-amiatinus | 700 | no (oldest complete Vulgate pandect, Wearmouth–Jarrow c. 692–716) | https://en.wikipedia.org/wiki/Codex_Amiatinus |
+| John of Damascus | john-of-damascus | 730 | no (*An Exposition of the Orthodox Faith* IV.17; newadvent.org/fathers/33044.htm) | https://en.wikipedia.org/wiki/John_of_Damascus |
+| The Stichometry of Nicephorus | stichometry-of-nicephorus | 810 | no (appended to Nicephorus of Constantinople's *Chronographia*; ntcanon.org) | https://en.wikipedia.org/wiki/Nikephoros_I_of_Constantinople |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
