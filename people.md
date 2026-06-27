@@ -68,6 +68,7 @@ when uncertain.
 | Bar Hebraeus | bar-hebraeus | 1286 | no (Chronography not in corpus; cited from Budge's 1932 English translation at archive.org) | https://en.wikipedia.org/wiki/Bar_Hebraeus |
 | Rufinus of Aquileia (Tyrannius Rufinus) | tyrannius-rufinus | 411 | yes (Apology of Rufinus in Writings-DB; slug mirrors folder "Tyrannius Rufinus"; Apology written c. 401, cited from New Advent / NPNF) | https://en.wikipedia.org/wiki/Tyrannius_Rufinus |
 | The Muratorian Fragment | muratorian-fragment | 170 | no (a document, not a person; majority 2nd-c. Roman date per Metzger/Tregelles; Sundberg–Hahneman 4th-c. redating a minority view; text + trans. at bible-researcher.com) | https://en.wikipedia.org/wiki/Muratorian_fragment |
+| The Council of Nicaea | council-of-nicaea | 325 | no (first ecumenical council; OT-canon witness only for the Jerome/Judith report — no canon-decree; adjudication on canon/arguments/nicaea-counted-judith.html) | https://en.wikipedia.org/wiki/First_Council_of_Nicaea |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
