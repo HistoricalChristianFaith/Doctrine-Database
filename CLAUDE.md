@@ -27,12 +27,12 @@ docs/                          the published site (GitHub Pages source = /docs)
   doctrines/<slug>/arguments/<arg>.html   argument page (one sub-claim → assessment; OFF-timeline)
 
 project.md   full brief        CLAUDE.md   this file        templates/   HTML page skeletons
-log.md       append-only history            TODO.md     pending-leads queue (pending only)
+log.md       append-only history            todo/       pending-leads queue (one file per lead)
 people.md    non-DB people dates/slugs       llm-wiki.md  the general pattern
 ```
-Meta files (this file, `project.md`, `log.md`, `TODO.md`, `people.md`, `templates/`, `README.md`)
+Meta files (this file, `project.md`, `log.md`, `todo/`, `people.md`, `templates/`, `README.md`)
 live at the repo root and are **not** part of the published site — only `docs/` is served. Note:
-`TODO.md` and `log.md` are intentionally **git-ignored** (operator bookkeeping) — edit them on disk
+`todo/` and `log.md` are intentionally **git-ignored** (operator bookkeeping) — edit them on disk
 as usual, but they won't appear in `git status` and are never part of a commit.
 
 Three page types: **doctrine** (summary timeline), **person-doctrine** (a witness's detail page,
@@ -136,15 +136,15 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 2. **Every** claim on a summary page ends in a footnote (the `<sup>` markup above).
 3. Quotes on detail pages are **verbatim** — never paraphrase inside `<blockquote>`.
 4. Firsthand quote found → cite the primary URL (page counts as *verified*). Only a secondary
-   report → mark the claim `⚠ unverified` inline, cite the secondary work, add a `TODO.md` row.
+   report → mark the claim `⚠ unverified` inline, cite the secondary work, add a `todo/` file.
 5. `person-slug` = lowercased full name, spaces→hyphens (mirrors the `Writings-Database` folder)
    and is the page's filename.
 6. Appending to an existing detail page → **append/merge**, don't overwrite.
 7. Use the real current date for `log.md` entries.
-8. **Never mention `TODO.md` in a published page** (summary / person-detail / argument) — it's
+8. **Never mention the `todo/` queue in a published page** (summary / person-detail / argument) — it's
    internal bookkeeping. On the page, mark an unsourced claim `⚠ unverified` (or call it an "open
-   lead" / "not yet sourced") and cite the secondary work only; still add the backlog row per
-   rule 4. Referencing `TODO.md` is fine only in meta files (this file, `project.md`, `log.md`).
+   lead" / "not yet sourced") and cite the secondary work only; still add the backlog file per
+   rule 4. Referencing `todo/` is fine only in meta files (this file, `project.md`, `log.md`).
 9. **No internal plumbing in reader-facing pages** (index / summary / person / argument — i.e. all of
    `docs/`; extends rule 8). Don't name the source DBs *as* infrastructure ("our corpus", "the
    database", "the writings corpus") or the meta files (`project.md`, `log.md`, `CLAUDE.md`,
@@ -161,17 +161,20 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
     trust — and a bare bibliographic citation (author, title, publisher, year, page) is the fallback,
     never the default. Don't dress an *unverified* page number as if linked: if you cite a page you
     didn't actually open, don't imply otherwise.
-- **`TODO.md` is a queue of not-yet-executed leads — pending items only.** It never holds
-  "done"/"resolved" entries: when a lead is executed, **delete its row** and record the outcome in
-  `log.md` (that is the history). Process rows **one at a time, top-down**; each row must carry enough
-  context to be actioned without re-reading the source it came from.
-- **"Import X"** (X = a local file or URL) means **extract every lead from X and add a row to
-  `TODO.md` for each** — it is *not* a request to author pages on the spot. Mine X for
-  `(person/claim, source)` pairs and open arguments, queue them below, then stop. The leads get
-  processed one-by-one in later passes (or when the user says to work the queue).
-- Two row types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
+- **`todo/` is a queue of not-yet-executed leads — one file per lead, pending items only.** Each lead is
+  its own file named `YYYY-MM-DD-HHMM-<slug>.md`; the queue is processed in **lexical filename order**
+  (earliest timestamp first), so new leads can be dropped in asynchronously without editing a shared file.
+  It never holds "done"/"resolved" items: when a lead is executed, **delete its file** and record the
+  outcome in `log.md` (that is the history). The **`/next`** skill works the queue, one file at a time;
+  each file must carry enough context to be actioned without re-reading the source it came from. See
+  `todo/README.md`.
+- **"Import X"** (X = a local file or URL) means **extract every lead from X and add a `todo/` file for
+  each** — it is *not* a request to author pages on the spot. Mine X for `(person/claim, source)` pairs
+  and open arguments, drop a file per lead, then stop. The leads get processed one-by-one in later passes
+  (or when the user says to work the queue). Vital to include source links from where you found the items (local file paths, external urls) for the agents to tap into later when attributing sources, if necessary.
+- Two lead types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
   per rule 4) and **argument** (a sub-claim needing adversarial adjudication → resolve into an argument
-  page with an `assessment`). Both end the same way: execute, then delete the row + log it.
+  page with an `assessment`). Both end the same way: execute, then delete the file + log it.
 
 ## Authoring checklist (see project.md §7 for detail)
 1. Identify doctrine(s) + slug + key verses; extract every `(person, claim)`.
@@ -181,7 +184,7 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
    context, links). Copy [`templates/person-detail.html`](templates/person-detail.html).
 5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
    chronological order; add the matching `<li>` footnotes to its Sources block.
-6. Bookkeep: append `log.md`, update `TODO.md`. Touch `docs/index.html` **only** for a new doctrine
+6. Bookkeep: append `log.md`, update `todo/`. Touch `docs/index.html` **only** for a new doctrine
    (a row in "Doctrines", with its people count) or a new argument (a row in "Arguments") — a new
    *witness* needs no index edit (the index no longer lists person pages; bump the doctrine's people
    count, though). Keep the doctrine row's count current.

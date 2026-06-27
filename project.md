@@ -18,7 +18,7 @@ Two rules are non-negotiable:
 2. **Every claim is cited.** No assertion about what someone believed appears without a
    footnote pointing to a source. Where we have a firsthand quote it is *verified*; where we
    only have someone else's report ("Father X believed Y") it is marked *unverified* and
-   logged in [`TODO.md`](TODO.md) until we find the primary source.
+   logged in the [`todo/`](todo/) queue until we find the primary source.
 
 This is an instance of the general pattern in [`llm-wiki.md`](llm-wiki.md): the LLM owns and
 maintains the wiki layer; raw sources are immutable; the wiki compounds over time.
@@ -31,7 +31,7 @@ Pages. There is no Markdown source and no build step — you edit the `.html` fi
 | Layer | What | Where |
 |-------|------|-------|
 | **Raw sources** (immutable) | Primary texts + secondary works | The two sibling databases (§3) + books/web you feed in |
-| **The wiki** (LLM-owned) | Doctrine pages, person-detail pages, the index, plus the log/todo bookkeeping | `docs/` (the published HTML) + `log.md`, `TODO.md`, `people.md` |
+| **The wiki** (LLM-owned) | Doctrine pages, person-detail pages, the index, plus the log/todo bookkeeping | `docs/` (the published HTML) + `log.md`, `todo/`, `people.md` |
 | **The schema** (co-evolved) | How the wiki is structured and maintained | This file + [`CLAUDE.md`](CLAUDE.md) + [`templates/`](templates/) |
 
 ## 3. Source databases (our source of truth)
@@ -107,7 +107,7 @@ docs/doctrines/
   timeline rather than sitting at one date, so it has **no year** and is **not** in the chronological
   list; instead it appears in an "Arguments" section on the summary page and an "Arguments"
   group in the index. Use it when a claim's interest is "does this argument hold up?" rather
-  than "who held this, when?" Resolving a TODO *argument* produces one of these pages (with the assessment), as opposed to flipping a
+  than "who held this, when?" Resolving a queued *argument* lead produces one of these pages (with the assessment), as opposed to flipping a
   witness's verified status. Skeleton: [`templates/argument.html`](templates/argument.html).
 - **Argument group** = a *grouping convention* over two or more argument pages that share a single proof-text,
   mechanism, or theme and are best read as a set. It is **not** a new page type, has **no year**, and
@@ -157,8 +157,8 @@ back-links work). Inline reference:
   person-slug (`<person-slug>-<n>`), so the two can differ — that is expected.
 - Footnote target priority: (1) the primary `historicalchristian.faith` verse/work URL; (2) the
   person-detail page (which itself carries the primary links); (3) for **unverified** claims, the
-  **secondary work** that asserted it — plus an inline `⚠ unverified` marker on the claim and a row
-  in [`TODO.md`](TODO.md) (never name `TODO.md` on a published page).
+  **secondary work** that asserted it — plus an inline `⚠ unverified` marker on the claim and a file
+  in the [`todo/`](todo/) queue (never name the queue on a published page).
 - Quote text on detail pages is **verbatim** from the DB (do not paraphrase inside `<blockquote>`).
 
 **Slugs & dating.**
@@ -174,9 +174,9 @@ back-links work). Inline reference:
 | State | Meaning | What to do |
 |-------|---------|-----------|
 | **Verified** | A firsthand quote was located in the Commentaries/Writings DBs (or a directly-quoted primary text). | Cite the primary `historicalchristian.faith` URL. |
-| **Unverified** | We only have a secondary work claiming the person believed it; no primary quote found yet. | Mark the claim `⚠ unverified`, cite the secondary work, add a row to [`TODO.md`](TODO.md). |
+| **Unverified** | We only have a secondary work claiming the person believed it; no primary quote found yet. | Mark the claim `⚠ unverified`, cite the secondary work, add a file to [`todo/`](todo/). |
 
-The goal over time is to convert unverified → verified by tracking down primaries. `TODO.md` is
+The goal over time is to convert unverified → verified by tracking down primaries. The `todo/` queue is
 the backlog for that.
 
 ## 7. Operations
@@ -194,7 +194,7 @@ the fathers said on X", **(c)** an ad-hoc topic prompt.
    - Search `Commentaries-Database/<Name>/` for the doctrine's key verses, and/or grep the
      father's `Writings-Database` HTML for relevant passages.
    - **Found** → capture the verbatim quote + `source_url` + `source_title`; build the link.
-   - **Not found** → mark unverified, cite the secondary work, add a [`TODO.md`](TODO.md) row.
+   - **Not found** → mark unverified, cite the secondary work, add a [`todo/`](todo/) file.
 4. **Write the person-detail page** `docs/doctrines/<slug>/<person-slug>.html` — full quote(s),
    surrounding context, all links (copy [`templates/person-detail.html`](templates/person-detail.html)).
    If it exists, **append/merge** rather than overwrite.
@@ -202,7 +202,7 @@ the fathers said on X", **(c)** an ad-hoc topic prompt.
    paragraph at the correct **chronological** position with footnote(s), and add the matching `<li>`
    to its Sources block. Re-order by hand if needed.
 6. **Bookkeep** — add a line to `docs/index.html`; append a line to [`log.md`](log.md)
-   (`## [YYYY-MM-DD] ingest | <source title>`); update [`TODO.md`](TODO.md).
+   (`## [YYYY-MM-DD] ingest | <source title>`); update [`todo/`](todo/).
 
 **When a (person, claim) is really an *argument*** — a sub-claim whose interest is "does this argument hold
 up?" rather than "who held it, when?" — don't force it onto the timeline. Instead write an **argument
@@ -211,7 +211,7 @@ page** (`docs/doctrines/<slug>/arguments/<arg-slug>.html`, skeleton
 marshal the strongest case, weigh it adversarially, and render an `assessment` of the interpretation.
 Then surface it in the summary's "Arguments" section + the index's "Arguments" group
 (not the timeline), and flag any part the proponent overstates on their own detail page. Resolving a
-TODO argument produces one of these (with an assessment), not a flipped verified status.
+queued argument lead produces one of these (with an assessment), not a flipped verified status.
 
 **When a new argument shares a proof-text, mechanism, or theme with existing arguments**, file it into that
 **argument group** rather than leaving it standalone: group it with its siblings under the
@@ -230,7 +230,7 @@ answers worth keeping get **filed back** as a new page and indexed.
 Look for: claims on summary pages **missing footnotes**; broken footnote `<sup>`/`<li>` id pairs;
 contradictions between pages; people in detail pages **missing from the summary timeline** (or out of
 date order); orphan detail pages with no inbound link; relative links that 404; unverified items
-lingering in `TODO.md`; doctrines that should exist but don't. For **argument pages**: each has an
+lingering in `todo/`; doctrines that should exist but don't. For **argument pages**: each has an
 assessment; is linked from both the summary's and the index's "Arguments" section (not the
 timeline); any proponent overstatement is reflected as a flag on that proponent's detail page; and it
 carries **no year/date** on the timeline. For **argument groups**: every grouped argument group has ≥ 2 members on

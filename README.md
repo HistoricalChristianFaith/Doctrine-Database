@@ -24,7 +24,7 @@ docs/                                   the published site (GitHub Pages source 
   doctrines/<slug>/<person>.html        detail page (full quotes + context + links)
   doctrines/<slug>/arguments/<arg>.html argument page (one sub-claim → assessment; off-timeline)
 templates/                              HTML page skeletons
-log.md  TODO.md  people.md              meta files (not served)
+log.md  todo/  people.md                meta files (not served)
 ```
 
 Three page types: **doctrine** (the timeline), **person-doctrine** (a witness's detail page, placed by
