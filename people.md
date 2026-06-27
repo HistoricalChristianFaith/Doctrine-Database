@@ -69,6 +69,7 @@ when uncertain.
 | Rufinus of Aquileia (Tyrannius Rufinus) | tyrannius-rufinus | 411 | yes (Apology of Rufinus in Writings-DB; slug mirrors folder "Tyrannius Rufinus"; Apology written c. 401, cited from New Advent / NPNF) | https://en.wikipedia.org/wiki/Tyrannius_Rufinus |
 | The Muratorian Fragment | muratorian-fragment | 170 | no (a document, not a person; majority 2nd-c. Roman date per Metzger/Tregelles; Sundberg–Hahneman 4th-c. redating a minority view; text + trans. at bible-researcher.com) | https://en.wikipedia.org/wiki/Muratorian_fragment |
 | The Council of Nicaea | council-of-nicaea | 325 | no (first ecumenical council; OT-canon witness only for the Jerome/Judith report — no canon-decree; adjudication on canon/arguments/nicaea-counted-judith.html) | https://en.wikipedia.org/wiki/First_Council_of_Nicaea |
+| The Council of Florence | council-of-florence | 1442 | no (17th ecumenical council; bull Cantate Domino, 4 Feb 1442 — first ecumenical enumeration of the full deuterocanon, a century before Trent) | https://en.wikipedia.org/wiki/Bull_of_Union_with_the_Copts |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
