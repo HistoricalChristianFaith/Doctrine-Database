@@ -56,6 +56,7 @@ when uncertain.
 | The Gospel of Nicodemus (Acts of Pilate) | gospel-of-nicodemus | 450 | no | https://en.wikipedia.org/wiki/Gospel_of_Nicodemus |
 | Cyprian of Carthage | cyprian | 253 | yes | https://en.wikipedia.org/wiki/Cyprian |
 | Epiphanius of Salamis | epiphanius-of-salamis | 375 | partial (Weights & Measures only) | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
+| Basil of Caesarea | basil-of-caesarea | 373 | partial (On the Spirit, Hexaemeron, Letters — but NOT the martyr homilies; *Homily on the Forty Martyrs* sourced from web for prayer-to-saints) — lifespan c. 330–379, Writings-Database default_year=379; slotted c. 373 on the prayer-to-saints timeline by the Forty Martyrs homily | https://en.wikipedia.org/wiki/Basil_of_Caesarea |
 | Ambrosiaster | ambrosiaster | 380 | yes (Commentaries-DB) | https://en.wikipedia.org/wiki/Ambrosiaster |
 | Caesarius of Arles | caesarius-of-arles | 520 | no | https://en.wikipedia.org/wiki/Caesarius_of_Arles |
 
