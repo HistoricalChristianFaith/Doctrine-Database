@@ -273,3 +273,28 @@ unrelated to this grouping convention, and is left as written.) Five rules:
    `<h3>` arguments after — so summary and index order agree. Re-sequence footnotes after any reorder
    (numbers are sequential by first appearance).
 5. **Standalone arguments are unchanged.** Arguments in no group keep their flat `<h3>` / `<ul>` presentation.
+
+## Doctrine clusters (cross-linking related doctrines)
+A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
+proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
+page type** — no file of its own, no `docs/` entry, **no index grouping**, no build step, and it does
+**not** touch any timeline. It is realized in exactly one place: a **`Related doctrines:` breadcrumb** on
+each member summary, placed directly under the intro paragraph (before the first `<h2>`). The breadcrumb
+names the family (an `<em>` label, **not** a link) and then `see also`s its sibling members as
+same-directory `<sibling>.html` links — every member points at all the others. Like all wiki metadata it
+is derived from visible content, not hidden frontmatter.
+
+```html
+<p><strong>Related doctrines:</strong> <em>Scripture's text &amp; canon</em> — see also
+<a href="ot-canon.html">the Old Testament canon</a> · <a href="septuagint-origin.html">the Septuagint's origin</a>
+· <a href="rabbinic-corruption.html">rabbinic corruption of the text</a></p>
+```
+
+Reader-facing label **"Related doctrines"**; internal term *doctrine cluster* with a kebab-case theme name
+used only in these meta files (there is **no** index anchor or `id="cluster-…"` — an earlier version
+grouped the members on the index under such a heading, but that index grouping was dropped, so the
+breadcrumb's family label is plain `<em>` text, not a link). Rules: ≥ 2 members; keep each member's
+existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
+
+**Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
+`rabbinic-corruption`.
