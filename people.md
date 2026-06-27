@@ -18,6 +18,7 @@ when uncertain.
 | Tertullian | tertullian | 220 | yes | https://en.wikipedia.org/wiki/Tertullian |
 | Aphrahat the Persian Sage | aphrahat-the-persian-sage | 345 | yes | https://en.wikipedia.org/wiki/Aphrahat |
 | Athenagoras of Athens | athenagoras-of-athens | 177 | yes | https://en.wikipedia.org/wiki/Athenagoras_of_Athens |
+| Hippolytus of Rome | hippolytus-of-rome | 204 | no for the *Commentary on Daniel* (web-sourced: T. C. Schmidt's 2010 ET, chronicon.net / pergrazia PDF; lifespan c. 170–235; sort year = the commentary c. 204; ot-canon slots its own Hippolytus witness at c. 205 for a different work) | https://en.wikipedia.org/wiki/Hippolytus_of_Rome |
 | Aerius of Sebaste | aerius | 355 | no (lone ancient denier of prayer for the dead; floruit fixed by his break with Eustathius of Sebaste, bp. c. 355; known only through Epiphanius, Panarion 75, and Augustine, De Haeresibus 53) | https://en.wikipedia.org/wiki/Aerius_of_Sebaste |
 | Commodian | commodian | 250 | yes | https://en.wikipedia.org/wiki/Commodian |
 | Methodius of Olympus | methodius-of-olympus | 290 | no | https://en.wikipedia.org/wiki/Methodius_of_Olympus |
