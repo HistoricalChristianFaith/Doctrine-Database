@@ -112,9 +112,13 @@
       li.className = "toc-" + h.tagName.toLowerCase();
       var a = document.createElement("a");
       a.href = "#" + id;
-      // Drop a trailing "(assessment: …)" tag from the TOC label only — it clutters the
-      // list; the heading itself keeps it.
-      a.textContent = (h.textContent || "").trim().replace(/\s*\(assessment:[^)]*\)\s*$/i, "");
+      // Trim the TOC label only — the headings themselves keep their full text:
+      //  • drop a trailing "(assessment: …)" tag, and
+      //  • drop the leading "Related arguments —" prefix from argument-group h4s,
+      // both of which just clutter the list.
+      a.textContent = (h.textContent || "").trim()
+        .replace(/\s*\(assessment:[^)]*\)\s*$/i, "")
+        .replace(/^Related arguments\s*[—–-]\s*/i, "");
       li.appendChild(a);
       ul.appendChild(li);
       byId[id] = a;
