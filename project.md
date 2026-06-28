@@ -255,7 +255,8 @@ dropped from a summary or the index.
 ## 9. Status / publishing
 The wiki is served as static HTML from `docs/` via GitHub Pages (Settings → Pages → Source =
 *Deploy from a branch*, branch `master`, folder `/docs`; a `.nojekyll` file keeps the HTML raw). The
-first worked doctrine — the nephilim / "sons of God" timeline (28 witnesses + 2 argument pages) — is
-complete. Future work (out of scope for now): a search/CLI tool over the wiki, and optional styling.
+first worked doctrine — the nephilim / "sons of God" timeline — is complete, and several more doctrines
+have since been built out (see `index.html` for the live set). Future work (out of scope for now): a
+search/CLI tool over the wiki, and optional styling.
 This project began as Markdown rendered to HTML; it is now authored directly in HTML and the Markdown
 source has been retired (see `log.md`).
