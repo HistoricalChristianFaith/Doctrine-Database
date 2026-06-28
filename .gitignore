@@ -5,3 +5,4 @@ to_process/
 log.md
 todo/
 .claude/skills/next/SKILL.md
+*.pyc
