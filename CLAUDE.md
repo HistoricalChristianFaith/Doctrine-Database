@@ -19,8 +19,11 @@ page and the LLM catalog — keep its intro reader-facing; operator guidance liv
 ## Layout
 ```
 docs/                          the published site (GitHub Pages source = /docs)
-  index.html                   the reader's home page: doctrine summaries + the arguments catalog
-                                 (NOT a person-page list — witnesses are cataloged on their timeline)
+  index.html                   the reader's home page + LLM catalog: ONE doctrine-organised list,
+                                 grouped by concept family (an <h2> per family). Each doctrine is an
+                                 <h3> heading linking to its summary, then a one-line description, then
+                                 the arguments adduced for it. (NOT a person-page list — witnesses are
+                                 cataloged on their timeline; the index tracks no counts.)
   .nojekyll                    serve raw HTML; do not Jekyll-process
   doctrines/<slug>.html              summary timeline (1 footnoted block/person)
   doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
@@ -112,9 +115,10 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 - **Cross-links are relative `.html`:** summary→detail `<slug>/<person>.html`; detail→summary
   `../<slug>.html`; argument→detail `../<person>.html`; argument→summary `../../<slug>.html`.
   Members of an **argument group** are additionally grouped under a shared `<h3 id="group-<slug>">` heading on
-  the summary and an `<h4>` group in the index (both labelled `Related arguments — <theme>`), and each member
-  page carries a `Related arguments:` breadcrumb linking the home-summary anchor
-  (`../../<slug>.html#group-<slug>`) and its sibling members.
+  the summary (labelled `Related arguments — <theme>`) and an `<h4>` group on the index (the **bare theme**,
+  e.g. `the descent` — no "Related arguments —" prefix; the index drops it since the theme already heads the
+  doctrine's own block), and each member page carries a `Related arguments:` breadcrumb linking the
+  home-summary anchor (`../../<slug>.html#group-<slug>`) and its sibling members.
 - **Footnotes** use this exact markup (matches every existing page) so numbering and back-links work:
   - Inline ref (visible `<n>` is sequential **by first appearance** on the page; the id uses the
     person-slug): `<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup>`
@@ -185,15 +189,16 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
    chronological order; add the matching `<li>` footnotes to its Sources block.
 6. Bookkeep: append `log.md`, update `todo/`. Touch `docs/index.html` **only** for a new doctrine
-   (a row in "Doctrines", with its people count) or a new argument (a row in "Arguments") — a new
-   *witness* needs no index edit (the index no longer lists person pages; bump the doctrine's people
-   count, though). Keep the doctrine row's count current.
+   (add an `<h3>` linked heading + one-line description under the right concept-family `<h2>`) or a
+   new argument (add its `<li>` — `title — <strong>rating</strong>` — under the doctrine's argument
+   group, or its trailing standalone `<ul>`). A new *witness* needs no index edit; the index lists
+   no person pages and tracks **no counts** (the old people/argument counts were dropped).
 
 If a `(person, claim)` is really an **argument** (interest = "does the argument hold?" not "who held it?"):
 skip the timeline — write an **argument page** instead (`arguments/<slug>.html`,
 [`templates/argument.html`](templates/argument.html)), weigh it adversarially → `assessment`, surface
-it in the summary's + index's "Arguments" section, and flag any of the proponent's
-overstatements on their detail page. See project.md §4/§7.
+it in the summary's "Arguments" section and under its doctrine on the index, and flag any of the
+proponent's overstatements on their detail page. See project.md §4/§7.
 
 ## Assessments (argument pages)
 The `assessment` rates the **interpretation** the argument serves — *not* whichever proponent we
@@ -241,16 +246,18 @@ etymological error, a logical contradiction — not for the bare fact of a mirac
 An **argument group** is a named cluster of **two or more argument pages** (within one doctrine, or
 occasionally across two) that share a single proof-text, mechanism, or theme and are best read as a set.
 It is a **grouping convention, not a page type**: it has no file of its own and adds no `docs/` entry. An
-argument group is realized in visible content in three places — a grouped sub-heading in the summary's and
-index's "Arguments" sections, and a `Related arguments:` breadcrumb on each member page that names
-the group and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
+argument group is realized in visible content in three places — a grouped sub-heading in the summary's
+"Arguments" section and under the doctrine's `<h3>` block on the index, and a `Related arguments:` breadcrumb
+on each member page that names the group and links its siblings. Like all wiki metadata it is derived from visible content, not hidden
 frontmatter.
 
 **Naming — internal term vs. reader-facing label.** The convention is called an *argument group* in the
 plumbing: the kebab-case slug (`descent`), the anchor `id="group-<slug>"`, and these meta files. The
 reader-facing surface is labelled **"Related arguments"** — the group heading reads `Related arguments —
-<theme>` (summary `<h3>`, index `<h4>`) and the member breadcrumb label is `Related arguments:` with the
-bare theme as its link text (e.g. `the descent`). (NB: the bare word "complex" still appears legitimately
+<theme>` on the **summary** (`<h3>`), while on the **index** the `<h4>` shows the **bare theme** only (e.g.
+`the descent` — the "Related arguments —" prefix is dropped there, since the theme already sits under the
+doctrine's own heading). The member breadcrumb label is `Related arguments:` with the bare theme as its link
+text (e.g. `the descent`). (NB: the bare word "complex" still appears legitimately
 in argument *prose* in its religious-studies sense — a "ritual/cultural complex" — which is content,
 unrelated to this grouping convention, and is left as written.) Five rules:
 
@@ -264,25 +271,26 @@ unrelated to this grouping convention, and is left as written.) Five rules:
    the 1 Peter 3:19 identity argument on `nephilim` ↔ the content-of-the-proclamation argument on
    `intermediate-state`, whose home group is `descent`).
 4. **Slug + display name + anchor.** Each argument group has a kebab-case slug (`descent`), a reader-facing
-   display name ("Related arguments — the descent"), and a stable anchor on its home summary:
-   `<h3 id="group-<slug>">`. Member
+   display name ("Related arguments — the descent" on the summary; the **bare theme** on the index), and a
+   stable anchor on its home summary: `<h3 id="group-<slug>">`. Member
    breadcrumbs link to `../../<doctrine>.html#group-<slug>`; on the summary the members demote from
-   `<h3>` to `<h4>` under a framing `<p>`; in the index they form an `<h4>` group above a trailing
-   unheaded `<ul>` of standalone arguments. **Argument groups lead the "Arguments" section on the
-   summary as well as the index** — the `<h3 id="group-<slug>">` group first, the standalone
-   `<h3>` arguments after — so summary and index order agree. Re-sequence footnotes after any reorder
-   (numbers are sequential by first appearance).
+   `<h3>` to `<h4>` under a framing `<p>`; on the index they form an `<h4>` group (bare theme) above a
+   trailing unheaded `<ul>` of standalone arguments, all under that doctrine's `<h3>` block. **Argument
+   groups lead each doctrine's arguments on the summary and the index alike** — the group(s) first, the
+   standalone arguments after — so summary and index order agree. Re-sequence footnotes after any reorder
+   (numbers are sequential by first appearance; the index itself carries no footnotes).
 5. **Standalone arguments are unchanged.** Arguments in no group keep their flat `<h3>` / `<ul>` presentation.
 
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
-page type** — no file of its own, no `docs/` entry, **no index grouping**, no build step, and it does
-**not** touch any timeline. It is realized in exactly one place: a **`Related doctrines:` breadcrumb** on
-each member summary, placed directly under the intro paragraph (before the first `<h2>`). The breadcrumb
-names the family (an `<em>` label, **not** a link) and then `see also`s its sibling members as
-same-directory `<sibling>.html` links — every member points at all the others. Like all wiki metadata it
-is derived from visible content, not hidden frontmatter.
+page type** — no file of its own, no `docs/` entry, no build step, and it does **not** touch any timeline.
+It is realized in two places: the **concept-family `<h2>` grouping on `index.html`** (the home page lists
+every doctrine under its family — the clusters below, plus an "Other doctrines" bucket for un-clustered
+doctrines), and a **`Related doctrines:` breadcrumb** on each member summary, placed directly under the
+intro paragraph (before the first `<h2>`). The breadcrumb names the family (an `<em>` label, **not** a link)
+and then `see also`s its sibling members as same-directory `<sibling>.html` links — every member points at
+all the others. Like all wiki metadata it is derived from visible content, not hidden frontmatter.
 
 ```html
 <p><strong>Related doctrines:</strong> <em>Scripture's text &amp; canon</em> — see also
@@ -291,10 +299,12 @@ is derived from visible content, not hidden frontmatter.
 ```
 
 Reader-facing label **"Related doctrines"**; internal term *doctrine cluster* with a kebab-case theme name
-used only in these meta files (there is **no** index anchor or `id="cluster-…"` — an earlier version
-grouped the members on the index under such a heading, but that index grouping was dropped, so the
-breadcrumb's family label is plain `<em>` text, not a link). Rules: ≥ 2 members; keep each member's
+used only in these meta files. The index groups doctrines under concept-family `<h2>` headings (see above),
+but those headings carry **no** `id="cluster-…"` anchor, and the summary breadcrumb's family label stays
+plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 
 **Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
-`rabbinic-corruption`.
+`rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
+`purgatory`, `prayer-to-saints`. (Un-clustered doctrines — `nephilim`, `flood` — sit under the index's
+"Other doctrines" family bucket.)
