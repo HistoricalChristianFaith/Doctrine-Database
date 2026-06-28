@@ -15,24 +15,105 @@
       .slice(0, 60) || "section";
   }
 
-  // A "home" link back to the site root (index.html). The href reuses the page's own
-  // depth-relative stylesheet prefix (style.css → index.html), so it is correct at any
-  // depth without counting path segments. Returns null on the root page (empty prefix)
-  // or if no stylesheet is found.
-  function makeHome() {
+  // Doctrine slug → concise display label for the breadcrumb's middle crumb. The label
+  // is the only crumb not derivable from the path (an argument page's h1 is the argument,
+  // not the doctrine), so it lives here. Add an entry when you add a doctrine (see CLAUDE.md).
+  var DOCTRINE_NAMES = {
+    "canon": "The Biblical Canon",
+    "ot-canon": "The Old Testament Canon",
+    "septuagint-origin": "The Septuagint",
+    "rabbinic-corruption": "The Rabbinic Corruption of Scripture",
+    "intermediate-state": "The Intermediate State",
+    "purgatory": "Purgatory",
+    "prayer-to-saints": "Prayer to the Saints",
+    "nephilim": "The Sons of God and the Nephilim",
+    "flood": "Noah's Flood"
+  };
+
+  // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
+  // own stylesheet href (style.css). Lets every crumb URL be built without counting path
+  // segments. Returns null on the root page (empty prefix) or if no stylesheet is found.
+  function getPrefix() {
     var links = document.querySelectorAll('link[rel~="stylesheet"]');
-    var prefix = null;
     for (var i = 0; i < links.length; i++) {
       var href = links[i].getAttribute("href") || "";
       var m = href.match(/^(.*?)style\.css(?:[?#].*)?$/);
-      if (m) { prefix = m[1]; break; }
+      if (m) return m[1];
     }
-    if (!prefix) return null; // no stylesheet, or already at the root
-    var a = document.createElement("a");
-    a.className = "toc-home";
-    a.href = prefix + "index.html";
-    a.textContent = "⌂ Doctrine Across Time";
-    return a;
+    return null;
+  }
+
+  function prettifySlug(slug) {
+    return slug.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  }
+
+  // Build the breadcrumb trail (Home › Doctrine › leaf) entirely from the path + the map
+  // above — no network. Returns a <nav> for any non-root page, or null on index.html / when
+  // the path doesn't sit under doctrines/. Crumbs: linked ancestors as <a>, the current page
+  // as a non-link <span aria-current="page"> (separators are CSS-generated, not in markup).
+  function buildBreadcrumb() {
+    var prefix = getPrefix();
+    if (!prefix) return null; // root page (or no stylesheet) — no breadcrumb
+
+    var segs = location.pathname.split("/").filter(Boolean);
+    var di = segs.lastIndexOf("doctrines");
+    if (di === -1 || di + 1 >= segs.length) return null;
+    var next = segs[di + 1];
+    var isSummary = /\.html$/i.test(next);
+    var isArgument = segs.indexOf("arguments") > di;
+    var slug = next.replace(/\.html$/i, "");
+
+    var crumbs = [
+      { href: prefix + "index.html", text: "⌂ Doctrine Across Time" }
+    ];
+    var doctrineName = DOCTRINE_NAMES[slug] || prettifySlug(slug);
+    if (isSummary) {
+      crumbs.push({ text: doctrineName }); // the summary itself — current, no link
+    } else {
+      crumbs.push({ href: prefix + "doctrines/" + slug + ".html", text: doctrineName });
+      crumbs.push(leafCrumb(doctrineName, isArgument));
+    }
+
+    var nav = document.createElement("nav");
+    nav.className = "breadcrumb";
+    nav.setAttribute("aria-label", "Breadcrumb");
+    var ol = document.createElement("ol");
+    crumbs.forEach(function (c) {
+      var li = document.createElement("li");
+      var el;
+      if (c.href) {
+        el = document.createElement("a");
+        el.href = c.href;
+      } else {
+        el = document.createElement("span");
+        el.setAttribute("aria-current", "page");
+      }
+      el.textContent = c.text;
+      if (c.title) el.title = c.title;
+      li.appendChild(el);
+      ol.appendChild(li);
+    });
+    nav.appendChild(ol);
+    return nav;
+  }
+
+  // The trailing (current-page) crumb for a person or argument page, derived from the h1:
+  //  • person h1 "Jerome on the Old Testament Canon" → "Jerome" (strip the doctrine phrase),
+  //  • argument h1 (a long question) → truncated, with the full text on hover.
+  // The " on …" strip is person-only — an argument h1 can legitimately contain " on " (e.g.
+  // "Does X depend on Y?"), so argument pages are never stripped, only truncated.
+  function leafCrumb(doctrineName, isArgument) {
+    var h1 = document.querySelector("h1");
+    var text = h1 ? (h1.textContent || "").trim() : "";
+    if (!isArgument) {
+      // Try the mapped doctrine name first, then a generic trailing " on …".
+      var escaped = doctrineName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      var stripped = text.replace(new RegExp("\\s+on\\s+" + escaped + "\\s*$", "i"), "");
+      if (stripped === text) stripped = text.replace(/\s+on\s+.+$/i, "");
+      if (stripped !== text && stripped) return { text: stripped };
+    }
+    if (text.length > 60) return { text: text.slice(0, 57).trim() + "…", title: text };
+    return { text: text };
   }
 
   function insertAfterH1(node) {
@@ -42,7 +123,10 @@
   }
 
   function build() {
-    var home = makeHome();
+    // Breadcrumb rides at the very top of every non-root page, independent of the TOC —
+    // so even a short, TOC-less page (and a deep-linked one) can climb the hierarchy.
+    var crumbs = buildBreadcrumb();
+    if (crumbs) document.body.insertBefore(crumbs, document.body.firstChild);
 
     // Headings in document order, excluding the Sources/footnote block. The page h1 leads
     // the list (top-level, styled as the title); h2–h4 nest beneath it.
@@ -53,12 +137,7 @@
       return t.toLowerCase() !== "sources";
     });
 
-    if (headings.length < 3) {
-      // Too short for a TOC, but the home link still belongs on the page — drop it in
-      // standalone (inline at the top) so every page can get back to the root.
-      if (home) { home.classList.add("toc-home--solo"); insertAfterH1(home); }
-      return;
-    }
+    if (headings.length < 3) return; // too short for a TOC (breadcrumb already handles up-nav)
 
     // Ensure every target has a unique id (without clobbering existing footnote ids).
     var used = {};
@@ -126,9 +205,6 @@
 
     nav.appendChild(ul);
     details.appendChild(nav);
-
-    // Home link rides at the top of the TOC box, above the "Table of Contents" toggle.
-    if (home) details.insertBefore(home, details.firstChild);
 
     insertAfterH1(details);
 

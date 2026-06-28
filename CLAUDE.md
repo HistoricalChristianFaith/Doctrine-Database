@@ -192,7 +192,9 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
    (add an `<h3>` linked heading + one-line description under the right concept-family `<h2>`) or a
    new argument (add its `<li>` — `title — <strong>rating</strong>` — under the doctrine's argument
    group, or its trailing standalone `<ul>`). A new *witness* needs no index edit; the index lists
-   no person pages and tracks **no counts** (the old people/argument counts were dropped).
+   no person pages and tracks **no counts** (the old people/argument counts were dropped). For a new
+   doctrine also add its `slug → display name` entry to the `DOCTRINE_NAMES` map in `docs/toc.js` so
+   its breadcrumb crumb is labelled (the only metadata the breadcrumb can't derive from the path).
 
 If a `(person, claim)` is really an **argument** (interest = "does the argument hold?" not "who held it?"):
 skip the timeline — write an **argument page** instead (`arguments/<slug>.html`,

@@ -135,9 +135,10 @@ metadata lives in the **path** and the **visible content**:
 - **Document wrapper** — `<!doctype html>` … `<head>` with `<meta charset>`, viewport, and a
   `<title>`; then `<body>`. No CSS/JS (bare HTML).
 - **type** ← the path; **doctrine slug** ← the path; **person-slug** ← the filename.
-- **Person-detail head line** carries the date, bio link, and back-link, then a one-line summary:
+- **Person-detail head line** carries the date and bio link, then a one-line summary (up-navigation is
+  the breadcrumb that `toc.js` builds at the top of every page — no inline "back to timeline" link):
   ```html
-  <p><strong>Dates:</strong> c. 220 · <a href="<wiki>">Wikipedia</a> · <a href="../baptism.html">back to timeline</a><br>
+  <p><strong>Dates:</strong> c. 220 · <a href="<wiki>">Wikipedia</a><br>
   <strong>Summary:</strong> …one or two sentences…</p>
   ```
   The visible `c. <year>` is the sort key; the summary timeline order is maintained **by hand**.
