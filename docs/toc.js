@@ -241,36 +241,9 @@
     headings.forEach(function (h) { io.observe(h); });
   }
 
-  // Announce this page's path to a parent viewer shell (historicalchristian.faith
-  // /doctrine), so it can mirror the location in its address bar for deep-linking.
-  // No-ops when the page is viewed standalone on GitHub Pages (parent === self), and
-  // the pinned targetOrigin means the message reaches only that one shell.
-  function postLocationToParent() {
-    if (window.parent === window) return; // not framed
-    var base = "/Doctrine-Database/"; // GitHub Pages repo root
-    var path = location.pathname;
-    var rel =
-      path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\/+/, "");
-    var msg = { type: "doctrine-nav", page: rel + location.search, hash: location.hash };
-    // Trusted parent shells this page may be embedded in. postMessage takes a single
-    // targetOrigin, so we post once per allowed origin — the browser delivers only to the
-    // frame whose origin matches and silently drops the rest. Pinned (never "*") to keep
-    // the message from leaking to an unexpected embedder.
-    var ALLOWED_PARENTS = [
-      "https://historicalchristian.faith",
-      "http://localhost:8888" // local dev shell
-    ];
-    ALLOWED_PARENTS.forEach(function (origin) {
-      window.parent.postMessage(msg, origin);
-    });
-  }
-
   function init() {
     build();
-    postLocationToParent();
   }
-
-  window.addEventListener("hashchange", postLocationToParent);
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

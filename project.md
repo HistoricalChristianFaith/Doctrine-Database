@@ -254,8 +254,8 @@ dropped from a summary or the index.
 - **date stamp** — use the real current date for `log.md` entries.
 
 ## 9. Status / publishing
-The wiki is served as static HTML from `docs/` via GitHub Pages (Settings → Pages → Source =
-*Deploy from a branch*, branch `master`, folder `/docs`; a `.nojekyll` file keeps the HTML raw). The
+The wiki is served as static HTML from `docs/`, deployed as standalone pages directly on
+historicalchristian.faith (no build step, no iframe/viewer shell). The
 first worked doctrine — the nephilim / "sons of God" timeline — is complete, and several more doctrines
 have since been built out (see `index.html` for the live set). Future work (out of scope for now): a
 search/CLI tool over the wiki, and optional styling.
