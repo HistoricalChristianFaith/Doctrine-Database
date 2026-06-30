@@ -31,6 +31,7 @@ when uncertain.
 | George Syncellus | george-syncellus | 810 | no (Ecloga Chronographica not in corpus; cited from Adler & Tuffin's 2002 Oxford translation, archive.org PDF) | https://en.wikipedia.org/wiki/George_Syncellus |
 | Doug Wilson | doug-wilson | 2021 | no | https://en.wikipedia.org/wiki/Douglas_Wilson_(theologian) |
 | The Westminster Confession | westminster-confession | 1646 | no | https://en.wikipedia.org/wiki/Westminster_Confession_of_Faith |
+| Charles Spurgeon | charles-spurgeon | 1861 | no (English Particular Baptist preacher, 1834–1892; the baptist-successionism witness is sorted by his 2 Apr 1861 address "Public Meeting of Our London Baptist Brethren," NPSP/MTP Vol. VII, sermon 376, p. 225, full text at ccel.org sermons07 / AiG) | https://en.wikipedia.org/wiki/Charles_Spurgeon |
 | Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
 | The Formula of Concord | formula-of-concord | 1577 | no | https://en.wikipedia.org/wiki/Formula_of_Concord |
 | The Acts of Paul and Thecla | acts-of-paul-and-thecla | 160 | no | https://en.wikipedia.org/wiki/Acts_of_Paul_and_Thecla |

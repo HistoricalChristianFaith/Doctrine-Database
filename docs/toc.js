@@ -27,7 +27,8 @@
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
     "nephilim": "The Sons of God and the Nephilim",
-    "flood": "Noah's Flood"
+    "flood": "Noah's Flood",
+    "baptist-successionism": "Baptist Successionism"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
