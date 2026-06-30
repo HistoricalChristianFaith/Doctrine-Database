@@ -32,6 +32,7 @@ when uncertain.
 | Doug Wilson | doug-wilson | 2021 | no | https://en.wikipedia.org/wiki/Douglas_Wilson_(theologian) |
 | The Westminster Confession | westminster-confession | 1646 | no | https://en.wikipedia.org/wiki/Westminster_Confession_of_Faith |
 | Charles Spurgeon | charles-spurgeon | 1861 | no (English Particular Baptist preacher, 1834–1892; the baptist-successionism witness is sorted by his 2 Apr 1861 address "Public Meeting of Our London Baptist Brethren," NPSP/MTP Vol. VII, sermon 376, p. 225, full text at ccel.org sermons07 / AiG) | https://en.wikipedia.org/wiki/Charles_Spurgeon |
+| James Milton Carroll | james-milton-carroll | 1931 | no (Texas Southern Baptist minister, 1852–1931; the baptist-successionism witness is anchored at the 1931 publication of his five-lecture booklet *The Trail of Blood* — written before his Jan 1931 death and published posthumously by Clarence Walker; full text at archive.org TheTrailOfBlood; scholarly review: Rodney A. Harrison, "The Dead End Trail," Midwestern Journal of Theology 5.2, Spring 2007, pp. 54–66) | https://en.wikipedia.org/wiki/The_Trail_of_Blood |
 | Benedict XII | benedict-xii | 1336 | no | https://en.wikipedia.org/wiki/Pope_Benedict_XII |
 | The Formula of Concord | formula-of-concord | 1577 | no | https://en.wikipedia.org/wiki/Formula_of_Concord |
 | The Acts of Paul and Thecla | acts-of-paul-and-thecla | 160 | no | https://en.wikipedia.org/wiki/Acts_of_Paul_and_Thecla |
