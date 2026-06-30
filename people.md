@@ -54,6 +54,7 @@ when uncertain.
 | Melito of Sardis | melito-of-sardis | 170 | yes | https://en.wikipedia.org/wiki/Melito_of_Sardis |
 | Clement of Rome (Pope Clement I) | clement-of-rome | 96 | yes (1 Clement; metadata default_year=99, but the letter is dated c. 95&#8211;96 AD) | https://en.wikipedia.org/wiki/Pope_Clement_I |
 | Clement of Alexandria | clement-of-alexandria | 200 | yes (metadata default_year=215, his death; timeline placed c. 200 for the Paedagogus/Stromateis, c. 198&#8211;203) | https://en.wikipedia.org/wiki/Clement_of_Alexandria |
+| Origen | origen | 248 | yes (Against Celsus in Writings-Database, "Origen of Alexandria/Against Celsus/Book 8.html"; metadata default_year=253 is his death — *Contra Celsum* dated c. 248, used as the timeline anchor) | https://en.wikipedia.org/wiki/Origen |
 | An Ancient Homily on Holy Saturday | holy-saturday-homily | 300 | no | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
 | Cyril of Alexandria | cyril-of-alexandria | 444 | yes | https://en.wikipedia.org/wiki/Cyril_of_Alexandria |
 | The Gospel of Nicodemus (Acts of Pilate) | gospel-of-nicodemus | 450 | no | https://en.wikipedia.org/wiki/Gospel_of_Nicodemus |
