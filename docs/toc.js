@@ -29,7 +29,8 @@
     "real-presence": "The Real Presence in the Eucharist",
     "nephilim": "The Sons of God and the Nephilim",
     "flood": "Noah's Flood",
-    "baptist-successionism": "Baptist Successionism"
+    "baptist-successionism": "Baptist Successionism",
+    "church-buildings": "The Place of Christian Worship"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
