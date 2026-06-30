@@ -27,6 +27,7 @@
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
     "real-presence": "The Real Presence in the Eucharist",
+    "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
     "flood": "Noah's Flood",
     "baptist-successionism": "Baptist Successionism",
