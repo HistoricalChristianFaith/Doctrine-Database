@@ -102,6 +102,7 @@ when uncertain.
 | John of Damascus | john-of-damascus | 730 | no (*An Exposition of the Orthodox Faith* IV.17; newadvent.org/fathers/33044.htm) | https://en.wikipedia.org/wiki/John_of_Damascus |
 | The Stichometry of Nicephorus | stichometry-of-nicephorus | 810 | no (appended to Nicephorus of Constantinople's *Chronographia*; ntcanon.org) | https://en.wikipedia.org/wiki/Nikephoros_I_of_Constantinople |
 | The Schleitheim Confession (Michael Sattler & the Swiss Brethren) | schleitheim-confession | 1527 | yes (infant-baptism witness — first credobaptist witness on that timeline; *Brüderliche Vereinigung*, Art. 1, adopted Schleitheim 24 Feb 1527; chief author Michael Sattler, ex-Benedictine prior, c. 1490–1527, burned 20 May 1527; primary text at courses.washington.edu/hist112) | https://en.wikipedia.org/wiki/Schleitheim_Confession |
+| John Calvin | john-calvin | 1536 | yes (infant-baptism witness — Reformed paedobaptist; *Institutes* IV.16.8–9, Beveridge trans.; timeline anchored 1536, first ed., though quoted section text follows the 1559 final ed.; 1509–1564, Geneva) | https://en.wikipedia.org/wiki/John_Calvin |
 
 <!-- Example non-DB row:
 | Martin Luther | martin-luther | 1546 | no | https://en.wikipedia.org/wiki/Martin_Luther |
