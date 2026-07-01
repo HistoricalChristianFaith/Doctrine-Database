@@ -70,6 +70,7 @@ when uncertain.
 
 
 | Tractate Megillah (b. Megillah 9a) | tractate-megillah | 200 | no | https://en.wikipedia.org/wiki/Megillah_(Talmud) |
+| Tractate Soferim (1:7) | tractate-soferim | 750 | no | https://en.wikipedia.org/wiki/Masekhet_Soferim |
 | The Babylonian Talmud (Bava Batra 14b; Bava Kamma 92b) | babylonian-talmud | 200 | no | https://en.wikipedia.org/wiki/Bava_Batra |
 | Philoxenus of Mabbug | philoxenus-of-mabbug | 523 | no | https://en.wikipedia.org/wiki/Philoxenus_of_Mabbug |
 | Moses bar Kepha | moses-bar-kepha | 903 | no | https://en.wikipedia.org/wiki/Moses_Bar_Kepha |
