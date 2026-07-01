@@ -31,6 +31,7 @@
     "nephilim": "The Sons of God and the Nephilim",
     "flood": "Noah's Flood",
     "baptist-successionism": "Baptist Successionism",
+    "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship"
   };
 
