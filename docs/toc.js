@@ -32,7 +32,8 @@
     "flood": "Noah's Flood",
     "baptist-successionism": "Baptist Successionism",
     "infant-baptism": "Infant Baptism",
-    "church-buildings": "The Place of Christian Worship"
+    "church-buildings": "The Place of Christian Worship",
+    "perpetual-virginity": "The Perpetual Virginity of Mary"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
