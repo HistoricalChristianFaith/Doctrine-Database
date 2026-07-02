@@ -63,6 +63,7 @@ when uncertain.
 | Basil of Caesarea | basil-of-caesarea | 373 | partial (On the Spirit, Hexaemeron, Letters — but NOT the martyr homilies; *Homily on the Forty Martyrs* sourced from web for prayer-to-saints) — lifespan c. 330–379, Writings-Database default_year=379; slotted c. 373 on the prayer-to-saints timeline by the Forty Martyrs homily | https://en.wikipedia.org/wiki/Basil_of_Caesarea |
 | Ambrosiaster | ambrosiaster | 380 | yes (Commentaries-DB) | https://en.wikipedia.org/wiki/Ambrosiaster |
 | Caesarius of Arles | caesarius-of-arles | 520 | no | https://en.wikipedia.org/wiki/Caesarius_of_Arles |
+| The Antidicomarianites | antidicomarianites | 370 | no (a sect, not a person; perpetual-virginity witness, Helvidian party — held Mary bore children to Joseph after Jesus. Obscure Arabian sect of the later 4th c.; no writing survives — known only through Epiphanius, *Panarion* 78, who coined the mocking name and refuted them [primary quote 78.7.1 verified in Commentaries-DB, Frank Williams trans. p. 620]. Sort year c. 370, before Epiphanius's letter → *Panarion* c. 377. Lightfoot §20 files them under "sons of Joseph and Mary"; Augustine equated them with Helvidius's party but Lightfoot says time/place resist it) | https://en.wikipedia.org/wiki/Antidicomarianites |
 
 <!-- NB Eusebius (intermediate-state descent witness, c. 324 = Church History) and Ambrose (c. 380 = Aurora Lucis Rutilat hymn,
      attribution traditional) also appear on the nephilim timeline at different work-dates (c. 339 / c. 397). The year above is
