@@ -16,6 +16,7 @@ when uncertain.
 | Person | person_slug | year | in DB? | wiki |
 |--------|-------------|------|--------|------|
 | Tertullian | tertullian | 220 | yes | https://en.wikipedia.org/wiki/Tertullian |
+| Ephraem the Syrian | ephraem-the-syrian | 363 | no (Commentary on Acts survives only in Armenian; perpetual-virginity page cites the Acts 1:13 apostle-list via Harris, *Four Lectures on the Western Text* [1894] 37–38, trans. of the Armenian; fuller Latin trans. by Conybeare in *Beginnings of Christianity* I.III [1926] 373–453) | https://en.wikipedia.org/wiki/Ephrem_the_Syrian |
 | Aphrahat the Persian Sage | aphrahat-the-persian-sage | 345 | yes | https://en.wikipedia.org/wiki/Aphrahat |
 | Athenagoras of Athens | athenagoras-of-athens | 177 | yes | https://en.wikipedia.org/wiki/Athenagoras_of_Athens |
 | Hippolytus of Rome | hippolytus-of-rome | 204 | no for the *Commentary on Daniel* (web-sourced: T. C. Schmidt's 2010 ET, chronicon.net / pergrazia PDF; lifespan c. 170–235; sort year = the commentary c. 204; ot-canon slots its own Hippolytus witness at c. 205 for a different work) | https://en.wikipedia.org/wiki/Hippolytus_of_Rome |
