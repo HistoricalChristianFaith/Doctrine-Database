@@ -58,6 +58,7 @@ when uncertain.
 | Origen | origen | 248 | yes (Against Celsus in Writings-Database, "Origen of Alexandria/Against Celsus/Book 8.html"; metadata default_year=253 is his death — *Contra Celsum* dated c. 248, used as the timeline anchor) | https://en.wikipedia.org/wiki/Origen |
 | An Ancient Homily on Holy Saturday | holy-saturday-homily | 300 | no | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
 | Cyril of Alexandria | cyril-of-alexandria | 444 | yes | https://en.wikipedia.org/wiki/Cyril_of_Alexandria |
+| Chromatius of Aquileia | chromatius-of-aquileia | 407 | yes (Commentaries-Database "Chromatius of Aquileia/Matthew 1_25.toml" etc.) — bishop of Aquileia c. 388–407, friend of Jerome/Rufinus/Ambrose/Chrysostom. *Tractates on Matthew* (CPL 218; CCSL 9A, Étaix–Lemarié 1974; ET Scheck, ACW 75, 2018) preached during his episcopate, slotted c. 407. Perpetual-virginity witness (Matt 1:25 "until"). Long transmitted under Chrysostom's name, re-attributed 1960s | https://en.wikipedia.org/wiki/Chromatius |
 | The Gospel of Nicodemus (Acts of Pilate) | gospel-of-nicodemus | 450 | no | https://en.wikipedia.org/wiki/Gospel_of_Nicodemus |
 | Cyprian of Carthage | cyprian | 253 | yes | https://en.wikipedia.org/wiki/Cyprian |
 | Epiphanius of Salamis | epiphanius-of-salamis | 375 | partial (Weights & Measures only) | https://en.wikipedia.org/wiki/Epiphanius_of_Salamis |
