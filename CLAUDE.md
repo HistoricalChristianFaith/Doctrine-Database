@@ -303,5 +303,6 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 **Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
 `rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
-`ministerial-priesthood`. (Un-clustered doctrines — `nephilim`, `flood`, `baptist-successionism`,
-`church-buildings` — sit under the index's "Other doctrines" family bucket.)
+`ministerial-priesthood`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`. (Un-clustered doctrines —
+`baptist-successionism`, `infant-baptism`, `church-buildings`, `perpetual-virginity` — sit under the index's
+"Other doctrines" family bucket.)
