@@ -17,10 +17,14 @@ intro reader-facing; operator guidance lives in an HTML comment.
 ## Layout
 ```
 docs/                          the published site (deployed to historicalchristian.faith)
-  index.html                   the reader's home page + LLM catalog: ONE doctrine-organised list,
-                                 grouped by concept family (an <h2> per family). Each doctrine is an
-                                 <h3> heading linking to its summary, then a one-line description, then
-                                 the arguments adduced for it. (NOT a person-page list — witnesses are
+  index.html                   the reader's home page + LLM catalog. TWO TIERS: (1) a compact
+                                 `nav.index-map` at the top — a "browse by family" jump table whose
+                                 doctrine links target the `<h3 id="<slug>">` blocks below and whose
+                                 family labels target the `<h2 id="family-…">`; (2) beneath it, the
+                                 full rated directory — ONE doctrine-organised list, grouped by concept
+                                 family (an <h2> per family). Each doctrine is an <h3 id="<slug>">
+                                 heading linking to its summary, then a one-line description, then the
+                                 arguments adduced for it. (NOT a person-page list — witnesses are
                                  cataloged on their timeline; the index tracks no counts.)
   doctrines/<slug>.html              summary timeline (1 footnoted block/person)
   doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
@@ -183,9 +187,11 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 5. Insert the person's footnoted block into the summary `docs/doctrines/<slug>.html` in
    chronological order; add the matching `<li>` footnotes to its Sources block.
 6. Bookkeep: append `log.md`, update `todo/`. Touch `docs/index.html` **only** for a new doctrine
-   (add an `<h3>` linked heading + one-line description under the right concept-family `<h2>`) or a
-   new argument (add its `<li>` — `title — <strong>rating</strong>` — under the doctrine's argument
-   group, or its trailing standalone `<ul>`). A new *witness* needs no index edit; the index lists
+   (add an `<h3 id="<slug>">` linked heading + one-line description under the right concept-family
+   `<h2>`, **and** a matching line in the top-of-page `nav.index-map` under that family — a new family
+   also needs an `<h2 id="family-…">` + its own map row) or a new argument (add its `<li>` — `title —
+   <strong>rating</strong>` — under the doctrine's argument group, or its trailing standalone `<ul>`;
+   the map is doctrine-level, so a new argument does not touch it). A new *witness* needs no index edit; the index lists
    no person pages and tracks **no counts** (the old people/argument counts were dropped). For a new
    doctrine also add its `slug → display name` entry to the `DOCTRINE_NAMES` map in `docs/toc.js` so
    its breadcrumb crumb is labelled (the only metadata the breadcrumb can't derive from the path).
@@ -282,8 +288,9 @@ A **doctrine cluster** is a named family of **two or more doctrine summaries** t
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
 page type** — no file of its own, no `docs/` entry, no build step, and it does **not** touch any timeline.
 It is realized in two places: the **concept-family `<h2>` grouping on `index.html`** (the home page lists
-every doctrine under its family — the clusters below, plus an "Other doctrines" bucket for un-clustered
-doctrines), and a **`Related doctrines:` breadcrumb** on each member summary, placed directly under the
+every doctrine under a family `<h2>` — a family with ≥ 2 members is a cluster; a single-doctrine family
+is a standalone topical heading, **not** a cluster, and gets no breadcrumb. There is no "Other doctrines"
+catch-all), and a **`Related doctrines:` breadcrumb** on each member summary, placed directly under the
 intro paragraph (before the first `<h2>`). The breadcrumb names the family (an `<em>` label, **not** a link)
 and then `see also`s its sibling members as same-directory `<sibling>.html` links — every member points at
 all the others. Like all wiki metadata it is derived from visible content, not hidden frontmatter.
@@ -295,14 +302,16 @@ all the others. Like all wiki metadata it is derived from visible content, not h
 ```
 
 Reader-facing label **"Related doctrines"**; internal term *doctrine cluster* with a kebab-case theme name
-used only in these meta files. The index groups doctrines under concept-family `<h2>` headings (see above),
-but those headings carry **no** `id="cluster-…"` anchor, and the summary breadcrumb's family label stays
-plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
+used only in these meta files. The index groups doctrines under concept-family `<h2>` headings (see above); each such heading
+carries an `id="family-<slug>"` anchor (the top-of-page family map jump-links to it) but **no**
+`id="cluster-…"` anchor, and the summary breadcrumb's family label stays plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 
 **Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
 `rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
-`ministerial-priesthood`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`. (Un-clustered doctrines —
-`baptist-successionism`, `infant-baptism`, `church-buildings`, `perpetual-virginity` — sit under the index's
-"Other doctrines" family bucket.)
+`ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
+`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`. **Standalone single-doctrine
+families** (their own `<h2 id="family-…">`, no cluster and no breadcrumb): "The Virgin Mary" —
+`perpetual-virginity`; "Astrology and the heavens" — `astrology`; "Cruxes of the Gospel text" —
+`writing-on-the-ground`. (There is no longer an "Other doctrines" bucket.)

@@ -9,22 +9,40 @@
 </head>
 <body>
 <!-- Operator note (not shown to readers): the reader's landing page and the catalog's MAP.
-     One doctrine-organised list, grouped by concept FAMILY (an h2 per family). Under each
-     family, every doctrine is an h3 whose heading links to its timeline summary page
-     (docs/doctrines/[slug].html), followed by a one-paragraph description and the off-timeline
-     ARGUMENTS adduced for it (each rated, each linking to its own argument page). The
-     at-a-glance assessment PROSE lives on the summary/argument pages; read this index first for
-     the lay of the land, then drill in. Note: a doctrine surfaces here via its arguments, so a
-     doctrine with no argument pages yet would need adding by hand. Update on every ingest;
+     TWO TIERS: (1) a compact "browse by family" nav.index-map at the very top — a doctrine-level
+     jump table whose links target the <h3 id="<slug>"> blocks below (family labels target the
+     <h2 id="family-…"> headings); (2) beneath it, the full rated directory — ONE doctrine-organised
+     list, grouped by concept FAMILY (an h2 per family). Under each family, every doctrine is an h3
+     whose heading links to its timeline summary page (docs/doctrines/[slug].html), followed by a
+     one-paragraph description and the off-timeline ARGUMENTS adduced for it (each rated, each
+     linking to its own argument page). The at-a-glance assessment PROSE lives on the
+     summary/argument pages; skim the map, then drill into the directory. Note: a doctrine surfaces
+     here via its arguments, so a doctrine with no argument pages yet would need adding by hand.
+     On a new doctrine: add its <h3 id="<slug>"> block AND a line in the map (under the right
+     family) AND, if a new family, an <h2 id="family-…"> + a map row. Update on every ingest;
      see project.md. -->
 <h1>Doctrine Across Time</h1>
 <p>For each Christian doctrine, a timeline of how the belief developed across the centuries — earliest
 voice first, every claim footnoted to its source — alongside the cross-cutting <em>arguments</em>: single
 sub-claims (a proof-text, a parallel, a historical thesis) weighed on their own merits and given an
-assessment. Browse the doctrines and their arguments below.</p>
-<p>Grouped into the families that share witnesses and proof-texts. Under each doctrine, the heading links to its timeline; below it are the cross-cutting <em>arguments</em> — single sub-claims adduced for a reading, each rated and linked to its own page.</p>
-<h2>Scripture’s text &amp; canon</h2>
-<h3><a href="doctrines/canon.html">The Biblical Canon</a></h3>
+assessment. The doctrines are grouped into families by theme; use the map
+to jump in, or browse the full catalog below — each doctrine's heading links to its timeline, and beneath
+it every argument is rated and linked to its own page.</p>
+<nav class="index-map" aria-label="Browse the doctrines by family">
+<p><strong>Browse by family.</strong> Jump into the catalog below, or open any doctrine’s timeline from its heading there.</p>
+<ul>
+<li><a class="family" href="#family-scripture">Scripture’s text &amp; canon</a>: <a href="#canon">The Biblical Canon</a> · <a href="#ot-canon">The Old Testament Canon</a> · <a href="#septuagint-origin">The Septuagint</a> · <a href="#rabbinic-corruption">The Rabbinic Corruption of Scripture</a></li>
+<li><a class="family" href="#family-communion">The living and the dead</a>: <a href="#intermediate-state">The Intermediate State</a> · <a href="#purgatory">Purgatory</a> · <a href="#prayer-to-saints">Prayer to the Saints</a></li>
+<li><a class="family" href="#family-eucharist">The Eucharist and the ministry</a>: <a href="#real-presence">The Real Presence</a> · <a href="#ministerial-priesthood">The Ministerial Priesthood</a></li>
+<li><a class="family" href="#family-church">The church and its practice</a>: <a href="#infant-baptism">Infant Baptism</a> · <a href="#baptist-successionism">Baptist Successionism</a> · <a href="#church-buildings">The Place of Christian Worship</a></li>
+<li><a class="family" href="#family-mary">The Virgin Mary</a>: <a href="#perpetual-virginity">The Perpetual Virginity of Mary</a></li>
+<li><a class="family" href="#family-astrology">Astrology and the heavens</a>: <a href="#astrology">Astrology and the Stars</a></li>
+<li><a class="family" href="#family-cruxes">Cruxes of the Gospel text</a>: <a href="#writing-on-the-ground">What Jesus Wrote on the Ground</a></li>
+<li><a class="family" href="#family-primeval">Primeval history (Genesis 6–9)</a>: <a href="#nephilim">The Sons of God and the Nephilim</a> · <a href="#flood">Noah’s Flood</a></li>
+</ul>
+</nav>
+<h2 id="family-scripture">Scripture’s text &amp; canon</h2>
+<h3 id="canon"><a href="doctrines/canon.html">The Biblical Canon</a></h3>
 <p>how the Church came to recognize <em>which books</em> are Scripture: the gradual, regional reception of the Old and New Testaments vs. the popular legend that the canon was fixed in one stroke at the Council of Nicaea (325).</p>
 <h4>the Nicene-canon legend</h4>
 <ul>
@@ -48,7 +66,7 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/canon/arguments/gospel-of-thomas-which-text.html">Which "Gospel of Thomas" did the Fathers condemn — the sayings gospel or the Infancy Gospel?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/canon/arguments/luther-removed-nt-books.html">Did Martin Luther remove four New Testament books — Hebrews, James, Jude, and Revelation?</a> — <strong>weak</strong></li>
 </ul>
-<h3><a href="doctrines/ot-canon.html">The Old Testament Canon (Is the Deuterocanon Scripture?)</a></h3>
+<h3 id="ot-canon"><a href="doctrines/ot-canon.html">The Old Testament Canon (Is the Deuterocanon Scripture?)</a></h3>
 <p>is Tobit — with Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees, the deuterocanon/Apocrypha — part of the Christian Old Testament? YES/NO verdicts across time: the Septuagint carried them, the Hebrew-minded Fathers and the Reformation excluded them, the African councils, Rome, Florence, and Trent affirmed them — settled by reception, not date.</p>
 <h4>the primitive church's witness</h4>
 <ul>
@@ -152,12 +170,12 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/ot-canon/arguments/medieval-shorter-canon-mainstream.html">Do the "52 ecclesiastical writers" and the Glossa Ordinaria show the shorter Hebrew canon was the medieval Western mainstream up to Trent?</a> — <strong>contested</strong></li>
 <li><a href="doctrines/ot-canon/arguments/parroting-jerome-preface.html">Do the writers who call the deuterocanon "not canonical" merely parrot Jerome's preface while citing the same books as Scripture in their own theology?</a> — <strong>contested</strong></li>
 </ul>
-<h3><a href="doctrines/septuagint-origin.html">The Origin and Inspiration of the Septuagint</a></h3>
+<h3 id="septuagint-origin"><a href="doctrines/septuagint-origin.html">The Origin and Inspiration of the Septuagint</a></h3>
 <p>how the account of the LXX’s making grew across time — from a royal commission (the Letter of Aristeas, Josephus) to the miracle of the seventy-two translators producing word-for-word identical versions in separate cells “by the Holy Spirit” (Irenaeus, Cyril, Epiphanius, Augustine), and the skeptics who called the cells a fable (Jerome).</p>
 <ul>
 <li><a href="doctrines/septuagint-origin/arguments/simeon-the-just.html">The Simeon-the-Just legend: did one of the Seventy balk at Isaiah 7:14's "virgin"?</a> — <strong>weak</strong></li>
 </ul>
-<h3><a href="doctrines/rabbinic-corruption.html">The Rabbinic Corruption of Scripture (Septuagint vs. Masoretic Text)</a></h3>
+<h3 id="rabbinic-corruption"><a href="doctrines/rabbinic-corruption.html">The Rabbinic Corruption of Scripture (Septuagint vs. Masoretic Text)</a></h3>
 <p>the patristic-to-medieval charge that rabbinic Judaism deliberately altered the Hebrew text — the messianic proof-texts and the Genesis chronology — while the older Septuagint preserved the true reading, vs. the modern text-critical finding (Tov; the Dead Sea Scrolls) that the LXX renders a different Hebrew <em>Vorlage</em>: divergent traditions, not corruption.</p>
 <h4>the corruption charge</h4>
 <ul>
@@ -177,8 +195,8 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/rabbinic-corruption/arguments/jews-removed-scripture.html">Did the Jews <em>remove</em> genuine Scripture — not merely reject it — including books testifying to Christ (Wisdom 18:15)?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/rabbinic-corruption/arguments/two-powers-daniel.html">Did rabbinic Judaism suppress a divine-Messiah ("two powers in heaven") reading of Daniel 7?</a> — <strong>contested</strong></li>
 </ul>
-<h2>The living and the dead (the communion of the saints)</h2>
-<h3><a href="doctrines/intermediate-state.html">The Intermediate State (the soul between death and resurrection)</a></h3>
+<h2 id="family-communion">The living and the dead (the communion of the saints)</h2>
+<h3 id="intermediate-state"><a href="doctrines/intermediate-state.html">The Intermediate State (the soul between death and resurrection)</a></h3>
 <p>conscious survival vs. soul-sleep, and a structured Hades (Abraham’s bosom / torment / Tartarus) vs. two destinies only.</p>
 <h4>the descent</h4>
 <ul>
@@ -196,7 +214,7 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/intermediate-state/arguments/soul-sleep.html">Is soul-sleep (psychopannychism) taught?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/intermediate-state/arguments/gehenna-lake-of-fire.html">Are Gehenna and the lake of fire one final state, distinct from intermediate Hades?</a> — <strong>sound</strong></li>
 </ul>
-<h3><a href="doctrines/purgatory.html">Purgatory and prayer for the dead</a></h3>
+<h3 id="purgatory"><a href="doctrines/purgatory.html">Purgatory and prayer for the dead</a></h3>
 <p>the ancient, near-universal practice of prayer and alms for the dead vs. the distinctively Latin theory of a satisfactory cleansing fire before judgment, denied root and branch by the Reformation.</p>
 <h4>the temporal nature of purgatory</h4>
 <ul>
@@ -217,7 +235,7 @@ assessment. Browse the doctrines and their arguments below.</p>
 <ul>
 <li><a href="doctrines/purgatory/arguments/prayer-for-the-dead-uncontested.html">Was prayer for the dead uncontested in the ancient Church?</a> — <strong>sound</strong></li>
 </ul>
-<h3><a href="doctrines/prayer-to-saints.html">Prayer to the Saints (invocation of the saints)</a></h3>
+<h3 id="prayer-to-saints"><a href="doctrines/prayer-to-saints.html">Prayer to the Saints (invocation of the saints)</a></h3>
 <p>may the living address the saints in heaven, “Holy Mary, pray for us”? Praying <em>to</em> the saints (invocation — direct second-person address) is a distinct act from believing the saints <em>intercede</em>. The intercession-belief is early and near-uncontested; the dating of invocation proper is the live question — a fourth-century development, or an older practice the apologists simply left unrecorded?</p>
 <h4>invocation of the saints</h4>
 <ul>
@@ -226,8 +244,8 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/prayer-to-saints/arguments/catacomb-graffiti.html">Do the San Sebastiano catacomb graffiti attest third-century invocation of the saints?</a> — <strong>sound</strong></li>
 <li><a href="doctrines/prayer-to-saints/arguments/constantinople-381-letter.html">Does the Council of Constantinople's letter to Theodosius (381) prove conciliar invocation of the saints?</a> — <strong>weak</strong> for the strong reading; sound as a witness to intercession-belief</li>
 </ul>
-<h2>The Eucharist and the ministry</h2>
-<h3><a href="doctrines/real-presence.html">The Real Presence in the Eucharist</a></h3>
+<h2 id="family-eucharist">The Eucharist and the ministry</h2>
+<h3 id="real-presence"><a href="doctrines/real-presence.html">The Real Presence in the Eucharist</a></h3>
 <p>the belief that, in the Eucharist, the consecrated bread and wine <em>are</em> — not merely symbolize — the body and blood of Christ. Traced from Ignatius's "flesh of our Saviour" (c. 108) across the later spectrum of views: symbolic/memorialist (Zwingli), spiritual presence (Calvin), Lutheran sacramental union, and the realist patristic line the Council of Trent defined as transubstantiation.</p>
 <h4>the New Testament words</h4>
 <ul>
@@ -238,7 +256,7 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/real-presence/arguments/augustine-sign-and-figure.html">Augustine's sign and figure: was he a symbolic witness against the Real Presence?</a> — <strong>contested</strong></li>
 <li><a href="doctrines/real-presence/arguments/transubstantiation-medieval-innovation.html">Is transubstantiation a medieval innovation, or the patristic realism made precise?</a> — <strong>contested</strong></li>
 </ul>
-<h3><a href="doctrines/ministerial-priesthood.html">The Ministerial Priesthood (why only ordained ministers confect the Eucharist)</a></h3>
+<h3 id="ministerial-priesthood"><a href="doctrines/ministerial-priesthood.html">The Ministerial Priesthood (why only ordained ministers confect the Eucharist)</a></h3>
 <p>why the historic Church held that the Eucharist may be offered only by an ordained bishop or priest, not by every believer: the Eucharist as the "pure offering" of Malachi 1:11, instituted by Christ for the apostles ("this do in remembrance of me"), and committed to their ordained successors — set against the Protestant "priesthood of all believers."</p>
 <h4>Christ's commission to the apostles</h4>
 <ul>
@@ -250,15 +268,8 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/ministerial-priesthood/arguments/malachi-pure-offering-eucharist.html">Is Malachi 1:11's "pure offering among the nations" fulfilled in the Eucharist? (Malachi 1:11)</a> — <strong>contested</strong></li>
 <li><a href="doctrines/ministerial-priesthood/arguments/ignatius-child-in-jesus-arms.html">Was Ignatius the child Jesus took in His arms? (Matthew 18:2–4)</a> — <strong>weak</strong></li>
 </ul>
-<h2>Other doctrines</h2>
-<h3><a href="doctrines/baptist-successionism.html">Baptist Successionism (the "Trail of Blood")</a></h3>
-<p>the claim that Baptists form an unbroken succession of true churches from the apostles — never part of Rome, not begun at the Reformation — versus the mainstream account that modern Baptists arose from early-seventeenth-century English Separatism. Charles Spurgeon's 1861 "we have an unbroken line up to the apostles" is the era's most-quoted endorsement.</p>
-<h4>Baptist origins</h4>
-<ul>
-<li><a href="doctrines/baptist-successionism/arguments/unbroken-baptist-succession.html">Is there an unbroken Baptist succession from the apostles?</a> — <strong>weak</strong></li>
-<li><a href="doctrines/baptist-successionism/arguments/english-separatist-origin.html">Did modern Baptists originate in early-seventeenth-century English Separatism?</a> — <strong>sound</strong></li>
-</ul>
-<h3><a href="doctrines/infant-baptism.html">Infant Baptism (paedobaptism)</a></h3>
+<h2 id="family-church">The church and its practice</h2>
+<h3 id="infant-baptism"><a href="doctrines/infant-baptism.html">Infant Baptism (paedobaptism)</a></h3>
 <p>should the infant children of Christians be baptized, or does baptism belong only to those old enough to profess faith for themselves? Traced from a possible earliest, implicit witness — Irenaeus (c. 180), who names infants among those "born again to God," his own term for baptism — to the earliest explicit one, Tertullian, who c. 203 urged that baptism be delayed for "little children," his objection itself presupposing that the practice already existed, across the tradition that came to receive infant baptism as apostolic custom. (Baby dedication is a subset of the same question.)</p>
 <h4>the historical case</h4>
 <ul>
@@ -280,14 +291,22 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/infant-baptism/arguments/polycarp-eighty-six-years.html">Polycarp's “eighty-six years” of service (<em>Martyrdom of Polycarp</em> 9): does it show he was baptized as an infant?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/infant-baptism/arguments/immersion-mode.html">Does baptism require immersion — picturing death, burial, and resurrection — so that infant sprinkling fails the sign?</a> — <strong>weak</strong></li>
 </ul>
-<h3><a href="doctrines/church-buildings.html">The Place of Christian Worship (house churches to church buildings)</a></h3>
+<h3 id="baptist-successionism"><a href="doctrines/baptist-successionism.html">Baptist Successionism (the "Trail of Blood")</a></h3>
+<p>the claim that Baptists form an unbroken succession of true churches from the apostles — never part of Rome, not begun at the Reformation — versus the mainstream account that modern Baptists arose from early-seventeenth-century English Separatism. Charles Spurgeon's 1861 "we have an unbroken line up to the apostles" is the era's most-quoted endorsement.</p>
+<h4>Baptist origins</h4>
+<ul>
+<li><a href="doctrines/baptist-successionism/arguments/unbroken-baptist-succession.html">Is there an unbroken Baptist succession from the apostles?</a> — <strong>weak</strong></li>
+<li><a href="doctrines/baptist-successionism/arguments/english-separatist-origin.html">Did modern Baptists originate in early-seventeenth-century English Separatism?</a> — <strong>sound</strong></li>
+</ul>
+<h3 id="church-buildings"><a href="doctrines/church-buildings.html">The Place of Christian Worship (house churches to church buildings)</a></h3>
 <p>why the first Christians met in homes and built no houses of worship, and what the later move to dedicated church buildings means — a fall from a New Testament "house-church" pattern, or continuity-by-circumstance once an illegal, persecuted body was free to build?</p>
 <h4>the place of worship: principle or circumstance?</h4>
 <ul>
 <li><a href="doctrines/church-buildings/arguments/nt-home-only-worship.html">Does the New Testament prescribe the home as the place of worship, or only describe the early circumstance?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/church-buildings/arguments/buildings-necessity-not-principle.html">Was the early church's lack of dedicated buildings a principle of the faith, or a necessity of their position?</a> — <strong>sound</strong></li>
 </ul>
-<h3><a href="doctrines/perpetual-virginity.html">The Perpetual Virginity of Mary</a></h3>
+<h2 id="family-mary">The Virgin Mary</h2>
+<h3 id="perpetual-virginity"><a href="doctrines/perpetual-virginity.html">The Perpetual Virginity of Mary</a></h3>
 <p>did Mary remain ever-virgin, or bear other children after Jesus? The whole question turns on the identity of the "brethren of the Lord" (Matthew 13:55; Galatians 1:19 etc.), read three ways in J. B. Lightfoot's naming: the Helvidian (sons of Joseph and Mary — denying the perpetual virginity), the Epiphanian (sons of Joseph by a former wife — preserving it), and the Hieronymian (maternal cousins — Jerome's reading, standard in the Latin West).</p>
 <h4>the cousin theory</h4>
 <ul>
@@ -337,7 +356,18 @@ assessment. Browse the doctrines and their arguments below.</p>
 <li><a href="doctrines/perpetual-virginity/arguments/josephite-marriage-unbiblical.html">Is a never-consummated ("Josephite") marriage unbiblical — does 1 Corinthians 7 forbid a permanently celibate Joseph and Mary? (the marriage-of-consent objection, distinct from the "until" dispute; Winger/GotQuestions on 1 Cor 7:3–5 and "took his wife"; answered from the 7:5 consent-clause and Augustine's marriage-by-consent)</a> — <strong>weak</strong></li>
 <li><a href="doctrines/perpetual-virginity/arguments/consecrated-womb-typology.html">Is Mary's perpetual virginity positively grounded in the "consecrated womb / new tomb" typology and the shut gate of Ezekiel 44:2 — not merely in ascetic devaluation of marriage? (Lightfoot's "not solely ascetic" observation; Origen's womb/tomb parallel, Against Celsus 2.69; the shut-gate proof-text read of Mary by Jerome, Ambrose, Augustine, Cyril, Theodoret, John of Damascus, Aquinas; a fittingness argument on an accommodated text, bearing chiefly on the virginity in partu)</a> — <strong>plausible</strong></li>
 </ul>
-<h3><a href="doctrines/writing-on-the-ground.html">What Jesus Wrote on the Ground (John 8:6)</a></h3>
+<h2 id="family-astrology">Astrology and the heavens</h2>
+<h3 id="astrology"><a href="doctrines/astrology.html">Astrology and the Stars</a></h3>
+<p>the early church's near-unanimous rejection of <em>astrology</em> — genethlialogy, the casting of a birth-horoscope to read a life's destiny — as astral fatalism that destroys free will, empties reward and punishment, and usurps God's providence (some Fathers adding that the fallen angels <em>taught</em> the art), while carefully sparing the legitimate <em>astronomy</em> that studies the heavens. Traced earliest-first from Ignatius (the Magi's star that "destroyed all magic") through Tatian, Bardaisan, Tertullian, Origen, Basil, and Augustine to Isidore's enduring astronomy/astrology distinction.</p>
+<ul>
+<li><a href="doctrines/astrology/arguments/twins-refute-astrology.html">Do twins refute astrology? (the potter's wheel, Firminius, and Jacob and Esau: identical horoscopes yield opposite lives, and the astrologers' one reply — Nigidius's unobservable interval — defeats the astrologer too; a sound refutation of deterministic natal astrology, though it leaves a merely "inclining" astrology untouched)</a> — <strong>sound</strong></li>
+<li><a href="doctrines/astrology/arguments/star-of-bethlehem-abolished-astrology.html">Did the star of Bethlehem abolish astrology, or vindicate it? (Ignatius, Tertullian, Chrysostom, and Gregory the Great read the Magi's star as the end of astrology, not its endorsement — sound as theology and primitively attested, but reading into Matthew 2 a verdict the text withholds, which the Priscillianists took the opposite way)</a> — <strong>contested</strong></li>
+<li><a href="doctrines/astrology/arguments/did-christians-accommodate-astrology.html">Did some early Christians accommodate astrology? (against the caricature of a monolithic rejection: Firmicus Maternus's Christian-era handbook that keeps astral fate under a supreme God, Zeno of Verona's baptized zodiac, the Valentinian escape from Fate at the font, and the astral determinism the councils had to anathematize in the Priscillianists — a real minority strand, though scattered, half of it heterodox or condemned, and even the orthodox keeping the stars under God and refusing deterministic natal astrology)</a> — <strong>sound</strong></li>
+<li><a href="doctrines/astrology/arguments/fallen-angels-taught-astrology.html">Did the fallen angels teach astrology? (Tatian and Tertullian, echoing 1 Enoch 8, root the art not in human discovery but in the rebel angels of Genesis 6 who "taught" it — sound as a reading of the Watcher tradition, but as an account of astrology's actual origin a theological aetiology resting on a single legendary stream, laid over its documented Babylonian human origins; ties across to the Nephilim)</a> — <strong>contested</strong></li>
+<li><a href="doctrines/astrology/arguments/church-condemned-astronomy.html">Did the church condemn astronomy along with astrology? (the "church versus science" charge that hostility to the horoscope was hostility to celestial science — but from Clement and Origen through Basil and Augustine to Isidore's "difference between astronomy and astrology," the Fathers consistently keep and praise the study of the heavenly courses while condemning only nativity-casting; the sweeping rhetoric of Tatian and Augustine's "neglect it as a distraction" fall short of condemning astronomy)</a> — <strong>weak</strong></li>
+</ul>
+<h2 id="family-cruxes">Cruxes of the Gospel text</h2>
+<h3 id="writing-on-the-ground"><a href="doctrines/writing-on-the-ground.html">What Jesus Wrote on the Ground (John 8:6)</a></h3>
 <p>the interpretive crux of the woman taken in adultery (John 7:53–8:11): twice the Evangelist says Jesus stooped and
 wrote with his finger, and twice omits the words — so what did he write? Traced from the fathers who guessed (Ambrose's
 Jeremiah oracle disowning the accusers; Jerome's enduring "he wrote their sins," the seed of a later scribal gloss;
@@ -352,17 +382,8 @@ legal and ritual reconstructions (Manson, Derrett) and the modern verdict that t
 <ul>
 <li><a href="doctrines/writing-on-the-ground/arguments/accusers-sins.html">Did Jesus write the accusers' sins on the ground? (Jerome's "he wrote their sins," anchored to Jeremiah 17:13; coherent on the intertext, but the specific content is twice withheld and its firmest support is a secondary scribal gloss)</a> — <strong>contested</strong></li>
 </ul>
-<h3><a href="doctrines/astrology.html">Astrology and the Stars</a></h3>
-<p>the early church's near-unanimous rejection of <em>astrology</em> — genethlialogy, the casting of a birth-horoscope to read a life's destiny — as astral fatalism that destroys free will, empties reward and punishment, and usurps God's providence (some Fathers adding that the fallen angels <em>taught</em> the art), while carefully sparing the legitimate <em>astronomy</em> that studies the heavens. Traced earliest-first from Ignatius (the Magi's star that "destroyed all magic") through Tatian, Bardaisan, Tertullian, Origen, Basil, and Augustine to Isidore's enduring astronomy/astrology distinction.</p>
-<ul>
-<li><a href="doctrines/astrology/arguments/twins-refute-astrology.html">Do twins refute astrology? (the potter's wheel, Firminius, and Jacob and Esau: identical horoscopes yield opposite lives, and the astrologers' one reply — Nigidius's unobservable interval — defeats the astrologer too; a sound refutation of deterministic natal astrology, though it leaves a merely "inclining" astrology untouched)</a> — <strong>sound</strong></li>
-<li><a href="doctrines/astrology/arguments/star-of-bethlehem-abolished-astrology.html">Did the star of Bethlehem abolish astrology, or vindicate it? (Ignatius, Tertullian, Chrysostom, and Gregory the Great read the Magi's star as the end of astrology, not its endorsement — sound as theology and primitively attested, but reading into Matthew 2 a verdict the text withholds, which the Priscillianists took the opposite way)</a> — <strong>contested</strong></li>
-<li><a href="doctrines/astrology/arguments/did-christians-accommodate-astrology.html">Did some early Christians accommodate astrology? (against the caricature of a monolithic rejection: Firmicus Maternus's Christian-era handbook that keeps astral fate under a supreme God, Zeno of Verona's baptized zodiac, the Valentinian escape from Fate at the font, and the astral determinism the councils had to anathematize in the Priscillianists — a real minority strand, though scattered, half of it heterodox or condemned, and even the orthodox keeping the stars under God and refusing deterministic natal astrology)</a> — <strong>sound</strong></li>
-<li><a href="doctrines/astrology/arguments/fallen-angels-taught-astrology.html">Did the fallen angels teach astrology? (Tatian and Tertullian, echoing 1 Enoch 8, root the art not in human discovery but in the rebel angels of Genesis 6 who "taught" it — sound as a reading of the Watcher tradition, but as an account of astrology's actual origin a theological aetiology resting on a single legendary stream, laid over its documented Babylonian human origins; ties across to the Nephilim)</a> — <strong>contested</strong></li>
-<li><a href="doctrines/astrology/arguments/church-condemned-astronomy.html">Did the church condemn astronomy along with astrology? (the "church versus science" charge that hostility to the horoscope was hostility to celestial science — but from Clement and Origen through Basil and Augustine to Isidore's "difference between astronomy and astrology," the Fathers consistently keep and praise the study of the heavenly courses while condemning only nativity-casting; the sweeping rhetoric of Tatian and Augustine's "neglect it as a distraction" fall short of condemning astronomy)</a> — <strong>weak</strong></li>
-</ul>
-<h2>Primeval history (Genesis 6–9)</h2>
-<h3><a href="doctrines/nephilim.html">The Sons of God and the Nephilim (Genesis 6)</a></h3>
+<h2 id="family-primeval">Primeval history (Genesis 6–9)</h2>
+<h3 id="nephilim"><a href="doctrines/nephilim.html">The Sons of God and the Nephilim (Genesis 6)</a></h3>
 <p>fallen angels and giant offspring vs. the line of Seth and merely mighty men.</p>
 <h4>the sacred-marriage (sacral-kingship)</h4>
 <ul>
@@ -407,7 +428,7 @@ legal and ritual reconstructions (Manson, Derrett) and the modern verdict that t
 <li><a href="doctrines/nephilim/arguments/1-peter-3-19.html">1 Peter 3:19 — the "spirits in prison"</a> — <strong>contested</strong></li>
 <li><a href="doctrines/nephilim/arguments/beowulf-giants-cain.html">Does <em>Beowulf</em> witness the angelic reading of Genesis 6?</a> — <strong>weak</strong></li>
 </ul>
-<h3><a href="doctrines/flood.html">The Historicity of Noah’s Flood</a></h3>
+<h3 id="flood"><a href="doctrines/flood.html">The Historicity of Noah’s Flood</a></h3>
 <p>the near-universal pre-modern reading of Genesis 6–9 as real history (with figurative senses layered on) vs. the modern questions its “literalist” slogan conflates: anthropological vs. geographic universality, and ancient historicity vs. 20th-c. flood-geology.</p>
 <h4>who first denied the Flood</h4>
 <ul>
