@@ -34,7 +34,8 @@
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
-    "writing-on-the-ground": "What Jesus Wrote on the Ground"
+    "writing-on-the-ground": "What Jesus Wrote on the Ground",
+    "astrology": "Astrology and the Stars"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
