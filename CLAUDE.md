@@ -98,8 +98,10 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
   above). No per-page CSS — keep styling in that one file.
 - **One shared script** — `docs/toc.js`, the only JS on the site. Every page loads it (`<script defer
   src="<…/>toc.js">` in the wrapper); it builds a collapsible, Wikipedia-style **table of contents**
-  from the page's `h2`–`h4` at view time (skips the `h1` and `Sources`; bails on pages with < 3
-  headings) and floats it in the left gutter on wide viewports, scroll-spy included. The TOC is
+  from the page's `h2`–`h4` at view time (skips `Sources`; bails on pages with < 3 headings) and
+  floats it in the left gutter on wide viewports, scroll-spy included. **Exception:** on the root
+  `index.html` it stops at `h3` (families + doctrines), dropping the per-argument `h4` groups that
+  would just restate the rated directory below. The TOC is
   generated, **not** authored into the HTML — write normal headings and it appears. TOC styling lives
   in `style.css` (the `.toc*` rules). Keep JS in this one file unless asked otherwise.
 - **Metadata is path- and content-derived, not hidden frontmatter:**
