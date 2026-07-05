@@ -54,6 +54,7 @@ when uncertain.
 | Ambrose of Milan | ambrose-of-milan | 380 | yes | https://en.wikipedia.org/wiki/Ambrose |
 | Leo the Great | leo-the-great | 447 | yes | https://en.wikipedia.org/wiki/Pope_Leo_I |
 | Melito of Sardis | melito-of-sardis | 170 | yes | https://en.wikipedia.org/wiki/Melito_of_Sardis |
+| Rabbi Akiva ben Joseph (also Akiba) | akiva-ben-joseph | 130 | no (Tannaitic sage, c. 50&#8211;135 AD; primaries via Sefaria: Mishnah Sanhedrin 10:1, Yadayim 3:5, Tosefta Yadayim 2:13, b. Sanhedrin 100b) | https://en.wikipedia.org/wiki/Akiva_ben_Joseph |
 | Clement of Rome (Pope Clement I) | clement-of-rome | 96 | yes (1 Clement; metadata default_year=99, but the letter is dated c. 95&#8211;96 AD) | https://en.wikipedia.org/wiki/Pope_Clement_I |
 | Clement of Alexandria | clement-of-alexandria | 200 | yes (metadata default_year=215, his death; timeline placed c. 200 for the Paedagogus/Stromateis, c. 198&#8211;203) | https://en.wikipedia.org/wiki/Clement_of_Alexandria |
 | Origen | origen | 248 | yes (Against Celsus in Writings-Database, "Origen of Alexandria/Against Celsus/Book 8.html"; metadata default_year=253 is his death — *Contra Celsum* dated c. 248, used as the timeline anchor) | https://en.wikipedia.org/wiki/Origen |
