@@ -39,26 +39,6 @@ img { max-width: 100%; height: auto; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb [aria-current="page"] { color: #bbb; }
 
-/* Home-page family map — the compact "browse by family" nav at the top of index.html (authored
-   in the HTML, not generated). Doctrine links jump into the full rated directory below, each
-   targeting an <h3 id="<slug>">; the bold family label targets its <h2 id="family-…">. Not a
-   heading list, so it stays out of the auto-TOC. Add a line here when you add a doctrine. */
-.index-map {
-  border: 1px solid #333;
-  border-radius: 4px;
-  background: #1e1e1e;
-  padding: 0.6rem 1rem 0.8rem;
-  margin: 1.5rem 0;
-  font-size: 0.92rem;
-}
-.index-map > p { margin: 0.3rem 0 0.7rem; color: #bbb; font-size: 0.85rem; }
-.index-map ul { list-style: none; margin: 0; padding: 0; }
-.index-map li { margin: 0.5rem 0; line-height: 1.5; }
-.index-map a { color: #8ab4f8; text-decoration: none; }
-.index-map a:visited { color: #8ab4f8; }
-.index-map a:hover { text-decoration: underline; }
-.index-map a.family { color: #f4f4f4; font-weight: bold; }
-
 /* Table of contents — built client-side by toc.js. Collapsible block by default;
    floats in the left gutter when the viewport is wide enough to hold it. */
 .toc {

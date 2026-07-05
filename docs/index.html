@@ -8,42 +8,29 @@
 <script defer src="toc.js"></script>
 </head>
 <body>
-<!-- Operator note (not shown to readers): the reader's landing page and the catalog's MAP.
-     TWO TIERS: (1) a compact "browse by family" nav.index-map at the very top — a doctrine-level
-     jump table whose links target the <h3 id="<slug>"> blocks below (family labels target the
-     <h2 id="family-…"> headings); (2) beneath it, the full rated directory — ONE doctrine-organised
-     list, grouped by concept FAMILY (an h2 per family). Under each family, every doctrine is an h3
-     whose heading links to its timeline summary page (docs/doctrines/[slug].html), followed by a
-     one-paragraph description and the off-timeline ARGUMENTS adduced for it (each rated, each
-     linking to its own argument page). The at-a-glance assessment PROSE lives on the
-     summary/argument pages; skim the map, then drill into the directory. Note: a doctrine surfaces
-     here via its arguments, so a doctrine with no argument pages yet would need adding by hand.
-     On a new doctrine: add its <h3 id="<slug>"> block AND a line in the map (under the right
-     family) AND, if a new family, an <h2 id="family-…"> + a map row. Update on every ingest;
-     see project.md. -->
+<!-- Operator note (not shown to readers): the reader's landing page and the catalog. ONE rated,
+     doctrine-organised directory, grouped by concept FAMILY (an h2 per family, id="family-…").
+     Under each family, every doctrine is an h3 whose heading links to its timeline summary page
+     (docs/doctrines/[slug].html), followed by a one-paragraph description and the off-timeline
+     ARGUMENTS adduced for it (each rated, each linking to its own argument page). The description
+     FOLDS IN a brief dated timeline arc — earliest witness → turning points → latest, naming a few
+     landmark figures with dates, drawn from the summary's own Timeline — so a new doctrine's
+     description here should carry that arc too. The at-a-glance assessment PROSE lives on the
+     summary/argument pages. Navigation is the generated table of contents (toc.js), which on this
+     root page lists families + doctrines only (h2/h3) — no hand-maintained jump table. Note: a
+     doctrine surfaces here via its arguments, so a doctrine with no argument pages yet would need
+     adding by hand. On a new doctrine: add its <h3 id="<slug>"> block (under the right family);
+     a new family also needs an <h2 id="family-…">. Update on every ingest; see project.md. -->
 <h1>Doctrine Across Time</h1>
 <p>For each Christian doctrine, a timeline of how the belief developed across the centuries — earliest
 voice first, every claim footnoted to its source — alongside the cross-cutting <em>arguments</em>: single
 sub-claims (a proof-text, a parallel, a historical thesis) weighed on their own merits and given an
-assessment. The doctrines are grouped into families by theme; use the map
-to jump in, or browse the full catalog below — each doctrine's heading links to its timeline, and beneath
-it every argument is rated and linked to its own page.</p>
-<nav class="index-map" aria-label="Browse the doctrines by family">
-<p><strong>Browse by family.</strong> Jump into the catalog below, or open any doctrine’s timeline from its heading there.</p>
-<ul>
-<li><a class="family" href="#family-scripture">Scripture’s text &amp; canon</a>: <a href="#canon">The Biblical Canon</a> · <a href="#ot-canon">The Old Testament Canon</a> · <a href="#septuagint-origin">The Septuagint</a> · <a href="#rabbinic-corruption">The Rabbinic Corruption of Scripture</a></li>
-<li><a class="family" href="#family-communion">The living and the dead</a>: <a href="#intermediate-state">The Intermediate State</a> · <a href="#purgatory">Purgatory</a> · <a href="#prayer-to-saints">Prayer to the Saints</a></li>
-<li><a class="family" href="#family-eucharist">The Eucharist and the ministry</a>: <a href="#real-presence">The Real Presence</a> · <a href="#ministerial-priesthood">The Ministerial Priesthood</a></li>
-<li><a class="family" href="#family-church">The church and its practice</a>: <a href="#infant-baptism">Infant Baptism</a> · <a href="#baptist-successionism">Baptist Successionism</a> · <a href="#church-buildings">The Place of Christian Worship</a></li>
-<li><a class="family" href="#family-mary">The Virgin Mary</a>: <a href="#perpetual-virginity">The Perpetual Virginity of Mary</a></li>
-<li><a class="family" href="#family-astrology">Astrology and the heavens</a>: <a href="#astrology">Astrology and the Stars</a></li>
-<li><a class="family" href="#family-cruxes">Cruxes of the Gospel text</a>: <a href="#writing-on-the-ground">What Jesus Wrote on the Ground</a></li>
-<li><a class="family" href="#family-primeval">Primeval history (Genesis 6–9)</a>: <a href="#nephilim">The Sons of God and the Nephilim</a> · <a href="#flood">Noah’s Flood</a></li>
-</ul>
-</nav>
+assessment. The doctrines are grouped into families by theme; browse the full catalog below — each
+doctrine's heading links to its timeline, and beneath it every argument is rated and linked to its own
+page.</p>
 <h2 id="family-scripture">Scripture’s text &amp; canon</h2>
 <h3 id="canon"><a href="doctrines/canon.html">The Biblical Canon</a></h3>
-<p>how the Church came to recognize <em>which books</em> are Scripture: the gradual, regional reception of the Old and New Testaments vs. the popular legend that the canon was fixed in one stroke at the Council of Nicaea (325).</p>
+<p>how the Church came to recognize <em>which books</em> are Scripture — the gradual, regional reception of the Old and New Testaments vs. the popular legend that the canon was fixed in one stroke at the Council of Nicaea (325). Traced from the earliest witnesses (Justin Martyr, c. 155; the Muratorian Fragment, c. 170) through Eusebius's sorting of the disputed books (c. 324), Athanasius's complete list (367), and the African councils of Hippo and Carthage (393–397), down to Luther's reshuffling of the antilegomena (c. 1522) — recognition by reception, not by a single decree.</p>
 <h4>the Nicene-canon legend</h4>
 <ul>
 <li><a href="doctrines/canon/arguments/nicaea-fixed-the-canon.html">Did the Council of Nicaea (325) fix the biblical canon? — the popular legend</a> — <strong>unsupported</strong></li>
@@ -176,7 +163,7 @@ it every argument is rated and linked to its own page.</p>
 <li><a href="doctrines/septuagint-origin/arguments/simeon-the-just.html">The Simeon-the-Just legend: did one of the Seventy balk at Isaiah 7:14's "virgin"?</a> — <strong>weak</strong></li>
 </ul>
 <h3 id="rabbinic-corruption"><a href="doctrines/rabbinic-corruption.html">The Rabbinic Corruption of Scripture (Septuagint vs. Masoretic Text)</a></h3>
-<p>the patristic-to-medieval charge that rabbinic Judaism deliberately altered the Hebrew text — the messianic proof-texts and the Genesis chronology — while the older Septuagint preserved the true reading, vs. the modern text-critical finding (Tov; the Dead Sea Scrolls) that the LXX renders a different Hebrew <em>Vorlage</em>: divergent traditions, not corruption.</p>
+<p>the patristic-to-medieval charge — from Justin Martyr's debate with Trypho over the messianic proof-texts (c. 165), through Eusebius carrying it to the Genesis chronology (c. 325), down to the Syriac chronographers (Bar Hebraeus, c. 1286) — that rabbinic Judaism deliberately altered the Hebrew text while the older Septuagint preserved the true reading, vs. the modern text-critical finding (Tov; the Dead Sea Scrolls) that the LXX renders a different Hebrew <em>Vorlage</em>: divergent traditions, not corruption.</p>
 <h4>the corruption charge</h4>
 <ul>
 <li><a href="doctrines/rabbinic-corruption/arguments/deliberate-corruption.html">Did the Jews deliberately corrupt the Hebrew Old Testament text?</a> — <strong>weak</strong></li>
@@ -197,7 +184,7 @@ it every argument is rated and linked to its own page.</p>
 </ul>
 <h2 id="family-communion">The living and the dead (the communion of the saints)</h2>
 <h3 id="intermediate-state"><a href="doctrines/intermediate-state.html">The Intermediate State (the soul between death and resurrection)</a></h3>
-<p>conscious survival vs. soul-sleep, and a structured Hades (Abraham’s bosom / torment / Tartarus) vs. two destinies only.</p>
+<p>conscious survival vs. soul-sleep, and a structured Hades (Abraham’s bosom / torment / Tartarus) vs. two destinies only. Traced from Justin’s souls of the pious and unjust “waiting for the time of judgment” (c. 165) through the full patristic geography of Tertullian and Hippolytus (c. 220–235) and Aphrahat’s lone soul-sleep (c. 345), to the Westminster Confession’s two places and “none” besides (1646) and N. T. Wright’s resurrection-subordinated paradise (c. 2008).</p>
 <h4>the descent</h4>
 <ul>
 <li><a href="doctrines/intermediate-state/arguments/descent-to-the-dead.html">Did the descended Christ free the OT righteous and "lead captivity captive"?</a> — <strong>plausible</strong></li>
@@ -215,7 +202,7 @@ it every argument is rated and linked to its own page.</p>
 <li><a href="doctrines/intermediate-state/arguments/gehenna-lake-of-fire.html">Are Gehenna and the lake of fire one final state, distinct from intermediate Hades?</a> — <strong>sound</strong></li>
 </ul>
 <h3 id="purgatory"><a href="doctrines/purgatory.html">Purgatory and prayer for the dead</a></h3>
-<p>the ancient, near-universal practice of prayer and alms for the dead vs. the distinctively Latin theory of a satisfactory cleansing fire before judgment, denied root and branch by the Reformation.</p>
+<p>the ancient, near-universal practice of prayer and alms for the dead vs. the distinctively Latin theory of a satisfactory cleansing fire before judgment, denied root and branch by the Reformation. Traced from 2 Maccabees' offering for the fallen (c. 124 BC) and Tertullian's yearly oblations for the dead (c. 211) through Gregory the Great's "cleansing fire before judgment" (c. 594) and Aquinas's temporal-debt system (c. 1274), to Calvin's wholesale rejection (c. 1559).</p>
 <h4>the temporal nature of purgatory</h4>
 <ul>
 <li><a href="doctrines/purgatory/arguments/final-sanctification.html">Does the "final sanctification" syllogism establish purgatory?</a> — <strong>plausible</strong></li>
@@ -236,7 +223,7 @@ it every argument is rated and linked to its own page.</p>
 <li><a href="doctrines/purgatory/arguments/prayer-for-the-dead-uncontested.html">Was prayer for the dead uncontested in the ancient Church?</a> — <strong>sound</strong></li>
 </ul>
 <h3 id="prayer-to-saints"><a href="doctrines/prayer-to-saints.html">Prayer to the Saints (invocation of the saints)</a></h3>
-<p>may the living address the saints in heaven, “Holy Mary, pray for us”? Praying <em>to</em> the saints (invocation — direct second-person address) is a distinct act from believing the saints <em>intercede</em>. The intercession-belief is early and near-uncontested; the dating of invocation proper is the live question — a fourth-century development, or an older practice the apologists simply left unrecorded?</p>
+<p>may the living address the saints in heaven, “Holy Mary, pray for us”? Praying <em>to</em> the saints (invocation — direct second-person address) is a distinct act from believing the saints <em>intercede</em>. The intercession-belief is early and near-uncontested — already Origen’s saints who “pray with and for” the living (c. 233); the dating of invocation proper is the live question — strict second-person petition surfaces clearly with Gregory of Nyssa (c. 381) and is taught outright from Rome by Gregory the Great (c. 604): a fourth-century development, or an older practice the apologists simply left unrecorded?</p>
 <h4>invocation of the saints</h4>
 <ul>
 <li><a href="doctrines/prayer-to-saints/arguments/invocation-vs-intercession.html">Praying <em>to</em> the saints vs. praying <em>with</em> them — is invocation the same as believing the saints intercede?</a> — <strong>sound</strong></li>
@@ -257,7 +244,7 @@ it every argument is rated and linked to its own page.</p>
 <li><a href="doctrines/real-presence/arguments/transubstantiation-medieval-innovation.html">Is transubstantiation a medieval innovation, or the patristic realism made precise?</a> — <strong>contested</strong></li>
 </ul>
 <h3 id="ministerial-priesthood"><a href="doctrines/ministerial-priesthood.html">The Ministerial Priesthood (why only ordained ministers confect the Eucharist)</a></h3>
-<p>why the historic Church held that the Eucharist may be offered only by an ordained bishop or priest, not by every believer: the Eucharist as the "pure offering" of Malachi 1:11, instituted by Christ for the apostles ("this do in remembrance of me"), and committed to their ordained successors — set against the Protestant "priesthood of all believers."</p>
+<p>why the historic Church held that the Eucharist may be offered only by an ordained bishop or priest, not by every believer: the Eucharist as the "pure offering" of Malachi 1:11, instituted by Christ for the apostles ("this do in remembrance of me") and committed to their ordained successors. Traced from Clement of Rome's appointed orders (c. 96) and Ignatius's one bishop presiding (c. 108), through the <em>Didache</em> and Justin Martyr reading Malachi's pure offering as the Eucharist (c. 155), to Cyprian's sacrificing priest (c. 253) and Aquinas's medieval synthesis (c. 1274) — set against the Protestant "priesthood of all believers."</p>
 <h4>Christ's commission to the apostles</h4>
 <ul>
 <li><a href="doctrines/ministerial-priesthood/arguments/do-this-said-to-the-apostles.html">Was "Do this in remembrance of me" a commission to the apostles alone? (Luke 22:19; 1 Corinthians 11)</a> — <strong>contested</strong></li>
@@ -292,14 +279,14 @@ it every argument is rated and linked to its own page.</p>
 <li><a href="doctrines/infant-baptism/arguments/immersion-mode.html">Does baptism require immersion — picturing death, burial, and resurrection — so that infant sprinkling fails the sign?</a> — <strong>weak</strong></li>
 </ul>
 <h3 id="baptist-successionism"><a href="doctrines/baptist-successionism.html">Baptist Successionism (the "Trail of Blood")</a></h3>
-<p>the claim that Baptists form an unbroken succession of true churches from the apostles — never part of Rome, not begun at the Reformation — versus the mainstream account that modern Baptists arose from early-seventeenth-century English Separatism. Charles Spurgeon's 1861 "we have an unbroken line up to the apostles" is the era's most-quoted endorsement.</p>
+<p>the claim that Baptists form an unbroken succession of true churches from the apostles — never part of Rome, not begun at the Reformation — versus the mainstream account that modern Baptists arose from early-seventeenth-century English Separatism. Charles Spurgeon's 1861 "we have an unbroken line up to the apostles" is the era's most-quoted endorsement; J. M. Carroll's <em>The Trail of Blood</em> (1931) gave the thesis its most concrete form — a fold-out chart of dissenting groups from Christ to the modern Baptists — and John MacArthur (c. 2018) restates its softer version, a perpetual remnant of true-gospel believers outside Rome rather than a documented church-by-church chain.</p>
 <h4>Baptist origins</h4>
 <ul>
 <li><a href="doctrines/baptist-successionism/arguments/unbroken-baptist-succession.html">Is there an unbroken Baptist succession from the apostles?</a> — <strong>weak</strong></li>
 <li><a href="doctrines/baptist-successionism/arguments/english-separatist-origin.html">Did modern Baptists originate in early-seventeenth-century English Separatism?</a> — <strong>sound</strong></li>
 </ul>
 <h3 id="church-buildings"><a href="doctrines/church-buildings.html">The Place of Christian Worship (house churches to church buildings)</a></h3>
-<p>why the first Christians met in homes and built no houses of worship, and what the later move to dedicated church buildings means — a fall from a New Testament "house-church" pattern, or continuity-by-circumstance once an illegal, persecuted body was free to build?</p>
+<p>why the first Christians met in homes and built no houses of worship, and what the later move to dedicated buildings means — a fall from a New Testament "house-church" pattern, or continuity-by-circumstance once an illegal, persecuted body was free to build? Traced from Justin Martyr (c. 165), who at trial could name only the private lodging where his congregation met, through the earliest dedicated buildings — the church at Edessa (c. 202), beyond the Roman frontier, and the surviving Dura-Europos house-church (c. 233) — to the legalization that let churches multiply: the rescript of Gallienus (c. 260) and the Edict of Milan (313).</p>
 <h4>the place of worship: principle or circumstance?</h4>
 <ul>
 <li><a href="doctrines/church-buildings/arguments/nt-home-only-worship.html">Does the New Testament prescribe the home as the place of worship, or only describe the early circumstance?</a> — <strong>weak</strong></li>
@@ -307,7 +294,7 @@ it every argument is rated and linked to its own page.</p>
 </ul>
 <h2 id="family-mary">The Virgin Mary</h2>
 <h3 id="perpetual-virginity"><a href="doctrines/perpetual-virginity.html">The Perpetual Virginity of Mary</a></h3>
-<p>did Mary remain ever-virgin, or bear other children after Jesus? The whole question turns on the identity of the "brethren of the Lord" (Matthew 13:55; Galatians 1:19 etc.), read three ways in J. B. Lightfoot's naming: the Helvidian (sons of Joseph and Mary — denying the perpetual virginity), the Epiphanian (sons of Joseph by a former wife — preserving it), and the Hieronymian (maternal cousins — Jerome's reading, standard in the Latin West).</p>
+<p>did Mary remain ever-virgin, or bear other children after Jesus? The whole question turns on the identity of the "brethren of the Lord" (Matthew 13:55; Galatians 1:19 etc.), read three ways in J. B. Lightfoot's naming (c. 1865): the Helvidian (sons of Joseph and Mary — denying the perpetual virginity), the Epiphanian (sons of Joseph by a former wife — preserving it), and the Hieronymian (maternal cousins — Jerome's reading, standard in the Latin West). Traced from the early witnesses to Joseph's prior marriage (the <em>Protevangelium of James</em>, c. 150) and Tertullian's dissent (c. 210), through the clash of Helvidius and Jerome (both c. 383) that fixed the cousin theory as the Western default, to Lightfoot's taxonomy that named the field.</p>
 <h4>the cousin theory</h4>
 <ul>
 <li><a href="doctrines/perpetual-virginity/arguments/adelphos-cousin.html">Does "brother" (<em>adelphos</em>) mean "cousin" in "the brethren of the Lord"?</a> — <strong>weak</strong></li>
@@ -384,7 +371,7 @@ legal and ritual reconstructions (Manson, Derrett) and the modern verdict that t
 </ul>
 <h2 id="family-primeval">Primeval history (Genesis 6–9)</h2>
 <h3 id="nephilim"><a href="doctrines/nephilim.html">The Sons of God and the Nephilim (Genesis 6)</a></h3>
-<p>fallen angels and giant offspring vs. the line of Seth and merely mighty men.</p>
+<p>fallen angels and their giant offspring vs. the line of Seth and merely mighty men. The angelic/Enochic reading is earliest — 1 Enoch (c. 300 BC), the Septuagint's "giants," then Justin, Athenagoras, and Tertullian — before the Sethite reading, first stated by Julius Africanus (c. 240), carried by Ephrem (c. 373) and Chrysostom (c. 407), and made standard by Augustine (c. 430), who dismissed the Enochic "fables." Revived in the modern supernatural reading of Heiser (c. 2015) and De Young.</p>
 <h4>the sacred-marriage (sacral-kingship)</h4>
 <ul>
 <li><a href="doctrines/nephilim/arguments/sacred-marriage-mechanism.html">The sacred-marriage rite as the mechanism of the Nephilim</a> — <strong>sound</strong></li>
@@ -429,7 +416,7 @@ legal and ritual reconstructions (Manson, Derrett) and the modern verdict that t
 <li><a href="doctrines/nephilim/arguments/beowulf-giants-cain.html">Does <em>Beowulf</em> witness the angelic reading of Genesis 6?</a> — <strong>weak</strong></li>
 </ul>
 <h3 id="flood"><a href="doctrines/flood.html">The Historicity of Noah’s Flood</a></h3>
-<p>the near-universal pre-modern reading of Genesis 6–9 as real history (with figurative senses layered on) vs. the modern questions its “literalist” slogan conflates: anthropological vs. geographic universality, and ancient historicity vs. 20th-c. flood-geology.</p>
+<p>the near-universal pre-modern reading of Genesis 6–9 as real history — figurative senses (ark = Church, Christ’s cross) layered on the event, not substituted for it. Traced from Theophilus (c. 185) and Origen (c. 248) through Basil, Ambrose, Chrysostom, and Jerome to Augustine (c. 417), who set the both/and rule; no named ancient writer denied the event, the first systematic denial coming only early-modern — set against the modern questions its “literalist” slogan conflates: anthropological vs. geographic universality, and ancient historicity vs. 20th-c. flood-geology.</p>
 <h4>who first denied the Flood</h4>
 <ul>
 <li><a href="doctrines/flood/arguments/allegory-not-denial.html">Was patristic allegory of the Flood a denial of its history — and did any named ancient writer deny it?</a> — <strong>sound</strong></li>

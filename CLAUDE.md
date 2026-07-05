@@ -17,14 +17,13 @@ intro reader-facing; operator guidance lives in an HTML comment.
 ## Layout
 ```
 docs/                          the published site (deployed to historicalchristian.faith)
-  index.html                   the reader's home page + LLM catalog. TWO TIERS: (1) a compact
-                                 `nav.index-map` at the top — a "browse by family" jump table whose
-                                 doctrine links target the `<h3 id="<slug>">` blocks below and whose
-                                 family labels target the `<h2 id="family-…">`; (2) beneath it, the
-                                 full rated directory — ONE doctrine-organised list, grouped by concept
-                                 family (an <h2> per family). Each doctrine is an <h3 id="<slug>">
-                                 heading linking to its summary, then a one-line description, then the
-                                 arguments adduced for it. (NOT a person-page list — witnesses are
+  index.html                   the reader's home page + LLM catalog. ONE rated, doctrine-organised
+                                 directory, grouped by concept family (an `<h2 id="family-…">` per
+                                 family). Each doctrine is an `<h3 id="<slug>">` heading linking to
+                                 its summary, then a one-line description, then the arguments adduced
+                                 for it. Browse-nav is the generated TOC (`toc.js`), which on this
+                                 root page lists families + doctrines only (h2/h3) — there is no
+                                 hand-maintained jump table. (NOT a person-page list — witnesses are
                                  cataloged on their timeline; the index tracks no counts.)
   doctrines/<slug>.html              summary timeline (1 footnoted block/person)
   doctrines/<slug>/<person>.html     detail page (full quotes + context + links)
@@ -188,10 +187,10 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
    chronological order; add the matching `<li>` footnotes to its Sources block.
 6. Bookkeep: append `log.md`, update `todo/`. Touch `docs/index.html` **only** for a new doctrine
    (add an `<h3 id="<slug>">` linked heading + one-line description under the right concept-family
-   `<h2>`, **and** a matching line in the top-of-page `nav.index-map` under that family — a new family
-   also needs an `<h2 id="family-…">` + its own map row) or a new argument (add its `<li>` — `title —
-   <strong>rating</strong>` — under the doctrine's argument group, or its trailing standalone `<ul>`;
-   the map is doctrine-level, so a new argument does not touch it). A new *witness* needs no index edit; the index lists
+   `<h2>` — a new family also needs its own `<h2 id="family-…">`) or a new argument (add its `<li>` —
+   `title — <strong>rating</strong>` — under the doctrine's argument group, or its trailing standalone
+   `<ul>`). Navigation is the generated TOC (families + doctrines), so there is no hand-maintained jump
+   table to update. A new *witness* needs no index edit; the index lists
    no person pages and tracks **no counts** (the old people/argument counts were dropped). For a new
    doctrine also add its `slug → display name` entry to the `DOCTRINE_NAMES` map in `docs/toc.js` so
    its breadcrumb crumb is labelled (the only metadata the breadcrumb can't derive from the path).
@@ -303,7 +302,7 @@ all the others. Like all wiki metadata it is derived from visible content, not h
 
 Reader-facing label **"Related doctrines"**; internal term *doctrine cluster* with a kebab-case theme name
 used only in these meta files. The index groups doctrines under concept-family `<h2>` headings (see above); each such heading
-carries an `id="family-<slug>"` anchor (the top-of-page family map jump-links to it) but **no**
+carries an `id="family-<slug>"` anchor (the generated TOC links to it) but **no**
 `id="cluster-…"` anchor, and the summary breadcrumb's family label stays plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 

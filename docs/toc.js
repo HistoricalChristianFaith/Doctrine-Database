@@ -1,6 +1,8 @@
 /* toc.js — builds a Wikipedia-style table of contents from the page's headings.
  * Shared across every page, linked like style.css (depth-relative src). No deps.
- * - Collects h2/h3 in the content (skips the page h1 and the Sources/footnotes block).
+ * - Collects h2–h4 in the content (skips the Sources/footnotes block). On the root index
+ *   page it stops at h3 (families + doctrines) — the per-argument h4 groups would just
+ *   duplicate the directory below; deeper pages keep their h4 sub-sections.
  * - Floats in the left gutter on wide viewports; collapses to a block at the top otherwise
  *   (positioning is entirely in style.css; this file only builds the markup + scroll-spy).
  */
@@ -137,8 +139,11 @@
     if (crumbs) document.body.insertBefore(crumbs, document.body.firstChild);
 
     // Headings in document order, excluding the Sources/footnote block. The page h1 leads
-    // the list (top-level, styled as the title); h2–h4 nest beneath it.
-    var all = Array.prototype.slice.call(document.querySelectorAll("h1, h2, h3, h4"));
+    // the list (top-level, styled as the title); h2–h4 nest beneath it. On the root index
+    // (empty prefix) we stop at h3 so the TOC lists families + doctrines only — its h4
+    // argument-groups would merely restate the rated directory printed below it.
+    var levels = getPrefix() === "" ? "h1, h2, h3" : "h1, h2, h3, h4";
+    var all = Array.prototype.slice.call(document.querySelectorAll(levels));
     var headings = all.filter(function (h) {
       if (h.closest(".footnote")) return false;
       var t = (h.textContent || "").trim();
