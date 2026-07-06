@@ -84,6 +84,7 @@ when uncertain.
 | Moses bar Kepha | moses-bar-kepha | 903 | no | https://en.wikipedia.org/wiki/Moses_Bar_Kepha |
 | The Letter of Aristeas | aristeas | -130 | no | https://en.wikipedia.org/wiki/Letter_of_Aristeas |
 | Isidore of Seville | isidore-of-seville | 636 | yes (Chronicon only; Etymologies not in corpus) | https://en.wikipedia.org/wiki/Isidore_of_Seville |
+| Julian of Eclanum | julian-of-eclanum | 425 | yes (Exposition on the Book of Job, on Job 40:15 &amp; 41:34; in corpus, trans. ACCS Job / CCSL 88; timeline anchor c. 425, composed in exile; life c. 386–455) | https://en.wikipedia.org/wiki/Julian_of_Eclanum |
 | Julian of Toledo | julian-of-toledo | 686 | no (De comprobatione aetatis sextae not in corpus; cited from PL 96 via Latin Wikisource) | https://en.wikipedia.org/wiki/Julian_of_Toledo |
 | Hrabanus Maurus | hrabanus-maurus | 845 | no (De rerum naturis / De Universo not in corpus; cited from PL 111 via Documenta Catholica Omnia) | https://en.wikipedia.org/wiki/Rabanus_Maurus |
 | Agapius of Hierapolis | agapius-of-hierapolis | 942 | no (Kitāb al-ʿUnwān / Universal History not in corpus; cited from the English translation of Vasiliev's PO edition at tertullian.org) | https://en.wikipedia.org/wiki/Agapius_of_Hierapolis |
