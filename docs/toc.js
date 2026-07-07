@@ -39,6 +39,7 @@
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
+    "pillars-of-seth": "The Pillars of Seth",
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts"
   };
 
