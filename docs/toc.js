@@ -40,7 +40,8 @@
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
-    "mythical-beasts": "Dragons, Unicorns & Mythical Beasts"
+    "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
+    "goliath-slayer": "Who Killed Goliath?"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
