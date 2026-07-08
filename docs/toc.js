@@ -42,7 +42,8 @@
     "pillars-of-seth": "The Pillars of Seth",
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
     "goliath-slayer": "Who Killed Goliath?",
-    "goliath-height": "How Tall Was Goliath?"
+    "goliath-height": "How Tall Was Goliath?",
+    "revelation-date": "The Date of Revelation"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
