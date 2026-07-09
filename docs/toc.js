@@ -44,7 +44,8 @@
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
-    "mark-of-the-beast": "The Mark of the Beast and the Number 666"
+    "mark-of-the-beast": "The Mark of the Beast and the Number 666",
+    "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
