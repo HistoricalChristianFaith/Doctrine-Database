@@ -43,7 +43,8 @@
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
-    "revelation-date": "The Date of Revelation"
+    "revelation-date": "The Date of Revelation",
+    "mark-of-the-beast": "The Mark of the Beast and the Number 666"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
