@@ -149,11 +149,17 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
    lead" / "not yet sourced") and cite the secondary work only; still add the backlog file per
    rule 4. Referencing `todo/` is fine only in meta files (this file, `project.md`, `log.md`).
 9. **No internal plumbing in reader-facing pages** (index / summary / person / argument — i.e. all of
-   `docs/`; extends rule 8). Don't name the source DBs *as* infrastructure ("our corpus", "the
-   database", "the writings corpus") or the meta files (`project.md`, `log.md`, `CLAUDE.md`,
-   `people.md`) — cite the actual work/edition instead, and scope a negative claim as "surveyed here,"
-   not "in the database." Keep the provenance (which edition/translation a quote is from); drop only the
-   corpus-membership framing. Operator notes go in HTML comments or meta files.
+   `docs/`; extends rule 8). Don't name the **source DBs** *as* infrastructure ("our corpus", "our
+   holdings", "the database", "the writings corpus", `Commentaries-Database`, `Writings-Database`) or
+   the meta files (`project.md`, `log.md`, `CLAUDE.md`, `people.md`) — cite the actual work/edition
+   instead, and scope a negative claim as "surveyed here," not "in the database." Keep the provenance
+   (which edition/translation a quote is from); drop only the corpus-membership framing. Operator notes
+   go in HTML comments or meta files.
+   - **"This wiki" / "the wiki" is fine** — it names the *published* doctrine site (reader-facing), not
+     the source DBs. Self-references like "X appears on this wiki also as a witness on the Y timeline,"
+     "the wiki does not discount a claim merely because it requires a miracle," or "this wiki rates it
+     weak" are acceptable house style. The rule bans naming the **upstream source databases** (or meta
+     files) as infrastructure — not the site referring to itself.
 10. **Link every citation you have a URL for — scholarship included.** We find most references during
     online research (often a free full copy on archive.org, Google Books, a journal, or a digitized
     edition); whenever a reference has a URL we've seen, **hyperlink the citation directly** in the
