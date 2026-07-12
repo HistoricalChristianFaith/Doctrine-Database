@@ -41,6 +41,7 @@
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "mary-new-eve": "Mary as the New Eve",
     "theotokos": "Theotokos (Mother of God)",
+    "immaculate-conception": "The Immaculate Conception of Mary",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
