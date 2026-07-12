@@ -39,6 +39,7 @@
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
+    "mary-new-eve": "Mary as the New Eve",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
