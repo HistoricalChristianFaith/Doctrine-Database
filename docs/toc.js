@@ -29,6 +29,7 @@
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
     "dream-apparitions-of-the-dead": "Dream-apparitions of the Dead",
+    "discernment-of-dreams": "The Discernment of Dreams",
     "real-presence": "The Real Presence in the Eucharist",
     "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
