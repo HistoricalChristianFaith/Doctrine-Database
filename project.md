@@ -123,6 +123,17 @@ docs/doctrines/
   cross-doctrine pairing stays a `see also` pattern rather than a heading group. See `CLAUDE.md`
   ("Argument groups") for the full rules.
 
+- **Relationship topic** = a doctrine-page *variant* whose subject is a relationship between two people
+  told across time (a friendship, quarrel, or correspondence), not a belief many held. It **reuses** the
+  summary + detail page types (no new type on disk): the summary's chronological entries are **dated
+  events** (each `<h3>` an event/letter/document with a parenthetical year, earliest-event-first with
+  narrative latitude), and the two parties each get a detail page carrying **life-span dates**
+  (`c. 347–420`, a span, not an event-year) that tells the arc from their side and cross-links the other.
+  It lives under the "Controversies among the Fathers" concept-family on the index; a second such topic
+  makes that family a cluster (add `Related doctrines:` breadcrumbs). First instances:
+  `origenist-controversy` (Jerome ↔ Rufinus) and `jerome-augustine` (Jerome ↔ Augustine). See `CLAUDE.md`
+  ("Relationship topics") for the full rules.
+
 Copy the shape of the skeletons in [`templates/`](templates/); for a full, real worked example see the
 nephilim doctrine — `docs/doctrines/nephilim.html` (summary timeline), its person-detail pages under
 `docs/doctrines/nephilim/`, and its argument pages under `docs/doctrines/nephilim/arguments/`.

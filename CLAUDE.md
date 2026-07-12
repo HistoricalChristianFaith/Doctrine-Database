@@ -290,6 +290,31 @@ unrelated to this grouping convention, and is left as written.) Five rules:
    (numbers are sequential by first appearance; the index itself carries no footnotes).
 5. **Standalone arguments are unchanged.** Arguments in no group keep their flat `<h3>` / `<ul>` presentation.
 
+## Relationship topics (a doctrine-page variant)
+A **relationship topic** is a doctrine page whose subject is a *relationship between two people told
+across time* — the friendship, quarrel, or correspondence itself — rather than a belief many witnesses
+held. It **reuses** the doctrine + person-detail page types (a summary timeline plus one detail page per
+party); it is **not** a fourth page type and adds no new file convention. It sits under the "Controversies
+among the Fathers" concept-family `<h2>` on the index. First instances: `origenist-controversy` (Jerome ↔
+Rufinus) and `jerome-augustine` (Jerome ↔ Augustine). It diverges from an ordinary belief-timeline in
+three ways:
+
+1. **Person pages carry life-span dates, not a single event-year.** Both parties are present across the
+   whole arc, so the detail head line reads `<strong>Dates:</strong> c. 347&ndash;420` (a span), and the
+   `Summary:` line scopes which stretch of the relationship that page covers.
+2. **Timeline "witnesses" are dated events, not persons.** Each `<h3>` on the summary is an event, letter,
+   or document with a parenthetical date (`<h3>Jerome settles at Bethlehem (386)</h3>`), ordered
+   earliest-event-first but tolerant of multi-year topical blocks (event-start-first, with narrative
+   latitude). Every event block still ends in a footnote (Hard rule 2); ordering is maintained by hand
+   (Hard rule 1).
+3. **Both parties get a detail page** under `docs/doctrines/<slug>/`, each telling the arc from that
+   person's side and cross-linking the other. The summary intro flags that this timeline is a
+   *relationship* told through its dated moments, unlike the belief-timelines elsewhere.
+
+Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged. A second
+relationship topic under the same family turns it into a **cluster** (≥ 2 members) → add a `Related
+doctrines:` breadcrumb to each member summary (see below).
+
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
@@ -320,6 +345,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
 `church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
-`goliath-height`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
+`goliath-height`; "Controversies among the Fathers" (relationship topics) — `origenist-controversy`,
+`jerome-augustine`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "The Virgin Mary" — `perpetual-virginity`; "Cruxes of the Gospel text" —
 `writing-on-the-ground`. (There is no longer an "Other doctrines" bucket.)

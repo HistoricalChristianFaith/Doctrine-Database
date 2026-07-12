@@ -45,7 +45,8 @@
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
     "mark-of-the-beast": "The Mark of the Beast and the Number 666",
-    "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)"
+    "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
+    "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
