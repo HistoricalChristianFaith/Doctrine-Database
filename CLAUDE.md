@@ -347,6 +347,6 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" (relationship topics) — `origenist-controversy`,
 `jerome-augustine`; "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
-`immaculate-conception`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
+`immaculate-conception`, `assumption`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
 `writing-on-the-ground`. (There is no longer an "Other doctrines" bucket.)
