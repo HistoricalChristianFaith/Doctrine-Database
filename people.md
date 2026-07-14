@@ -50,6 +50,7 @@ when uncertain.
 | Ignatius of Antioch | ignatius-of-antioch | 107 | yes | https://en.wikipedia.org/wiki/Ignatius_of_Antioch |
 | The Didache (Teaching of the Twelve Apostles) | didache | 100 | no (anonymous document, not a person; compiled c. AD 100, range c. 50&#8211;150; moral section is a Christian recension of the Jewish "Two Ways") | https://en.wikipedia.org/wiki/Didache |
 | Polycarp of Smyrna | polycarp-of-smyrna | 125 | yes | https://en.wikipedia.org/wiki/Polycarp |
+| The Akathist Hymn to the Theotokos | akathist-hymn | 500 | no (anonymous Greek liturgical *kontakion*, not a person; **mary-new-eve** witness &mdash; Ikos 1 hails the Virgin as "the recall of fallen Adam… the redemption of the tears of Eve" [Χαῖρε, τῶν δακρύων τῆς Εὔας ἡ λύτρωσις]. Date genuinely disputed: Wellesz 6th&ndash;7th c.; Peltomaa mid-5th c. [Ephesus-era Christology, no Chalcedon]; Cunningham late-5th/early-6th c.; often ascribed to Romanos the Melodist [fl. c. 540] but unproven. Slotted c. 500 as a midpoint. Proem "To thee, the Champion Leader" is a later addition [626 siege of Constantinople]) | https://en.wikipedia.org/wiki/Akathist |
 | The Odes of Solomon | odes-of-solomon | 125 | yes | https://en.wikipedia.org/wiki/Odes_of_Solomon |
 | The Shepherd of Hermas | shepherd-of-hermas | 150 | yes | https://en.wikipedia.org/wiki/The_Shepherd_of_Hermas |
 | Eusebius of Caesarea | eusebius-of-caesarea | 324 | yes | https://en.wikipedia.org/wiki/Eusebius |
