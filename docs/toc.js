@@ -34,6 +34,7 @@
     "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
     "flood": "Noah's Flood",
+    "conquest-of-canaan": "The Conquest of Canaan",
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",
     "infant-baptism": "Infant Baptism",
