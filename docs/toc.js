@@ -35,6 +35,7 @@
     "nephilim": "The Sons of God and the Nephilim",
     "flood": "Noah's Flood",
     "conquest-of-canaan": "The Conquest of Canaan",
+    "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",
     "infant-baptism": "Infant Baptism",
