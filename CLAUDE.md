@@ -223,6 +223,17 @@ proponent's overreach as a *less-probable reading* or *conjecture beyond the evi
 "wrong/false" — reserve falsity language for genuinely false claims (e.g. a factual misstatement), and
 keep wording-precision issues separate from probability judgments.
 
+**One advocated claim per page — split rivals, fold defeaters.** An argument page states **one**
+interpretation in its steelman form, shows the strongest evidence for it, folds in the counterpoints
+*to that evidence*, and rates it. Give a counter-position its **own** argument page when it is
+*independently advocated* (has its own proponents and proof-texts); **fold it in** when it is a mere
+*defeater* — a limit on the evidence that nobody holds as a positive thesis. The trigger is
+"**is it advocated?**", not "is it correct?": a popular-but-failing argument (e.g. "*suggenēs* tells
+against the cousin-reading") still earns its own rated page. So two genuinely-advocated rival readings
+become **two advocacy pages**, grouped and cross-linked (as the Helvidian and Epiphanian readings each
+get their own page under `perpetual-virginity`) — **not** one dual-panel page hosting both. This cut
+operates at two levels: page-split for advocated rivals, paragraph-level fold-in for defeaters.
+
 **State the finding, don't rebut a label.** Assess the interpretation on its own evidence — plausible,
 probable, overstated, with caveats. Do **not** frame the assessment as overturning a label
 (especially one *we* assigned: "often called the shakiest claim … but actually," "not a mere
