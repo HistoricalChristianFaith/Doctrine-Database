@@ -197,7 +197,11 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
    (add an `<h3 id="<slug>">` linked heading + one-line description under the right concept-family
    `<h2>` — a new family also needs its own `<h2 id="family-…">`) or a new argument (add its `<li>` —
    `title — <strong>rating</strong>` — under the doctrine's argument group, or its trailing standalone
-   `<ul>`). Navigation is the generated TOC (families + doctrines), so there is no hand-maintained jump
+   `<ul>`). **The index `<li>` link text is the argument's title/question only — never its assessment
+   prose.** Don't append a paragraph-length parenthetical mini-essay: the reasoning lives on the argument
+   page and (condensed) in the summary's "Arguments" section; duplicating it on the index bloats the
+   directory and drifts out of sync. A short parenthetical that is genuinely *part of the question* is
+   fine; a rehearsal of the verdict is not. Navigation is the generated TOC (families + doctrines), so there is no hand-maintained jump
    table to update. A new *witness* needs no index edit; the index lists
    no person pages and tracks **no counts** (the old people/argument counts were dropped). For a new
    doctrine also add its `slug → display name` entry to the `DOCTRINE_NAMES` map in `docs/toc.js` so
