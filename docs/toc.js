@@ -56,6 +56,7 @@
     "apostle-matthew": "Matthew",
     "apostle-james-alphaeus": "James, son of Alphaeus",
     "apostle-thaddaeus-jude": "Thaddaeus / Jude",
+    "apostle-simon-zealot": "Simon the Zealot",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
