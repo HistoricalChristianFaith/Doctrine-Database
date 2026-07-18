@@ -330,6 +330,21 @@ Arguments, argument groups, and the "Related doctrines" cluster convention all a
 relationship topic under the same family turns it into a **cluster** (≥ 2 members) → add a `Related
 doctrines:` breadcrumb to each member summary (see below).
 
+## Biographical tradition-timelines (a doctrine-page variant)
+A **biographical tradition-timeline** is a doctrine page whose subject is *a person* — an apostle — rather
+than a belief many held. The "belief that developed" is the **tradition about that figure**: how the
+church's memory of his origin, mission, and death grew (and got embellished) across the centuries. It
+**reuses** the ordinary doctrine + person-detail types unchanged — **not** a new page type. The timeline's
+"witnesses" are the datable **sources** that report on him (NT → Papias → Clement of Alexandria →
+Irenaeus/Tertullian → Eusebius → the apocryphal *Acts* → Jerome → the Byzantine/Latin apostle-lists →
+the *Golden Legend* → modern scholarship), ordered earliest-source-first (Hard rule 1), each block
+footnoted (Hard rule 2). Contested identity/mission/death questions (Bartholomew = Nathanael? Thomas in
+India? Peter's Roman crucifixion?) become ordinary **argument pages** in the summary's "Arguments" section.
+The Twelve, Matthias, and Paul live under the **"The apostles"** concept-family `<h2 id="family-apostles">`
+on the index, fronted by the overview hub `doctrines/apostles.html`; slug convention `apostle-<name>`
+(e.g. `apostle-peter`, `apostle-james-zebedee`). Once ≥ 2 apostle pages exist the family reads as a
+**doctrine cluster** — add the `Related doctrines:` breadcrumb to each member summary and the hub then.
+
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a

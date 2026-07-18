@@ -45,6 +45,7 @@
     "theotokos": "Theotokos (Mother of God)",
     "immaculate-conception": "The Immaculate Conception of Mary",
     "assumption": "The Assumption / Dormition of Mary",
+    "apostles": "The Apostles",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
