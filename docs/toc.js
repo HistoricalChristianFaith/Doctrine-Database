@@ -58,6 +58,7 @@
     "apostle-thaddaeus-jude": "Thaddaeus / Jude",
     "apostle-simon-zealot": "Simon the Zealot",
     "apostle-judas-iscariot": "Judas Iscariot",
+    "apostle-matthias": "Matthias",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
