@@ -33,6 +33,7 @@
     "real-presence": "The Real Presence in the Eucharist",
     "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
+    "ufo-demonic": "Aliens, UFOs, and the Demonic",
     "flood": "Noah's Flood",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
