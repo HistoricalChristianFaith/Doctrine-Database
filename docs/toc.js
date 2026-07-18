@@ -53,6 +53,7 @@
     "apostle-philip": "Philip",
     "apostle-bartholomew": "Bartholomew",
     "apostle-thomas": "Thomas",
+    "apostle-matthew": "Matthew",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
