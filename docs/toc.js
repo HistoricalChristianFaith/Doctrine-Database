@@ -51,6 +51,7 @@
     "apostle-james-zebedee": "James, son of Zebedee",
     "apostle-john": "John, son of Zebedee",
     "apostle-philip": "Philip",
+    "apostle-bartholomew": "Bartholomew",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
