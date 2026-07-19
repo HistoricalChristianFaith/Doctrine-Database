@@ -122,10 +122,19 @@ the wiki:
 - **`log.md`** — append a dated entry (real current date, rule 7) recording: the page, the
   rating/title change and *why* (the steelman + the decisive evidence), the overreaches corrected, the
   coherence reconciliation, and every file touched.
+- **Commit.** Review the diff first (`git diff --stat` then eyeball each hunk) to confirm it contains
+  **only** this steelman pass and swept up nothing stray — the working tree may hold unrelated edits at
+  session start. If it's clean, `git add` exactly the pages you touched (the argument page + every
+  propagation surface: summary, index, cross-referencing pages) and commit with a message of the form
+  `<doctrine>/<arg-slug>: steelman … (<old-rating> → <new-rating>)`, a body summarising the steelman,
+  the corrections, and the coherence reconciliation, ending with the standard
+  `Co-Authored-By: Claude …` trailer. **Do not push** — leave that to the user. (`log.md` and `todo/`
+  are git-ignored, so they won't appear in the commit; that's expected.) If the diff is *not* isolable
+  from unrelated pre-existing changes, don't force it — commit nothing and flag it in your report
+  instead.
 - **Report** to the user: the before/after rating, the core of the steelman, what was corrected, any
-  cross-doctrine coherence issue you resolved, and any rating that was a judgment call (with the
-  alternative).
+  cross-doctrine coherence issue you resolved, the commit made (hash + that it's unpushed), and any
+  rating that was a judgment call (with the alternative).
 
 Respect all `CLAUDE.md` hard rules throughout (no internal plumbing on reader-facing pages, verbatim
-quotes, depth-relative links, append-don't-overwrite, footnote on every summary claim). This skill does
-**not** commit — leave that to the user unless they ask.
+quotes, depth-relative links, append-don't-overwrite, footnote on every summary claim).
