@@ -72,7 +72,8 @@
     "revelation-date": "The Date of Revelation",
     "mark-of-the-beast": "The Mark of the Beast and the Number 666",
     "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
-    "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean"
+    "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
+    "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
