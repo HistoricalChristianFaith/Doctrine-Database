@@ -26,6 +26,7 @@
     "septuagint-origin": "The Septuagint",
     "rabbinic-corruption": "The Rabbinic Corruption of Scripture",
     "origin-of-the-soul": "The Origin of the Soul",
+    "parity-of-sins": "Are All Sins Equal?",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
