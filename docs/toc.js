@@ -25,6 +25,7 @@
     "ot-canon": "The Old Testament Canon",
     "septuagint-origin": "The Septuagint",
     "rabbinic-corruption": "The Rabbinic Corruption of Scripture",
+    "origin-of-the-soul": "The Origin of the Soul",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
