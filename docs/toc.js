@@ -159,6 +159,24 @@
     return { text: text };
   }
 
+  // A "‹ Back" control that just drives the browser's own history (history.back()). It exists
+  // for the install-to-homescreen / standalone-PWA case, where the app window has no browser
+  // chrome and therefore no back gesture. Only shown when there is somewhere to go back to
+  // (history.length > 1) — a fresh launch at the home page shouldn't show a dead button.
+  function buildBackButton() {
+    if (!window.history || window.history.length <= 1) return null;
+    var nav = document.createElement("nav");
+    nav.className = "backnav";
+    nav.setAttribute("aria-label", "Back");
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "backnav-btn";
+    btn.textContent = "‹ Back";
+    btn.addEventListener("click", function () { window.history.back(); });
+    nav.appendChild(btn);
+    return nav;
+  }
+
   function insertAfterH1(node) {
     var h1 = document.querySelector("h1");
     if (h1 && h1.parentNode) h1.parentNode.insertBefore(node, h1.nextSibling);
@@ -170,6 +188,11 @@
     // so even a short, TOC-less page (and a deep-linked one) can climb the hierarchy.
     var crumbs = buildBreadcrumb();
     if (crumbs) document.body.insertBefore(crumbs, document.body.firstChild);
+
+    // Back button rides above the breadcrumb, at the very top of every page (index included).
+    // Inserted last so insertBefore(firstChild) lands it before the breadcrumb we just added.
+    var back = buildBackButton();
+    if (back) document.body.insertBefore(back, document.body.firstChild);
 
     // Headings in document order, excluding the Sources/footnote block. The page h1 leads
     // the list (top-level, styled as the title); h2–h4 nest beneath it. On the root index

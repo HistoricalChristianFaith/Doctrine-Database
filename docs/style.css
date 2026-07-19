@@ -39,6 +39,19 @@ img { max-width: 100%; height: auto; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb [aria-current="page"] { color: #bbb; }
 
+/* Back button — built client-side by toc.js; sits above the breadcrumb at the top of every
+   page. Drives window.history.back() for the standalone/PWA case (no browser back gesture).
+   Only rendered when there is history to return to, so it's absent on a fresh home-page launch. */
+.backnav { margin: 0 0 0.75rem; }
+.backnav-btn {
+  font: inherit; font-size: 0.85rem; cursor: pointer;
+  color: #8ab4f8; background: transparent;
+  border: 1px solid #33475e; border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+}
+.backnav-btn:hover { background: #1b2735; border-color: #4a6689; }
+.backnav-btn:active { background: #22303f; }
+
 /* Table of contents — built client-side by toc.js. Collapsible block by default;
    floats in the left gutter when the viewport is wide enough to hold it. */
 .toc {
