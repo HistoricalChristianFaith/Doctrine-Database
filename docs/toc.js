@@ -72,6 +72,7 @@
     "revelation-date": "The Date of Revelation",
     "mark-of-the-beast": "The Mark of the Beast and the Number 666",
     "origen-condemnation": "The Condemnation of Origen",
+    "tertullian-heresy": "Was Tertullian a Heretic?",
     "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
     "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
     "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom"
