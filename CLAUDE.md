@@ -345,6 +345,15 @@ on the index, fronted by the overview hub `doctrines/apostles.html`; slug conven
 (e.g. `apostle-peter`, `apostle-james-zebedee`). Once ≥ 2 apostle pages exist the family reads as a
 **doctrine cluster** — add the `Related doctrines:` breadcrumb to each member summary and the hub then.
 
+**Reception-history timelines** are the same shape aimed at a *verdict* rather than a life: the subject is a
+person, and the "belief that developed" is the church's judgement on him — who called him heretical, on what
+charges, on whose authority, and how the charge-sheet changed. Timeline "witnesses" are the datable
+**judgements and documents** (a synod, a rival's treatise, a heresy-catalogue, a papal letter, an imperial
+edict, a conciliar anathema, a modern monograph), earliest first, each footnoted; contested questions become
+ordinary argument pages. Again **not** a new page type — it reuses doctrine + person-detail unchanged, and
+sits in whatever concept-family fits its subject. First instance: `origen-condemnation`, under "Controversies
+among the Fathers".
+
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
@@ -375,8 +384,9 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
 `church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
-`goliath-height`; "Controversies among the Fathers" (relationship topics) — `origenist-controversy`,
-`jerome-augustine`; "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
+`goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
+`theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
+"The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
 `immaculate-conception`, `assumption`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
 `writing-on-the-ground`. (There is no longer an "Other doctrines" bucket.)
