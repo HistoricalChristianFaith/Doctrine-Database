@@ -354,6 +354,30 @@ ordinary argument pages. Again **not** a new page type — it reuses doctrine + 
 sits in whatever concept-family fits its subject. First instance: `origen-condemnation`, under "Controversies
 among the Fathers".
 
+## Evidential reconstruction timelines (a doctrine-page variant)
+An **evidential reconstruction** is a doctrine page whose subject is not *who believed what* but *what the material
+record shows* once a contested premise is granted for the sake of exploration. It **reuses** the ordinary doctrine +
+person-detail + argument types unchanged — **not** a new page type. First (and so far only) instance:
+`primeval-evidence` ("The Flood and the Nephilim in the Material Record"), under the "Primeval history (Genesis 6–9)"
+family alongside `nephilim` and `flood`. It diverges from a belief-timeline in three ways:
+
+1. **The premise is granted, not assumed proven.** The intro states plainly that granting a Flood / a real Nephilim
+   phenomenon is *not* assuming the conclusion; each line of evidence is rated on its own merits, **possibility ≠ proof**,
+   and several arguments are expected to come out `weak`/`unsupported` (a page's job is sometimes to say so). This is the
+   anti-apologetics guard — it is the direct extension of the "don't rule out the supernatural a priori" rule, and it is
+   load-bearing: without it the variant is just apologetics.
+2. **Timeline "witnesses" are datable evidence-sources, ordered by evidence-date, not event-date.** A witness is a
+   stratum, tablet, king-list, megalith, hoax, or scientific finding — ordered by the age of the *evidence* (deposition /
+   composition), **not** by the age of the event it reports (which is exactly what the premise leaves open and the page
+   tests). The intro must flag this ordering so a reader does not mistake the shelf of sources for a claimed chronology.
+3. **Arguments run in two modes, both rated adversarially.** *Retrospective* ("here is an artifact — does it fit?") and
+   *predictive* ("the premise requires X — is X there?"). A predictive page states a risky prediction, commits to what
+   would falsify it, and **scopes any failure to the specific model that made it** (a young single-date global deluge, a
+   literal eight-person survival) — not to the bare premise. Keep at least one honestly-*successful* prediction in the set
+   so it is not rigged toward debunking.
+
+Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
+
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
@@ -382,7 +406,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`; "Astrology and the heavens"
+`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
