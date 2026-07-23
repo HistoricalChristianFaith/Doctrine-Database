@@ -184,6 +184,12 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
 - Two lead types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
   per rule 4) and **argument** (a sub-claim needing adversarial adjudication → resolve into an argument
   page with an `assessment`). Both end the same way: execute, then delete the file + log it.
+- **Blocked from a needed doc? Exhaust workarounds first, then escalate to `human_todo/`.** If a
+  research agent is denied access to a source it needs, it must first try hard to work around it
+  (alternative editions, web copies, other sources that suffice). Only if *no* workaround is found
+  does it drop a lead in `human_todo/` (same filename convention) asking the human to pull that
+  specific doc; assume the human will fetch it and later queue a fresh `todo/` lead for an agent with
+  access. `human_todo/` is git-ignored operator bookkeeping, like `todo/`.
 
 ## Authoring checklist (see project.md §7 for detail)
 1. Identify doctrine(s) + slug + key verses; extract every `(person, claim)`.
