@@ -378,6 +378,37 @@ family alongside `nephilim` and `flood`. It diverges from a belief-timeline in t
 
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
+## Dating-skepticism & out-of-place-artifact (OOPArt) arguments
+Some arguments (esp. on `primeval-evidence`) test whether an artifact is **significantly older than its official
+date** — potentially reaching a pre-Flood / nephilim horizon — i.e. that the conventional dating is wrong. These are
+legitimate, genuinely-advocated arguments and get honest rated pages, but they carry a **strict method** so
+"strongly considered" never decays into special pleading. Rate the *interpretation* ("X is much older than dated"),
+via five steps: **(1)** steelman the OOPArt/antiquity claim in its strongest form (scale, precision, technique);
+**(2)** name the *actual dating method* and its specific evidence (epigraphic/inscriptional · radiocarbon · OSL/TL ·
+stratigraphic · art-historical/stylistic · palaeographic · molecular-clock) — different methods have different
+failure modes; **(3)** state plainly **what would have to hold true** for the older date, conceding the *real*
+precedents that make it live (monument **usurpation/appropriation** — a ruler claiming a predecessor's work;
+**renovation-as-construction**; reused **foundations/spolia**; circular stylistic dating); **(4)** test adversarially
+whether those conditions actually hold *at this artifact*, noting where a mechanism transfers well vs. badly (e.g.
+usurpation is strong against a free-standing built temple, weak against a **monolithic rock-cut excavation** with no
+prior structure to appropriate); **(5)** rate on the evidence.
+
+Non-negotiable honesty guards (these bind every such page):
+- **"Strongly considered" = thorough steelman + fair examination, NOT a favorable rating regardless.** The rating
+  tracks the evidence; do not pre-ordain a verdict in either direction.
+- **Symmetry of skepticism.** Don't defend a date by authority/consensus alone, *and* don't unseat one on bare
+  possibility. If a load-bearing assumption is genuinely live, rate up and say so; if the specific evidence defeats
+  it, say that.
+- **Don't invoke the supernatural to move a date.** Weigh dating on dating evidence; possibility ≠ proof (per "Don't
+  rule out the supernatural a priori"). A miracle can be granted elsewhere; it does not relocate a stratum or an
+  inscription.
+- **Differentiate by method, don't blanket-rate.** Dating security is high where contemporary writing or converging
+  methods anchor it, genuinely open where a single assumption-laden method (palaeography, molecular clocks) carries
+  the weight — report which per artifact; that differentiation is the honest result.
+- Keep the **manufacturing** sub-claim ("needed advanced tech to make") distinct from the **dating** sub-claim
+  ("older than its date") and rate each separately. OOPArt pages are grouped under `group-oopart`; the
+  reader-facing group label is "Related arguments — out-of-place artifacts."
+
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
 proof-texts, and arguments and are best read together. It is a **lightweight cross-link convention, not a
