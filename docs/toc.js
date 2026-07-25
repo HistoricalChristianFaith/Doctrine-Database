@@ -39,6 +39,7 @@
     "ufo-demonic": "Aliens, UFOs, and the Demonic",
     "flood": "Noah's Flood",
     "primeval-evidence": "The Flood and the Nephilim in the Material Record",
+    "flood-date": "The Dating of Noah's Flood",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
