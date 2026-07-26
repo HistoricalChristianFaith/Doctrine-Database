@@ -384,6 +384,48 @@ family alongside `nephilim` and `flood`. It diverges from a belief-timeline in t
 
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
+## Comparative scenario-ledger pages (a doctrine-page variant)
+A **scenario ledger** is a doctrine page whose subject is not *who believed what*, nor *what the material record shows*
+(that is an evidential reconstruction), but **how one shared body of evidence reads under two or more competing, fixed
+presupposition-bundles** — "scenarios." It **reuses** the ordinary doctrine + person-detail + argument types unchanged —
+**not** a new page type, **one aggregate page**, and it **does not clone** the pages it reads: it *links* the existing
+argument/evidence pages and holds only the *conditional delta* per item. First (and so far only) instance:
+`primeval-scenarios` ("The Flood and the Nephilim: the evidence under competing scenarios"), under the "Primeval history
+(Genesis 6–9)" family alongside `nephilim`, `flood`, `primeval-evidence`, and `flood-date`. The reusable purpose is
+comparison of *total frameworks*: a later instance is planned for `perpetual-virginity` (the Helvidian vs. Epiphanian vs.
+Hieronymian readings as fixed bundles scored over the same proof-texts). It has four defining features:
+
+1. **Scenarios are named, fixed presupposition-bundles, each stating exactly what it commits to.** A scenario is not a
+   mood ("the traditional view") but a spelled-out set of commitments with a **bill** — the specific things that must
+   hold true for it, and what would falsify it. E.g. on `primeval-scenarios`: *(A)* Septuagint long chronology + real
+   antediluvian Watcher-arts inherited *through* the Flood; *(B)* Masoretic short / young-earth literal global Flood;
+   *(C)* mainstream naturalistic null. Each column carries its own falsifiers, not just its friendly fits.
+2. **One shared evidence shelf, scored per scenario into four buckets.** The rows are the *same* evidence for every
+   column (drawn from the linked argument/evidence pages), and each cell places that item, under that scenario, in one
+   bucket: **✓ fits / positively predicted**, **○ neutral (consistent, non-discriminating)**, **△ costs a date** (fits
+   only if a *named* dating result is wrong — say which method and how load-bearing), or **✗ unexplained / contradicts**
+   (a residue the scenario cannot absorb *even granting its premises* — the honesty anchor). The cell holds a terse
+   conditional delta and links the full argument page; it does **not** re-rate that argument (its `assessment` stays the
+   neutral one — the ledger reports how it reads *conditional on* each bundle, nothing more). No cloning, no per-page
+   codas, no laundering a fit upward because the friendly bundle is assumed.
+3. **The honesty floor is mandatory and load-bearing.** Every scenario column **must** publish, from the ledger, (a) its
+   **✗ residue** explicitly (what it still cannot explain), and (b) its **△ count** — how many *independent* dating
+   results it needs overturned, and whether those failures share one mechanism (correlated — e.g. "all radiometric
+   compressible") or are **ad hoc** (many unrelated excuses). The friendly bundle is always shown beside its bill, and a
+   scenario ledger **may — and often should — conclude against a bundle**. This is the direct extension of the
+   anti-apologetics guard and the "don't launder a fit upward" and "symmetry of skepticism" rules; without it the variant
+   is just apologetics with extra columns. Keep at least one honest ✓ *and* one honest ✗ per live scenario so no column
+   is rigged in either direction.
+4. **Confine it to subjects where a presupposition bundle genuinely reorganizes the whole reading.** Requires ≥ 2
+   scenarios (one bundle is just the neutral page) and a shared evidence shelf it links rather than restates. Do **not**
+   spawn scenario ledgers for every doctrine — the value is systems-level accounting where competing *total* frameworks
+   read the *same* data differently.
+
+Reader-facing label **"Scenarios" / "the scenario ledger"**; internal term *scenario ledger* with a kebab-case slug per
+instance (`primeval-scenarios`). Arguments, argument groups, and the "Related doctrines" cluster convention all apply
+unchanged; the base facts and neutral ratings live once on the linked pages, so the ledger's job is the *delta and the
+bill*, kept in one legible place. Skeleton: [`templates/scenario-ledger.html`](templates/scenario-ledger.html).
+
 ## Dating-skepticism & out-of-place-artifact (OOPArt) arguments
 Some arguments (esp. on `primeval-evidence`) test whether an artifact is **significantly older than its official
 date** — potentially reaching a pre-Flood / nephilim horizon — i.e. that the conventional dating is wrong. These are
@@ -482,7 +524,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`; "Astrology and the heavens"
+`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);

@@ -134,6 +134,16 @@ docs/doctrines/
   `origenist-controversy` (Jerome ↔ Rufinus) and `jerome-augustine` (Jerome ↔ Augustine). See `CLAUDE.md`
   ("Relationship topics") for the full rules.
 
+- **Scenario ledger** = a doctrine-page *variant* — **one aggregate page** — whose subject is *how one shared body of
+  evidence reads under two or more competing, fixed presupposition-bundles* ("scenarios"). It **reuses** the existing page
+  types and **does not clone** the pages it reads: it links the argument/evidence pages and holds only the *conditional
+  delta* per item (which of four buckets — ✓ fits · ○ neutral · △ costs a named date · ✗ unexplained — that item falls in
+  under each scenario), never re-rating the linked argument. A mandatory **honesty floor** makes each column publish its
+  ✗ residue and its count of independent datings it must overturn (correlated vs. ad hoc), so the friendly bundle is
+  always shown beside its bill and a ledger may conclude *against* a bundle. First instance: `primeval-scenarios`
+  (Septuagint-long + Watcher-inheritance vs. young-earth vs. naturalistic null, over the primeval material record); a
+  `perpetual-virginity` instance is planned. See `CLAUDE.md` ("Comparative scenario-ledger pages") for the full rules.
+
 Copy the shape of the skeletons in [`templates/`](templates/); for a full, real worked example see the
 nephilim doctrine — `docs/doctrines/nephilim.html` (summary timeline), its person-detail pages under
 `docs/doctrines/nephilim/`, and its argument pages under `docs/doctrines/nephilim/arguments/`.
