@@ -414,6 +414,45 @@ Non-negotiable honesty guards (these bind every such page):
 - Keep the **manufacturing** sub-claim ("needed advanced tech to make") distinct from the **dating** sub-claim
   ("older than its date") and rate each separately. OOPArt pages are grouped under `group-oopart`; the
   reader-facing group label is "Related arguments — out-of-place artifacts."
+- **Default steelman for a manufacturing / "beyond-native-capacity" claim: post-Flood *inheritance*, not a redated
+  artifact.** When the maker-culture itself sits *after* the Flood, the strong form of "they couldn't have made this
+  unaided" is not "the object is secretly older" (that is the *dating* sub-claim) but "the capacity is antediluvian
+  know-how — the Watcher-arts of *1 Enoch* 7–8 — carried *through* the Flood into a post-Flood heir." Consider this
+  reading before rating any such claim. It makes the **Septuagint** horizon *load-bearing*: only the long chronology
+  leaves the culture standing after the deluge (the short one turns it into an antediluvian casualty), so here the
+  Flood date is **not** moot — the opposite of the dating sub-claim, where it usually is. Concede the chronological fit
+  where the LXX gives one (straddle patterns — a technique attested pre-Flood and climaxing post-Flood — count in the
+  argument's favour), then rate on the **date-independent material character** of the work (tool-marks, excavated
+  workshops, craft-trajectory). Worked model: `primeval-evidence/arguments/jade-manufacturing-technology.html`
+  (§ "Where the Flood date is not moot").
+
+## The biblical Flood horizon as a yardstick (Genesis 6–9 evidential pages)
+When a `primeval-evidence` or `flood-date` page needs a **biblical Flood date to judge an artifact's or horizon's
+fit**, steelman the *strongest* reckoning, not the most *popular* one: default to the **Septuagint long chronology**
+(Flood c. 3300–3000 BC, Creation c. 5500 BC) as the working horizon, since the wiki already rates it "arguably the
+stronger" reckoning (`flood-date/arguments/septuagint-long-chronology.html`), not Ussher's Masoretic 2348 BC merely
+because young-earth writers favour it. But do **not** flip this into "measure against the LXX only" — that just swaps
+one strawman for its mirror image. The honest standard, modelled by `primeval-evidence/arguments/ur-flood-deposit.html`
+(whose verdict is "extent, not date"):
+- **Test against the contested interval** — short end (Masoretic/Samaritan ~2348 BC) to long end (LXX ~3300 BC) — not
+  a single number.
+- **Flag any verdict that flips** with the reckoning: "'X is too early' is a verdict about a chosen yardstick, not a
+  fact about the artifact." Where the verdict is date-*independent* (stratigraphy, mechanism, or wrong by orders of
+  magnitude), say so and move on.
+- **Don't launder a fit upward on the LXX's back — but an honest reframing may legitimately raise a rating.** The LXX
+  is still *weak as a date* on its own (even c. 3200 BC the continuous Naqada/Uruk sequences run across the horizon with
+  no rupture), so a fit does **not** improve *merely because* you switched to the more generous yardstick — that
+  mechanical swap is the laundering to avoid. What *is* allowed: a rating that rises because the reconsidered evidence
+  itself warrants it. An upward move is an acceptable outcome of a steelman pass, not a ceiling the yardstick forbids;
+  the bar is honesty about *why* it moved (the evidence, not the chosen number).
+- **Deep-time artifacts** (Göbekli Tepe, etc.) sit before *both* reckonings' Creation, so the horizon choice is moot
+  there — the live question is dating-method security (`dating-security.html`), not which biblical number.
+
+Two research directions extend this and are queued in `todo/`: a **calibration-spine** argument (the
+dendro/varve/speleothem/ice-core anchor chain + accelerated-decay — the one *live* form of the "deep dates are
+compressible" case, to be rated honestly with symmetry of skepticism) and a **mature-creation / apparent-age**
+argument (does created-with-appearance-of-age neutralize the dating record? — a philosophy-of-evidence move that
+*concedes* the measurements, kept distinct from dating-method skepticism).
 
 ## Doctrine clusters (cross-linking related doctrines)
 A **doctrine cluster** is a named family of **two or more doctrine summaries** that share witnesses,
