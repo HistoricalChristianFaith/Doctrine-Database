@@ -397,9 +397,11 @@ Hieronymian readings as fixed bundles scored over the same proof-texts). It has 
 
 1. **Scenarios are named, fixed presupposition-bundles, each stating exactly what it commits to.** A scenario is not a
    mood ("the traditional view") but a spelled-out set of commitments with a **bill** — the specific things that must
-   hold true for it, and what would falsify it. E.g. on `primeval-scenarios`: *(A)* Septuagint long chronology + real
-   antediluvian Watcher-arts inherited *through* the Flood; *(B)* Masoretic short / young-earth literal global Flood;
-   *(C)* mainstream naturalistic null. Each column carries its own falsifiers, not just its friendly fits.
+   hold true for it, and what would falsify it. E.g. on `primeval-scenarios` the two scored bundles are *(A)* Septuagint
+   long chronology + real antediluvian Watcher-arts inherited *through* the Flood and *(B)* Masoretic short / young-earth
+   literal global Flood; the mainstream naturalistic reading is **not** a scored column there but the neutral baseline the
+   linked premises-open pages already carry, against which A and B are measured (a null may be carried either way — see
+   feature 4). Each scored column carries its own falsifiers, not just its friendly fits.
 2. **One shared evidence shelf, scored per scenario into four buckets.** The rows are the *same* evidence for every
    column (drawn from the linked argument/evidence pages), and each cell places that item, under that scenario, in one
    bucket: **✓ fits / positively predicted**, **○ neutral (consistent, non-discriminating)**, **△ costs a date** (fits
@@ -412,12 +414,16 @@ Hieronymian readings as fixed bundles scored over the same proof-texts). It has 
    **✗ residue** explicitly (what it still cannot explain), and (b) its **△ count** — how many *independent* dating
    results it needs overturned, and whether those failures share one mechanism (correlated — e.g. "all radiometric
    compressible") or are **ad hoc** (many unrelated excuses). The friendly bundle is always shown beside its bill, and a
-   scenario ledger **may — and often should — conclude against a bundle**. This is the direct extension of the
-   anti-apologetics guard and the "don't launder a fit upward" and "symmetry of skepticism" rules; without it the variant
-   is just apologetics with extra columns. Keep at least one honest ✓ *and* one honest ✗ per live scenario so no column
-   is rigged in either direction.
+   scenario ledger **may — and often should — conclude against a bundle**. This extends the "don't launder a fit upward"
+   and "symmetry of skepticism" rules: the ✗ residue and △ count are what keep the ledger honest, not a column of friendly
+   fits. Keep at least one honest ✓ *and* one honest ✗ per live scored bundle so no column is rigged in either direction.
+   (A dedicated naturalistic-null *column* is optional, not required — the null can instead sit as the neutral baseline the
+   linked pages establish; the honesty work is done by each live bundle publishing its own residue and bill, not by hosting
+   a null column for contrast.)
 4. **Confine it to subjects where a presupposition bundle genuinely reorganizes the whole reading.** Requires ≥ 2
-   scenarios (one bundle is just the neutral page) and a shared evidence shelf it links rather than restates. Do **not**
+   competing bundles and a shared evidence shelf it links rather than restates; the mainstream/naturalistic reading may be
+   carried as one scored column *or* folded into the baseline the linked neutral pages already hold (as `primeval-scenarios`
+   now does, scoring only its two believing bundles A and B against that baseline). Do **not**
    spawn scenario ledgers for every doctrine — the value is systems-level accounting where competing *total* frameworks
    read the *same* data differently.
 
