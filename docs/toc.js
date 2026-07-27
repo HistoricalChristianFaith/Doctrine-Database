@@ -45,6 +45,7 @@
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",
+    "church-government": "The Government of the Church",
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
