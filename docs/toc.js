@@ -46,6 +46,7 @@
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",
     "church-government": "The Government of the Church",
+    "roman-primacy": "The Primacy of Rome",
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",

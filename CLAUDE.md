@@ -530,7 +530,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
+`church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
