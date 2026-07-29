@@ -37,6 +37,7 @@
     "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
     "ufo-demonic": "Aliens, UFOs, and the Demonic",
+    "divine-council": "The Divine Council and the Sons of God",
     "flood": "Noah's Flood",
     "primeval-evidence": "The Flood and the Nephilim in the Material Record",
     "flood-date": "The Dating of Noah's Flood",
