@@ -432,6 +432,55 @@ instance (`primeval-scenarios`). Arguments, argument groups, and the "Related do
 unchanged; the base facts and neutral ratings live once on the linked pages, so the ledger's job is the *delta and the
 bill*, kept in one legible place. Skeleton: [`templates/scenario-ledger.html`](templates/scenario-ledger.html).
 
+## Synthesis-narrative pages (a doctrine-page variant)
+A **synthesis narrative** is a doctrine page whose subject is a *whole worldview told as one connected story* — the
+"big picture" that individual doctrines and arguments only ever show a fragment of. Many of the wiki's threads (the
+divine council, the Genesis-6 rebellion, the Nephilim, the Flood, Babel's disinherited nations, the conquest giants,
+the gods-of-the-nations, the modern UFO tail) interlock into a single cohesive account; each leg lives on its own
+timeline/argument page and is weighed there, but nowhere does a reader see the arc *as* an arc. A synthesis narrative
+draws that arc. It **reuses** the ordinary doctrine + person-detail + argument types unchanged — **not** a new page
+type, **one aggregate page** — and it **does not clone** the pages it draws on: it *links* them and holds only the
+*connective narration*. First (and so far only) instance: `supernatural-worldview` ("The Supernatural Worldview: How
+the Threads Connect"), the Deuteronomy-32 / Heiser "unseen realm" story, under its own "The big picture" family
+(`family-big-picture`). It is defined by four features:
+
+1. **It grants the whole reading and narrates in its own voice — it makes NO assessments.** Unlike every other page,
+   a synthesis narrative carries **no** `sound`/`plausible`/`contested`/`weak`/`unsupported` judgments and does not
+   adjudicate anything in its prose. It states plainly up front that it is a *synthesis, not an assessment*: "granting
+   the whole reading, here is the single story its threads tell." The narrative is deliberately kept **clean** — it is
+   **not** hedged, tagged, or rebutted at the seams (that staining is exactly what this page-type exists to avoid). The
+   honesty is not abandoned; it is **relocated** to (a) an inline link at every load-bearing leg, out to the page that
+   weighs it critically, and (b) the mandatory cost ledger at the foot. Those two carry the whole honesty burden, so
+   both are non-negotiable.
+2. **The cost ledger at the foot is the single honesty floor — mandatory and load-bearing.** The page ends in a
+   `<h2>` **"What you would have to hold"** (reader-facing label; internal term *cost ledger*): the complete tally of
+   the load-bearing commitments the worldview requires, **each linking the page that weighs it and carrying that page's
+   real assessment** (this is the one place ratings appear — at the *foot*, not smeared through the story). It is framed
+   as a **conjunction**: to hold the *whole* picture as history you must accept *all* of these together, and the
+   cumulative weight of the conjunction is the honest counter to the narrative's coherence (a chain of individually
+   *plausible* legs can have a low joint probability — coherence makes a story feel likelier, conjunction makes it less).
+   Order the ledger most-load-bearing / most-fragile first, and be honest that several of these the wiki itself rates
+   weak or unsupported. A synthesis narrative that omits or softens this ledger is just apologetics with a disclaimer.
+3. **One worldview per page, in its own voice — rivals get their own synthesis pages, never a both-sides treatment.**
+   A synthesis narrative tells *one* framework's story straight through; it does **not** stain that story with a rival's
+   objections or a comparative panel (that is the scenario ledger's job, and even there the rows are neutral). The
+   naturalistic/materialist reading — and any other rival framework — earns its **own** standalone synthesis page later,
+   told in its own voice, so each story can be read and weighed on its own terms. Do **not** flag "the form's asymmetry"
+   inside a synthesis page; the symmetry is supplied at the *family* level by the sibling pages, not inside any one of
+   them. Once ≥ 2 synthesis pages exist the "The big picture" family reads as a cluster → add the `Related doctrines:`
+   breadcrumb then.
+4. **Legs are sourced by inline link, not a footnote apparatus.** Because every claim in the narrative is a conditional
+   re-narration of a leg that is fully sourced and adversarially weighed on its *own* page, the synthesis narrative
+   sources itself by **inline links to those pages** rather than a per-claim `Sources`/footnote block — a deliberate
+   divergence from Hard rule 2, mirroring how the scenario ledger's cells link the full argument page instead of
+   re-citing it. Every load-bearing leg must be one click from its full treatment; a leg with no page yet is a lead to
+   create that page first (or the cost ledger flags it as not-yet-weighed) — the narrative may never be the *sole* home
+   of a claim (no laundering by burying an unrated claim only here).
+
+Reader-facing label **"The big picture"** / **"synthesis"**; internal term *synthesis narrative* with a kebab-case slug
+per instance (`supernatural-worldview`). Arguments, argument groups, and the "Related doctrines" cluster convention all
+apply unchanged. Skeleton: [`templates/synthesis-narrative.html`](templates/synthesis-narrative.html).
+
 ## Dating-skepticism & out-of-place-artifact (OOPArt) arguments
 Some arguments (esp. on `primeval-evidence`) test whether an artifact is **significantly older than its official
 date** — potentially reaching a pre-Flood / nephilim horizon — i.e. that the conventional dating is wrong. These are
@@ -535,6 +584,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
 "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
-`immaculate-conception`, `assumption`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
+`immaculate-conception`, `assumption`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`. **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
-`writing-on-the-ground`. (There is no longer an "Other doctrines" bucket.)
+`writing-on-the-ground`; "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
+rival-worldview synthesis page joins it). (There is no longer an "Other doctrines" bucket.)
