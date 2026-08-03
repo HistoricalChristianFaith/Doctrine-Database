@@ -25,6 +25,7 @@
     "ot-canon": "The Old Testament Canon",
     "septuagint-origin": "The Septuagint",
     "rabbinic-corruption": "The Rabbinic Corruption of Scripture",
+    "divine-name": "The Divine Name",
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
     "intermediate-state": "The Intermediate State",

@@ -576,7 +576,7 @@ carries an `id="family-<slug>"` anchor (the generated TOC links to it) but **no*
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 
 **Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
-`rabbinic-corruption`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
+`rabbinic-corruption`, `divine-name`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
 `church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
