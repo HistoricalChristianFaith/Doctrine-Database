@@ -87,7 +87,8 @@
     "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
     "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
     "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom",
-    "great-apostasy": "The Great Apostasy"
+    "great-apostasy": "The Great Apostasy",
+    "book-of-mormon-historicity": "The Book of Mormon and the Material Record"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
