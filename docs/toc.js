@@ -86,7 +86,8 @@
     "tertullian-heresy": "Was Tertullian a Heretic?",
     "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
     "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
-    "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom"
+    "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom",
+    "great-apostasy": "The Great Apostasy"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
