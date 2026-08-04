@@ -89,7 +89,8 @@
     "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom",
     "great-apostasy": "The Great Apostasy",
     "book-of-mormon-historicity": "The Book of Mormon and the Material Record",
-    "first-vision": "The First Vision (the multiple accounts)"
+    "first-vision": "The First Vision (the multiple accounts)",
+    "quranic-tahrif": "Tahrif and the Islamic Restoration"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
