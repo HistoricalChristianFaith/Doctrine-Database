@@ -53,6 +53,7 @@
     "job": "Job",
     "naaman": "Naaman the Syrian",
     "jannes-and-jambres": "Jannes and Jambres",
+    "queen-of-sheba": "The Queen of Sheba",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
