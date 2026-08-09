@@ -45,6 +45,7 @@
     "flood-date": "The Dating of Noah's Flood",
     "primeval-scenarios": "The Flood and the Nephilim Under Competing Scenarios",
     "supernatural-worldview": "The Supernatural Worldview",
+    "balaam": "Balaam son of Beor",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
