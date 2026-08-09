@@ -48,6 +48,7 @@
     "balaam": "Balaam son of Beor",
     "melchizedek": "Melchizedek",
     "nimrod": "Nimrod",
+    "enoch": "Enoch",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
