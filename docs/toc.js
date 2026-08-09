@@ -47,6 +47,7 @@
     "supernatural-worldview": "The Supernatural Worldview",
     "balaam": "Balaam son of Beor",
     "melchizedek": "Melchizedek",
+    "nimrod": "Nimrod",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
