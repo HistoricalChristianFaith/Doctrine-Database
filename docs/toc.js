@@ -75,6 +75,7 @@
     "apostle-matthias": "Matthias",
     "apostle-paul": "Paul",
     "magi": "Who Were the Magi?",
+    "birthplace-of-christ": "Where Was Christ Born?",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
