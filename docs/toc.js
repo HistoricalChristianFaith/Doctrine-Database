@@ -61,6 +61,7 @@
     "og": "Og of Bashan",
     "cyrus": "Cyrus the Great",
     "death-of-moses": "The Death and Assumption of Moses",
+    "curse-of-ham": "The Curse of Ham",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
