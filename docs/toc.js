@@ -59,6 +59,7 @@
     "rahab": "Rahab of Jericho",
     "nebuchadnezzar": "Nebuchadnezzar",
     "og": "Og of Bashan",
+    "cyrus": "Cyrus the Great",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
