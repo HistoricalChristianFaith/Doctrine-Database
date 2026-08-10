@@ -35,6 +35,7 @@
     "apokatastasis": "Universal Restoration (Apokatastasis)",
     "discernment-of-dreams": "The Discernment of Dreams",
     "star-prophecy": "The Star Prophecy",
+    "messianic-claimants": "The Messianic Claimants",
     "real-presence": "The Real Presence in the Eucharist",
     "ministerial-priesthood": "The Ministerial Priesthood",
     "nephilim": "The Sons of God and the Nephilim",
