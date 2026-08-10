@@ -57,6 +57,7 @@
     "queen-of-sheba": "The Queen of Sheba",
     "jethro": "Jethro",
     "rahab": "Rahab of Jericho",
+    "og": "Og of Bashan",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
