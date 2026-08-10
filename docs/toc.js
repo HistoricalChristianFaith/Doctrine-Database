@@ -56,6 +56,7 @@
     "jannes-and-jambres": "Jannes and Jambres",
     "queen-of-sheba": "The Queen of Sheba",
     "jethro": "Jethro",
+    "rahab": "Rahab of Jericho",
     "conquest-of-canaan": "The Conquest of Canaan",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
