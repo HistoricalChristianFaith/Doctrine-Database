@@ -73,6 +73,7 @@
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
+    "divorce": "Divorce and remarriage",
     "remarriage": "Remarriage (the deprecation of digamy)",
     "mary-new-eve": "Mary as the New Eve",
     "theotokos": "Theotokos (Mother of God)",
