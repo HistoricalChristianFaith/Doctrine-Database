@@ -389,11 +389,15 @@ A **scenario ledger** is a doctrine page whose subject is not *who believed what
 (that is an evidential reconstruction), but **how one shared body of evidence reads under two or more competing, fixed
 presupposition-bundles** — "scenarios." It **reuses** the ordinary doctrine + person-detail + argument types unchanged —
 **not** a new page type, **one aggregate page**, and it **does not clone** the pages it reads: it *links* the existing
-argument/evidence pages and holds only the *conditional delta* per item. First (and so far only) instance:
+argument/evidence pages and holds only the *conditional delta* per item. First instance:
 `primeval-scenarios` ("The Flood and the Nephilim: the evidence under competing scenarios"), under the "Primeval history
-(Genesis 6–9)" family alongside `nephilim`, `flood`, `primeval-evidence`, and `flood-date`. The reusable purpose is
-comparison of *total frameworks*: a later instance is planned for `perpetual-virginity` (the Helvidian vs. Epiphanian vs.
-Hieronymian readings as fixed bundles scored over the same proof-texts). It has four defining features:
+(Genesis 6–9)" family alongside `nephilim`, `flood`, `primeval-evidence`, and `flood-date`. Second instance:
+`divorce-scenarios` ("Divorce and remarriage: the evidence under competing scenarios"), under the "Marriage, celibacy, and
+the single life" family, scoring the three historic answers (A Latin/Catholic indissolubility · B the Erasmian–Protestant
+dissolution reading · C the Eastern Orthodox *oikonomia* practice) over the shared shelf of Gospel/Pauline proof-texts; it
+adapts the △ bucket from "costs a date" to **"costs a text"** for a textual/doctrinal (non-dating) domain. The reusable
+purpose is comparison of *total frameworks*: a later instance is planned for `perpetual-virginity` (the Helvidian vs.
+Epiphanian vs. Hieronymian readings as fixed bundles scored over the same proof-texts). It has four defining features:
 
 1. **Scenarios are named, fixed presupposition-bundles, each stating exactly what it commits to.** A scenario is not a
    mood ("the traditional view") but a spelled-out set of commitments with a **bill** — the specific things that must
@@ -428,7 +432,7 @@ Hieronymian readings as fixed bundles scored over the same proof-texts). It has 
    read the *same* data differently.
 
 Reader-facing label **"Scenarios" / "the scenario ledger"**; internal term *scenario ledger* with a kebab-case slug per
-instance (`primeval-scenarios`). Arguments, argument groups, and the "Related doctrines" cluster convention all apply
+instance (`primeval-scenarios`, `divorce-scenarios`). Arguments, argument groups, and the "Related doctrines" cluster convention all apply
 unchanged; the base facts and neutral ratings live once on the linked pages, so the ledger's job is the *delta and the
 bill*, kept in one legible place. Skeleton: [`templates/scenario-ledger.html`](templates/scenario-ledger.html).
 
@@ -579,7 +583,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `rabbinic-corruption`, `divine-name`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
+`church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);

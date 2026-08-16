@@ -74,6 +74,7 @@
     "church-buildings": "The Place of Christian Worship",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "divorce": "Divorce and remarriage",
+    "divorce-scenarios": "Divorce: the scenario ledger",
     "remarriage": "Remarriage (the deprecation of digamy)",
     "mary-new-eve": "Mary as the New Eve",
     "theotokos": "Theotokos (Mother of God)",
