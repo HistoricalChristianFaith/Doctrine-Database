@@ -81,6 +81,7 @@
     "theotokos": "Theotokos (Mother of God)",
     "immaculate-conception": "The Immaculate Conception of Mary",
     "assumption": "The Assumption / Dormition of Mary",
+    "tomb-of-the-virgin": "The Tomb of the Virgin (Church of the Sepulchre of St. Mary)",
     "apostles": "The Apostles",
     "apostle-peter": "Simon Peter",
     "apostle-andrew": "Andrew",
