@@ -100,6 +100,7 @@
     "birthplace-of-christ": "Where Was Christ Born?",
     "tomb-of-jesus": "The tomb of Jesus (Golgotha & the Holy Sepulchre)",
     "garden-of-gethsemane": "The Garden of Gethsemane",
+    "burial-cloths": "The burial cloths of Christ (the Shroud & the Sudarium)",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
