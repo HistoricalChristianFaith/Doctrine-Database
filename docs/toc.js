@@ -102,6 +102,7 @@
     "tomb-of-jesus": "The tomb of Jesus (Golgotha & the Holy Sepulchre)",
     "garden-of-gethsemane": "The Garden of Gethsemane",
     "bethany-bethphage": "Bethany & Bethphage (the tomb of Lazarus & the Palm Sunday sending-place)",
+    "ascension-site": "The site of the Ascension (the Imbomon & the Chapel of the Ascension)",
     "burial-cloths": "The burial cloths of Christ (the Shroud & the Sudarium)",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
