@@ -592,4 +592,6 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
 `writing-on-the-ground`; "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
-rival-worldview synthesis page joins it). (There is no longer an "Other doctrines" bucket.)
+rival-worldview synthesis page joins it); "The Christian life &amp; the virtues" (`family-virtues`) — `friendship` (grows into
+a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it). (There is no longer an "Other
+doctrines" bucket.)

@@ -29,6 +29,7 @@
     "nt-use-of-ot": "Which text did the New Testament quote?",
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
+    "friendship": "The Christian Theology of Friendship",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
     "prayer-to-saints": "Prayer to the Saints",
