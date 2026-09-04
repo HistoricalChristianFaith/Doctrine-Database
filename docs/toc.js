@@ -48,6 +48,8 @@
     "primeval-evidence": "The Flood and the Nephilim in the Material Record",
     "flood-date": "The Dating of Noah's Flood",
     "primeval-scenarios": "The Flood and the Nephilim Under Competing Scenarios",
+    "biblical-chronology": "Reckoning the Age of the World",
+    "chronology-scenarios": "Biblical Chronology Under Competing Systems",
     "supernatural-worldview": "The Supernatural Worldview",
     "balaam": "Balaam son of Beor",
     "melchizedek": "Melchizedek",
