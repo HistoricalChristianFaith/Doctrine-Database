@@ -29,6 +29,7 @@
     "nt-use-of-ot": "Which text did the New Testament quote?",
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
+    "original-sin": "Original Sin & the Fall",
     "justification": "Justification",
     "predestination": "Predestination & Free Will",
     "trinity": "The Trinity",
