@@ -132,6 +132,7 @@
     "origenist-controversy": "The Origenist Controversy (Jerome and Rufinus)",
     "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
     "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom",
+    "cyril-nestorius": "Cyril of Alexandria and Nestorius",
     "great-apostasy": "The Great Apostasy",
     "book-of-mormon-historicity": "The Book of Mormon and the Material Record",
     "first-vision": "The First Vision (the multiple accounts)",

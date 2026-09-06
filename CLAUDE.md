@@ -586,7 +586,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
-`theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
+`theophilus-chrysostom`, `cyril-nestorius` (relationship topics) and `origen-condemnation` (a reception-history timeline);
 "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
 `immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`, `cross-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (an evidential reconstruction),
 `first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
