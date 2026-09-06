@@ -30,6 +30,7 @@
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
     "justification": "Justification",
+    "predestination": "Predestination & Free Will",
     "trinity": "The Trinity",
     "christology": "The Person of Christ",
     "filioque": "The Filioque",
