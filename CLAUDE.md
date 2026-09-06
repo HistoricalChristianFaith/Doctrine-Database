@@ -594,7 +594,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 **Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
 `rabbinic-corruption`, `divine-name`, `nt-use-of-ot`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
-`ministerial-priesthood`; "The sacraments" — `penance`, `seven-sacraments`, `confirmation`, `anointing-of-the-sick`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
+`ministerial-priesthood`, `communion-one-kind`, `communion-of-infants`; "The sacraments" — `penance`, `seven-sacraments`, `confirmation`, `anointing-of-the-sick`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
 `church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
 — `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
