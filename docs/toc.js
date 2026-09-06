@@ -83,6 +83,7 @@
     "roman-primacy": "The Primacy of Rome",
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
+    "penance": "Penance & Confession",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "divorce": "Divorce and remarriage",
     "divorce-scenarios": "Divorce: the scenario ledger",
