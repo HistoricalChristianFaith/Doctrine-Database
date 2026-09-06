@@ -32,6 +32,7 @@
     "justification": "Justification",
     "trinity": "The Trinity",
     "christology": "The Person of Christ",
+    "filioque": "The Filioque",
     "friendship": "The Christian Theology of Friendship",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
