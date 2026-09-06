@@ -110,6 +110,7 @@
     "ascension-site": "The site of the Ascension (the Imbomon & the Chapel of the Ascension)",
     "burial-cloths": "The burial cloths of Christ (the Shroud & the Sudarium)",
     "image-veneration": "The Veneration of Images & Icons",
+    "relic-veneration": "The Veneration of Relics",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
