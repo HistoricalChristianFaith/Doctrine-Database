@@ -87,6 +87,7 @@
     "penance": "Penance & Confession",
     "seven-sacraments": "The seven sacraments",
     "confirmation": "Confirmation & Chrismation",
+    "anointing-of-the-sick": "Anointing of the Sick",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "divorce": "Divorce and remarriage",
     "divorce-scenarios": "Divorce: the scenario ledger",
