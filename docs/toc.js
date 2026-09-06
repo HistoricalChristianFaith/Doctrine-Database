@@ -30,6 +30,7 @@
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
     "justification": "Justification",
+    "trinity": "The Trinity",
     "friendship": "The Christian Theology of Friendship",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
