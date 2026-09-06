@@ -57,6 +57,7 @@ when uncertain.
 | The Odes of Solomon | odes-of-solomon | 125 | yes | https://en.wikipedia.org/wiki/Odes_of_Solomon |
 | The Shepherd of Hermas | shepherd-of-hermas | 150 | yes | https://en.wikipedia.org/wiki/The_Shepherd_of_Hermas |
 | Eusebius of Caesarea | eusebius-of-caesarea | 324 | yes | https://en.wikipedia.org/wiki/Eusebius |
+| Marcellus of Ancyra | marcellus-of-ancyra | 336 | no (bishop of Ancyra c. 280–374; **trinity** witness for the near-modalist overcorrection — timeline anchor c. 336, his *Against Asterius* + deposition at the Synod of Constantinople 336. Not in the Writings-Database; his book survives only as ~128 fragments quoted to refute him by Eusebius in *Contra Marcellum* & *De Ecclesiastica Theologia* [Klostermann/Vinzent numbering; English translations at fourthcentury.com/marcellus-intro]. Detail page docs/doctrines/trinity/marcellus-of-ancyra.html) | https://en.wikipedia.org/wiki/Marcellus_of_Ancyra |
 | Athanasius of Alexandria | athanasius-of-alexandria | 371 | yes | https://en.wikipedia.org/wiki/Athanasius_of_Alexandria |
 | Ambrose of Milan | ambrose-of-milan | 380 | yes | https://en.wikipedia.org/wiki/Ambrose |
 | Leo the Great | leo-the-great | 447 | yes | https://en.wikipedia.org/wiki/Pope_Leo_I |
