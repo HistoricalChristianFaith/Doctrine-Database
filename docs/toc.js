@@ -86,6 +86,7 @@
     "church-buildings": "The Place of Christian Worship",
     "penance": "Penance & Confession",
     "seven-sacraments": "The seven sacraments",
+    "confirmation": "Confirmation & Chrismation",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "divorce": "Divorce and remarriage",
     "divorce-scenarios": "Divorce: the scenario ledger",
