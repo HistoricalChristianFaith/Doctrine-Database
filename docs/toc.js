@@ -48,6 +48,7 @@
     "messianic-claimants": "The Messianic Claimants",
     "real-presence": "The Real Presence in the Eucharist",
     "ministerial-priesthood": "The Ministerial Priesthood",
+    "communion-one-kind": "Communion under one kind",
     "nephilim": "The Sons of God and the Nephilim",
     "ufo-demonic": "Aliens, UFOs, and the Demonic",
     "divine-council": "The Divine Council and the Sons of God",
