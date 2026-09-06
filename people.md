@@ -62,6 +62,7 @@ when uncertain.
 | Athanasius of Alexandria | athanasius-of-alexandria | 371 | yes | https://en.wikipedia.org/wiki/Athanasius_of_Alexandria |
 | Ambrose of Milan | ambrose-of-milan | 380 | yes | https://en.wikipedia.org/wiki/Ambrose |
 | Leo the Great | leo-the-great | 447 | yes | https://en.wikipedia.org/wiki/Pope_Leo_I |
+| Pope Gelasius I | gelasius-i | 494 | no (bishop of Rome 492–496; witness on communion-one-kind — the decretal *Comperimus*, "whole sacrament or none," preserved in Gratian *Decretum* De consecratione D.2 c.12; aimed at Manichaeans who shunned the wine) | https://en.wikipedia.org/wiki/Pope_Gelasius_I |
 | Melito of Sardis | melito-of-sardis | 170 | yes | https://en.wikipedia.org/wiki/Melito_of_Sardis |
 | Rabbi Akiva ben Joseph (also Akiba) | akiva-ben-joseph | 130 | no (Tannaitic sage, c. 50&#8211;135 AD; primaries via Sefaria: Mishnah Sanhedrin 10:1, Yadayim 3:5, Tosefta Yadayim 2:13, b. Sanhedrin 100b) | https://en.wikipedia.org/wiki/Akiva_ben_Joseph |
 | Clement of Rome (Pope Clement I) | clement-of-rome | 96 | yes (1 Clement; metadata default_year=99, but the letter is dated c. 95&#8211;96 AD) | https://en.wikipedia.org/wiki/Pope_Clement_I |
