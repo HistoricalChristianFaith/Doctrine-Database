@@ -593,5 +593,8 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
 `writing-on-the-ground`; "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
 rival-worldview synthesis page joins it); "The Christian life &amp; the virtues" (`family-virtues`) — `friendship` (grows into
-a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it). (There is no longer an "Other
+a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it); "Grace, faith, and
+justification" (`family-grace`) — `justification` (the imputed-vs-infused righteousness dispute + the sola-fide
+proof-texts; the doctrinal root beneath `treasury-of-merit`/`indulgences`, which stay under `family-communion`; grows
+into a cluster if a grace/predestination or works-of-the-law page joins it). (There is no longer an "Other
 doctrines" bucket.)
