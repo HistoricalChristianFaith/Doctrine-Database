@@ -181,9 +181,21 @@ the reader-facing label is **"Related arguments"**.) See "Argument groups" under
   each** — it is *not* a request to author pages on the spot. Mine X for `(person/claim, source)` pairs
   and open arguments, drop a file per lead, then stop. The leads get processed one-by-one in later passes
   (or when the user says to work the queue). Vital to include source links from where you found the items (local file paths, external urls) for the agents to tap into later when attributing sources, if necessary. Do not explicitly specify the exact edits the agent needs to make - make it clear that the agent should investigate the sources and where our wiki is at, and determine that for itself.
+- **Cap a multi-lead batch with a fan-out harvest lead — when appropriate.** Whenever you queue a *batch*
+  of leads that scaffolds a **new doctrine, family, or other substantial topic** (a spine + its initial
+  research/argument leads), add one trailing **harvest lead** with the **latest timestamp** in the batch, so
+  `/next` reaches it only after the spine and initial leads are worked. Its job: once the fresh pages exist,
+  run the **`/harvest-leads`** skill over the new area to spin up follow-on leads from the unturned stones the
+  initial research surfaced but never queued (named-but-unslotted witnesses, sub-questions raised in prose but
+  not yet given argument pages, cross-links that deepen into their own leads, adjacent doctrines worth their
+  own spine). The lead must say **do not action until** the pages it depends on exist (else re-queue later and
+  stop), and end the normal way (delete + log). This keeps a topic self-extending instead of stopping at the
+  first pass. **Only where it fits** — skip it for a lone primary-hunt, a single argument, or any one-off lead
+  that opens no new territory; a harvest lead is for batches that plausibly have a *tail* of further research.
 - Two lead types: **primary-hunt** (a secondhand claim needing a primary located in the DBs → resolve
   per rule 4) and **argument** (a sub-claim needing adversarial adjudication → resolve into an argument
-  page with an `assessment`). Both end the same way: execute, then delete the file + log it.
+  page with an `assessment`). Both end the same way: execute, then delete the file + log it. (A **harvest
+  lead** — see above — is a third, *meta* kind that queues more leads rather than authoring a page.)
 - **Blocked from a needed doc? Exhaust workarounds first, then escalate to `human_todo/`.** If a
   research agent is denied access to a source it needs, it must first try hard to work around it
   (alternative editions, web copies, other sources that suffice). Only if *no* workaround is found
