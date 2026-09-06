@@ -112,6 +112,7 @@
     "burial-cloths": "The burial cloths of Christ (the Shroud & the Sudarium)",
     "image-veneration": "The Veneration of Images & Icons",
     "relic-veneration": "The Veneration of Relics",
+    "cross-veneration": "The Veneration of the Cross",
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",

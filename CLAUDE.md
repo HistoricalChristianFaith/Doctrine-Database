@@ -588,7 +588,7 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom` (relationship topics) and `origen-condemnation` (a reception-history timeline);
 "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
-`immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (an evidential reconstruction),
+`immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`, `cross-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (an evidential reconstruction),
 `first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
 no cluster and no breadcrumb): "Cruxes of the Gospel text" —
 `writing-on-the-ground`; "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
