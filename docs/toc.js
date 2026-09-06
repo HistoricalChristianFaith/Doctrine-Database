@@ -31,6 +31,7 @@
     "parity-of-sins": "Are All Sins Equal?",
     "justification": "Justification",
     "trinity": "The Trinity",
+    "christology": "The Person of Christ",
     "friendship": "The Christian Theology of Friendship",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
