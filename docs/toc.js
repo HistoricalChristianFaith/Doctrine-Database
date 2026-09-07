@@ -32,6 +32,7 @@
     "original-sin": "Original Sin & the Fall",
     "justification": "Justification",
     "predestination": "Predestination & Free Will",
+    "problem-of-evil": "The Problem of Evil",
     "trinity": "The Trinity",
     "christology": "The Person of Christ",
     "filioque": "The Filioque",
