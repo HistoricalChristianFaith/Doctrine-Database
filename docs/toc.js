@@ -43,6 +43,7 @@
     "treasury-of-merit": "The Treasury of Merit",
     "prayer-to-saints": "Prayer to the Saints",
     "dream-apparitions-of-the-dead": "Dream-apparitions of the Dead",
+    "eternal-conscious-torment": "Eternal Conscious Torment",
     "apokatastasis": "Universal Restoration (Apokatastasis)",
     "conditional-immortality": "Conditional Immortality (Annihilationism)",
     "final-state-scenarios": "The Final State of the Lost: the scenario ledger",
