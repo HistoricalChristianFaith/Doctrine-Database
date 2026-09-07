@@ -131,6 +131,7 @@
     "writing-on-the-ground": "What Jesus Wrote on the Ground",
     "astrology": "Astrology and the Stars",
     "pillars-of-seth": "The Pillars of Seth",
+    "living-heavens": "The Living Heavens",
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
