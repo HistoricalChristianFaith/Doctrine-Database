@@ -45,6 +45,7 @@
     "dream-apparitions-of-the-dead": "Dream-apparitions of the Dead",
     "apokatastasis": "Universal Restoration (Apokatastasis)",
     "conditional-immortality": "Conditional Immortality (Annihilationism)",
+    "final-state-scenarios": "The Final State of the Lost: the scenario ledger",
     "discernment-of-dreams": "The Discernment of Dreams",
     "star-prophecy": "The Star Prophecy",
     "messianic-claimants": "The Messianic Claimants",
