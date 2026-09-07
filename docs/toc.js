@@ -44,6 +44,7 @@
     "prayer-to-saints": "Prayer to the Saints",
     "dream-apparitions-of-the-dead": "Dream-apparitions of the Dead",
     "apokatastasis": "Universal Restoration (Apokatastasis)",
+    "conditional-immortality": "Conditional Immortality (Annihilationism)",
     "discernment-of-dreams": "The Discernment of Dreams",
     "star-prophecy": "The Star Prophecy",
     "messianic-claimants": "The Messianic Claimants",
