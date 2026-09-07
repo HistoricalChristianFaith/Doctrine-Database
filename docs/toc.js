@@ -26,6 +26,7 @@
     "septuagint-origin": "The Septuagint",
     "rabbinic-corruption": "The Rabbinic Corruption of Scripture",
     "divine-name": "The Divine Name",
+    "power-of-the-name": "The Power of the Name",
     "nt-use-of-ot": "Which text did the New Testament quote?",
     "origin-of-the-soul": "The Origin of the Soul",
     "parity-of-sins": "Are All Sins Equal?",
