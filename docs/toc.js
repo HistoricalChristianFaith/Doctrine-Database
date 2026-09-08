@@ -134,6 +134,7 @@
     "pillars-of-seth": "The Pillars of Seth",
     "living-heavens": "The Living Heavens",
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
+    "barlaam-josaphat": "Barlaam and Josaphat",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
