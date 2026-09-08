@@ -135,6 +135,7 @@
     "living-heavens": "The Living Heavens",
     "mythical-beasts": "Dragons, Unicorns & Mythical Beasts",
     "barlaam-josaphat": "Barlaam and Josaphat",
+    "seven-sleepers": "The Seven Sleepers of Ephesus",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
