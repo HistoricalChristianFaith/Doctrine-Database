@@ -44,6 +44,7 @@
     "treasury-of-merit": "The Treasury of Merit",
     "prayer-to-saints": "Prayer to the Saints",
     "dream-apparitions-of-the-dead": "Dream-apparitions of the Dead",
+    "resurrection-of-the-body": "The Resurrection of the Body",
     "eternal-conscious-torment": "Eternal Conscious Torment",
     "apokatastasis": "Universal Restoration (Apokatastasis)",
     "conditional-immortality": "Conditional Immortality (Annihilationism)",
