@@ -139,6 +139,7 @@
     "saint-christopher": "Saint Christopher the dog-headed",
     "dhul-qarnayn": "Dhū'l-Qarnayn and the Alexander Legend",
     "saint-george": "Saint George",
+    "saint-guinefort": "Saint Guinefort, the holy greyhound",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
