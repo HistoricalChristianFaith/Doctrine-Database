@@ -137,6 +137,7 @@
     "barlaam-josaphat": "Barlaam and Josaphat",
     "seven-sleepers": "The Seven Sleepers of Ephesus",
     "saint-christopher": "Saint Christopher the dog-headed",
+    "dhul-qarnayn": "Dhū'l-Qarnayn and the Alexander Legend",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "revelation-date": "The Date of Revelation",
