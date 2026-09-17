@@ -40,6 +40,7 @@
     "friendship": "The Christian Theology of Friendship",
     "liberal-arts": "The Purpose of the Liberal Arts",
     "christian-humanism": "Christian Humanism",
+    "vocation-and-work": "Vocation and the Dignity of Work",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
     "indulgences": "Indulgences",
