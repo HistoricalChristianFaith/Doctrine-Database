@@ -38,6 +38,7 @@
     "christology": "The Person of Christ",
     "filioque": "The Filioque",
     "friendship": "The Christian Theology of Friendship",
+    "liberal-arts": "The Purpose of the Liberal Arts",
     "intermediate-state": "The Intermediate State",
     "purgatory": "Purgatory",
     "indulgences": "Indulgences",
