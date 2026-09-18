@@ -596,16 +596,16 @@ existing in-prose cross-links — the breadcrumb is the consistent nav handle, t
 `purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
 `ministerial-priesthood`, `communion-one-kind`, `communion-of-infants`; "The sacraments" — `penance`, `seven-sacraments`, `confirmation`, `anointing-of-the-sick`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
 `church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
-— `astrology`, `pillars-of-seth`; "Alleged contradictions in Scripture" — `goliath-slayer`,
-`goliath-height`; "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
+— `astrology`, `pillars-of-seth`; "Hard passages" (`family-hard-passages`, placed right after
+"Scripture's text &amp; canon") — `goliath-slayer`, `goliath-height` (alleged contradictions) + `writing-on-the-ground`
+(a Gospel-text crux); "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
 `theophilus-chrysostom`, `cyril-nestorius` (relationship topics) and `origen-condemnation` (a reception-history timeline);
 "The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
 `immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`, `cross-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (an evidential reconstruction),
 `first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts); "Saints, legends, and the
 transmission of holy lives" (`family-hagiography`) — `barlaam-josaphat`, `seven-sleepers`, `saint-christopher`,
 `dhul-qarnayn`, `saint-george`, `saint-guinefort` (all legend-transmission timelines). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
-no cluster and no breadcrumb): "Cruxes of the Gospel text" —
-`writing-on-the-ground`; "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
+no cluster and no breadcrumb): "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
 rival-worldview synthesis page joins it); "The Christian life &amp; the virtues" (`family-virtues`) — `friendship` (grows into
 a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it); "Grace, faith, and
 justification" (`family-grace`) — `justification` (the imputed-vs-infused righteousness dispute + the sola-fide
