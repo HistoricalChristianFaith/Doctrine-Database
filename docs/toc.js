@@ -168,7 +168,8 @@
     "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?",
     "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?",
     "bene-israel": "The Bene Israel of India: a lost tribe of Israel?",
-    "japanese-israelite": "The Japanese-Israelite theory: a lost tribe in the East?"
+    "japanese-israelite": "The Japanese-Israelite theory: a lost tribe in the East?",
+    "lemba": "The Lemba of southern Africa: a lost tribe with a genetic signal?"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
