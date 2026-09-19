@@ -162,7 +162,8 @@
     "great-apostasy": "The Great Apostasy",
     "book-of-mormon-historicity": "The Book of Mormon and the Material Record",
     "first-vision": "The First Vision (the multiple accounts)",
-    "quranic-tahrif": "Tahrif and the Islamic Restoration"
+    "quranic-tahrif": "Tahrif and the Islamic Restoration",
+    "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
