@@ -163,7 +163,8 @@
     "book-of-mormon-historicity": "The Book of Mormon and the Material Record",
     "first-vision": "The First Vision (the multiple accounts)",
     "quranic-tahrif": "Tahrif and the Islamic Restoration",
-    "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas"
+    "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas",
+    "british-israelism": "British Israelism: the Anglo-Saxons as the Lost Tribes"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
