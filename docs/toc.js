@@ -166,7 +166,8 @@
     "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas",
     "british-israelism": "British Israelism: the Anglo-Saxons as the Lost Tribes",
     "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?",
-    "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?"
+    "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?",
+    "bene-israel": "The Bene Israel of India: a lost tribe of Israel?"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
