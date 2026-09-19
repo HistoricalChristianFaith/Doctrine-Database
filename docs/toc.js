@@ -147,6 +147,7 @@
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "genealogies-of-jesus": "The Two Genealogies of Jesus",
+    "death-of-judas": "The Death of Judas",
     "revelation-date": "The Date of Revelation",
     "mark-of-the-beast": "The Mark of the Beast and the Number 666",
     "origen-condemnation": "The Condemnation of Origen",
