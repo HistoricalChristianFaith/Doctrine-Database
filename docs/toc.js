@@ -146,6 +146,7 @@
     "saint-guinefort": "Saint Guinefort, the holy greyhound",
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
+    "solomon-horses": "Solomon's Stalls: 40,000 or 4,000?",
     "genealogies-of-jesus": "The Two Genealogies of Jesus",
     "death-of-judas": "The Death of Judas",
     "baptism-for-the-dead": "Baptized for the Dead",
