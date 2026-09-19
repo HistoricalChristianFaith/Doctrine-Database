@@ -167,7 +167,8 @@
     "british-israelism": "British Israelism: the Anglo-Saxons as the Lost Tribes",
     "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?",
     "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?",
-    "bene-israel": "The Bene Israel of India: a lost tribe of Israel?"
+    "bene-israel": "The Bene Israel of India: a lost tribe of Israel?",
+    "japanese-israelite": "The Japanese-Israelite theory: a lost tribe in the East?"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
