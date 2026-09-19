@@ -165,7 +165,8 @@
     "quranic-tahrif": "Tahrif and the Islamic Restoration",
     "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas",
     "british-israelism": "British Israelism: the Anglo-Saxons as the Lost Tribes",
-    "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?"
+    "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?",
+    "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
