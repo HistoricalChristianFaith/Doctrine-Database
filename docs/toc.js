@@ -147,6 +147,7 @@
     "goliath-slayer": "Who Killed Goliath?",
     "goliath-height": "How Tall Was Goliath?",
     "solomon-horses": "Solomon's Stalls: 40,000 or 4,000?",
+    "ahaziah-age": "Ahaziah's Age: 22 or 42?",
     "genealogies-of-jesus": "The Two Genealogies of Jesus",
     "death-of-judas": "The Death of Judas",
     "conflated-citations": "Naming the Wrong Prophet",
