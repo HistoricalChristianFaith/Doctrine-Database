@@ -149,6 +149,7 @@
     "solomon-horses": "Solomon's Stalls: 40,000 or 4,000?",
     "genealogies-of-jesus": "The Two Genealogies of Jesus",
     "death-of-judas": "The Death of Judas",
+    "conflated-citations": "Naming the Wrong Prophet",
     "baptism-for-the-dead": "Baptized for the Dead",
     "revelation-date": "The Date of Revelation",
     "mark-of-the-beast": "The Mark of the Beast and the Number 666",
