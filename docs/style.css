@@ -28,6 +28,19 @@ table { border-collapse: collapse; }
 td, th { border: 1px solid #333; padding: 0.3rem 0.6rem; }
 img { max-width: 100%; height: auto; }
 
+/* Granted-premise banner — an <aside class="granted-premise"> directly under the <h1> of a page analysed as if a
+   stated premise were true (see CLAUDE.md → "Granted premise"). A quiet amber rule so it reads as scope, not alarm. */
+.granted-premise {
+  margin: 0 0 1.25rem;
+  padding: 0.5rem 0.9rem;
+  border-left: 3px solid #b58a3c;
+  background: #221e16;
+  font-size: 0.92rem;
+  color: #d8d2c4;
+}
+.granted-premise p { margin: 0.3rem 0; }
+.granted-premise strong { color: #e8c27a; }
+
 /* Breadcrumb trail — built client-side by toc.js, sits at the very top of every non-root
    page (Home › Doctrine › leaf). Subtle, wraps on narrow viewports; separators are generated. */
 .breadcrumb { font-size: 0.8rem; margin: 0 0 1.25rem; }
