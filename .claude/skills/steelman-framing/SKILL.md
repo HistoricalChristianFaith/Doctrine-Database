@@ -79,6 +79,11 @@ Cite every source you actually consulted, with URLs where you have them (rule 10
   rate the page for the strong reading, but keep the weak sub-claim visibly *flagged as the part that
   fails* (the two-question structure on `descent-to-the-dead.html` / the reworked
   `excised-descent-prophecy.html` is the model).
+- **On a granted-premise page, steelman inside the premise.** If the page (or its home summary) carries a
+  `granted-premise` banner in *working inside* mode, its rating means "given the premise": steelman and rate
+  the interpretation *conditional on* that premise, and don't let the re-rate drift into re-judging the
+  premise itself (that lives on the page the banner links). On a *testing* page the verdict bears on the
+  premise, so rate as usual. Never change a page's mode silently; flag it in the report.
 - If the rating is a **genuine judgment call** (e.g. `plausible` vs `contested`), pick the one you can
   best defend, make the change, and **flag the alternative** to the user in your report — don't block.
 

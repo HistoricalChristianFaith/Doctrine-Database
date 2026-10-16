@@ -280,7 +280,11 @@
 
   function insertAfterH1(node) {
     var h1 = document.querySelector("h1");
-    if (h1 && h1.parentNode) h1.parentNode.insertBefore(node, h1.nextSibling);
+    // A granted-premise banner belongs directly under the title, so slot in after it.
+    var anchor = h1;
+    var next = h1 && h1.nextElementSibling;
+    if (next && next.classList.contains("granted-premise")) anchor = next;
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(node, anchor.nextSibling);
     else document.body.insertBefore(node, document.body.firstChild);
   }
 
