@@ -626,24 +626,9 @@ carries an `id="family-<slug>"` anchor (the generated TOC links to it) but **no*
 `id="cluster-…"` anchor, and the summary breadcrumb's family label stays plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 
-**Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
-`rabbinic-corruption`, `divine-name`, `nt-use-of-ot`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
-`purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
-`ministerial-priesthood`, `communion-one-kind`, `communion-of-infants`; "The sacraments" — `penance`, `seven-sacraments`, `confirmation`, `anointing-of-the-sick`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
-— `astrology`, `pillars-of-seth`; "Hard passages" (`family-hard-passages`, placed right after
-"Scripture's text &amp; canon") — `goliath-slayer`, `goliath-height` (alleged contradictions) + `writing-on-the-ground`
-(a Gospel-text crux); "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
-`theophilus-chrysostom`, `cyril-nestorius` (relationship topics) and `origen-condemnation` (a reception-history timeline);
-"The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
-`immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`, `cross-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (a testing granted-premise page),
-`first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts); "Saints, legends, and the
-transmission of holy lives" (`family-hagiography`) — `barlaam-josaphat`, `seven-sleepers`, `saint-christopher`,
-`dhul-qarnayn`, `saint-george`, `saint-guinefort` (all legend-transmission timelines). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
-no cluster and no breadcrumb): "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
-rival-worldview synthesis page joins it); "The Christian life &amp; the virtues" (`family-virtues`) — `friendship` (grows into
-a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it); "Grace, faith, and
-justification" (`family-grace`) — `justification` (the imputed-vs-infused righteousness dispute + the sola-fide
-proof-texts; the doctrinal root beneath `treasury-of-merit`/`indulgences`, which stay under `family-communion`; grows
-into a cluster if a grace/predestination or works-of-the-law page joins it). (There is no longer an "Other
-doctrines" bucket.)
+**Where membership lives.** Which doctrines belong to which family is recorded in exactly two visible
+places: the concept-family `<h2>` groupings on `index.html` (the source of truth) and each member's
+`Related doctrines:` breadcrumb. This file keeps **no** roster of clusters or families, because a
+hand-kept copy drifts. To see a family, read its `<h2 id="family-…">` block on the index. When a
+family grows from one doctrine to two, it becomes a cluster: add the breadcrumb to both members then.
+When adding a doctrine to an existing cluster, add it to every sibling's breadcrumb.
