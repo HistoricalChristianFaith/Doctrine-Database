@@ -423,8 +423,9 @@ A page that grants several premises side by side (a scenario ledger) uses the pl
    prediction in the set so it is not rigged toward debunking.
 
 **Current premised pages.** Testing: `primeval-evidence` (a Flood and real Nephilim) and `book-of-mormon-historicity`
-(the Book of Mormon as history). Working inside: `flood-date` (that a Flood happened) and `supernatural-worldview` (the
-unseen-realm reading, in the narrative format below). Several premises side by side: the four scenario ledgers below.
+(the Book of Mormon as history). Working inside: `flood-date` (that a Flood happened), `conquest-as-written` (the conquest of Canaan on the
+Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill at the foot) and
+`supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the four scenario ledgers below.
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
 ## Comparative scenario-ledger pages (several granted premises side by side)
