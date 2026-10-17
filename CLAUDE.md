@@ -47,6 +47,9 @@ a proof-text, mechanism, or theme may be grouped into a named **argument group**
 realized in visible content (a sub-heading on the summary + index and a `Related arguments:` breadcrumb on
 each member), **not** a fourth page type and **not** a new file. ("Argument group" is the internal term;
 the reader-facing label is **"Related arguments"**.) See "Argument groups" under Assessments below.
+Any of the three page types may also carry a **granted premise** banner: the page is analysed *as if* a stated premise
+were true (testing it, or working inside it), or — for a **held presupposition** — the wiki simply holds it and the page
+works inside it. It is a modifier, not a page type; see "Granted premise" below.
 
 ## Source databases (prefer over web, but still use web)
 - `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
@@ -372,52 +375,114 @@ ordinary argument pages. Again **not** a new page type — it reuses doctrine + 
 sits in whatever concept-family fits its subject. First instance: `origen-condemnation`, under "Controversies
 among the Fathers".
 
-## Evidential reconstruction timelines (a doctrine-page variant)
-An **evidential reconstruction** is a doctrine page whose subject is not *who believed what* but *what the material
-record shows* once a contested premise is granted for the sake of exploration. It **reuses** the ordinary doctrine +
-person-detail + argument types unchanged — **not** a new page type. First (and so far only) instance:
-`primeval-evidence` ("The Flood and the Nephilim in the Material Record"), under the "Primeval history (Genesis 6–9)"
-family alongside `nephilim` and `flood`. It diverges from a belief-timeline in three ways:
+## Granted premise (a banner on any page type)
+A **granted premise** marks a page that is analysed *as if* a stated premise were true. It is a **modifier, not a page
+type and not a doctrine-page variant**: a banner at the top of an ordinary doctrine summary, person-detail, or argument
+page. It lets the wiki drive deep into belief structures whose premises are not mainstream, or fit the real-world record
+poorly, without the page's findings being mistaken for a verdict on the premise. Like all wiki metadata it is visible
+content, not hidden frontmatter: a page *is* premised exactly when it carries the banner. (It replaces the former
+"evidential reconstruction" variant, and underlies the scenario ledger and the synthesis narrative below.)
 
-1. **The premise is granted, not assumed proven.** The intro states plainly that granting a Flood / a real Nephilim
-   phenomenon is *not* assuming the conclusion; each line of evidence is rated on its own merits, **possibility ≠ proof**,
-   and several arguments are expected to come out `weak`/`unsupported` (a page's job is sometimes to say so). This is the
-   anti-apologetics guard — it is the direct extension of the "don't rule out the supernatural a priori" rule, and it is
-   load-bearing: without it the variant is just apologetics.
-2. **Timeline "witnesses" are datable evidence-sources, ordered by evidence-date, not event-date.** A witness is a
-   stratum, tablet, king-list, megalith, hoax, or scientific finding — ordered by the age of the *evidence* (deposition /
-   composition), **not** by the age of the event it reports (which is exactly what the premise leaves open and the page
-   tests). The intro must flag this ordering so a reader does not mistake the shelf of sources for a claimed chronology.
-3. **Arguments run in two modes, both rated adversarially.** *Retrospective* ("here is an artifact — does it fit?") and
-   *predictive* ("the premise requires X — is X there?"). A predictive page states a risky prediction, commits to what
-   would falsify it, and **scopes any failure to the specific model that made it** (a young single-date global deluge, a
-   literal eight-person survival) — not to the bare premise. Keep at least one honestly-*successful* prediction in the set
-   so it is not rigged toward debunking.
+**Markup.** An `<aside class="granted-premise">` placed directly after the `<h1>` (styled in `style.css`):
+```html
+<aside class="granted-premise">
+<p><strong>Granted premise:</strong> that <premise, stated plainly>. <mode sentence>. <link to where the premise
+itself is weighed, with its real assessment>.</p>
+</aside>
+```
+A page that grants several premises side by side (a scenario ledger) uses the plural label **Granted premises:**. A page
+working inside a **held presupposition** (below) uses the label **Presupposition:** instead, in the same `<aside>`.
 
+**Three modes — the banner must say which.**
+- **Testing** — the page grants the premise to see what it predicts and whether the evidence bears it out. Its verdicts
+  bear on the premise itself, so the page *is* where the premise is weighed and the banner points at its own Arguments
+  section. No page uses this mode at present. Use it only where a page must reason *inside* a premise to derive what it
+  predicts; a page that simply gathers the evidence for and against a claim (e.g. `book-of-mormon-historicity`) is an
+  ordinary evidence page and carries no banner.
+- **Working inside** — the page assumes the premise to explore what follows from it (the "unseen realm" told as one
+  story). Its ratings are **conditional** on the premise, and the banner links the page that weighs the premise
+  unconditionally.
+- **Held presupposition** — the wiki itself *holds* the premise, as the site owner's working presupposition, and does not
+  spend pages testing whether it is true: no page argues that it did not happen, and none is kept "for balance." The
+  banner (label **Presupposition:**) says "this wiki holds that …" and states what the page asks *inside* it. Ratings are
+  conditional on it, as for working-inside pages. Rule 2's "link where it is weighed" is met by linking the belief-history
+  page that records how the Church has held it (e.g. `flood`), not an unconditional test. Evidence still gets weighed
+  honestly, sorted three ways: (a) **a claimed trace is not what it is claimed to be** (a silt band, landform, skull) —
+  rate it weak/unsupported as usual; (b) **evidence that tells against one *model* of the event** (a given date, a
+  given mechanism) — say so, scoped to that model; (c) **evidence that presses on the presupposition itself** — present it as an
+  **open puzzle inside the presupposition**: state the tension plainly without softening the data, and weigh the
+  resolutions proposed by those who hold it (noting where a resolution only works by giving up part of the
+  presupposition — e.g. a regional Flood, under a whole-earth presupposition). Never frame (c) as falsifying the
+  presupposition, and never frame (b) as a test of it. Rival believing models stay (e.g. scenarios A/B/C, three datings of
+  the Flood, on `primeval-scenarios`). **Current held presuppositions:** Noah's Flood happened, **covered the whole earth**,
+  and destroyed all humanity outside the ark — its *date* stays open — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
+  their argument pages); and Israel took Canaan as Joshua and Judges tell it — its *date* stays open, the early (c. 1406 BC)
+  and late (c. 1250 BC) datings being rival models, and no "no invasion" reading is carried (`conquest-of-canaan`,
+  `conquest-as-written`, and their argument pages; their banners link the belief-history page `conquest-in-tradition`, as
+  the Flood pages link `flood`). Extend the list only when the site owner adopts a new one.
+
+**Rules.**
+1. **Conditional ratings say so.** On a working-inside page every `Assessment:` means "given the premise." The banner
+   scopes them; don't restate the condition on every line, but never present such a rating as unconditional in prose,
+   and the page's one-line description on the index must name the premise it grants.
+2. **The banner links where the premise is weighed, with its real assessment** (or, for a testing page, its own
+   Arguments). A premise that is weighed nowhere yet is a lead to create that page first: a premised page may never be
+   the *sole* home of its premise (no laundering an unrated premise by assuming it). A **held presupposition** is the one
+   exception: it is held, not weighed, so its banner links the belief-history page that records how the Church has held it
+   (see the third mode above), and no page is created to test it.
+3. **Argument pages inherit.** Each argument page under a premised summary carries a one-line inherited banner,
+   `<aside class="granted-premise"><p><strong>Granted premise:</strong> inherited from <a href="../../<slug>.html">…</a>
+   — …</p></aside>`, so a reader who lands there directly sees the scope. Person-detail pages under a premised summary
+   report a source and need no banner unless their own prose works inside the premise.
+4. **Granting is not assuming the conclusion.** On a testing or working-inside page the intro still says so plainly;
+   each line of evidence is rated on its own merits, **possibility ≠ proof**, and such a page may (and often should)
+   report that the evidence does not bear the premise out. This is the anti-apologetics guard, the direct extension of
+   "don't rule out the supernatural a priori," and it is load-bearing: without it a granted premise is just apologetics
+   with a label. On a **held-presupposition** page the guard applies to every *claimed trace and model* (possibility ≠
+   proof; a misidentified artifact stays misidentified; tensions are stated, not buried), but not to the presupposition
+   itself, which the page holds rather than tests (see the third mode above).
+5. **Testing and held-presupposition pages: evidence-dated timelines and two argument modes.** Where such a page's timeline "witnesses" are
+   datable evidence-sources (a stratum, tablet, king-list, megalith, hoax, genome study), order them by the age of the
+   *evidence*, not of the event it reports, and flag that ordering in the intro. Arguments run *retrospective* ("here is
+   an artifact — does it fit?") and *predictive* ("the premise requires X — is X there?"); a predictive page commits to
+   what would falsify it and **scopes any failure to the specific model that made it** (a young single-date global
+   deluge, a literal eight-person survival), not to the bare premise. Keep at least one honestly-*successful*
+   prediction in the set so it is not rigged toward debunking. (On a held-presupposition page, a failed prediction sorts
+   into model-choice (b) or open puzzle (c) above, never into a test of the presupposition.)
+
+**Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (a whole-earth
+Flood that destroyed all humanity outside the ark, and real Nephilim); `conquest-of-canaan` (the conquest as Joshua tells
+it, date open; Jericho's date, Ai's empty mound and the highland pottery as open puzzles) and `conquest-as-written` (one
+dating model inside it, the Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill
+at the foot). Testing: none at present. Working inside: `supernatural-worldview` (the unseen-realm reading, in the
+narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
+inside the held presupposition, under the **Presupposition:** label).
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
-## Comparative scenario-ledger pages (a doctrine-page variant)
-A **scenario ledger** is a doctrine page whose subject is not *who believed what*, nor *what the material record shows*
-(that is an evidential reconstruction), but **how one shared body of evidence reads under two or more competing, fixed
-presupposition-bundles** — "scenarios." It **reuses** the ordinary doctrine + person-detail + argument types unchanged —
-**not** a new page type, **one aggregate page**, and it **does not clone** the pages it reads: it *links* the existing
-argument/evidence pages and holds only the *conditional delta* per item. First instance:
-`primeval-scenarios` ("The Flood and the Nephilim: the evidence under competing scenarios"), under the "Primeval history
-(Genesis 6–9)" family alongside `nephilim`, `flood`, `primeval-evidence`, and `flood-date`. Second instance:
-`divorce-scenarios` ("Divorce and remarriage: the evidence under competing scenarios"), under the "Marriage, celibacy, and
-the single life" family, scoring the three historic answers (A Latin/Catholic indissolubility · B the Erasmian–Protestant
-dissolution reading · C the Eastern Orthodox *oikonomia* practice) over the shared shelf of Gospel/Pauline proof-texts; it
-adapts the △ bucket from "costs a date" to **"costs a text"** for a textual/doctrinal (non-dating) domain. The reusable
-purpose is comparison of *total frameworks*: a later instance is planned for `perpetual-virginity` (the Helvidian vs.
-Epiphanian vs. Hieronymian readings as fixed bundles scored over the same proof-texts). It has four defining features:
+## Comparative scenario-ledger pages (several granted premises side by side)
+A **scenario ledger** is a doctrine page that grants **two or more competing premises at once** and reads one shared
+body of evidence under each. Each premise is a fixed presupposition-bundle — a "scenario" — and the page carries the
+plural **Granted premises:** banner (see "Granted premise" above) — or, when its scenarios are rival models inside a held
+presupposition (as on `primeval-scenarios`), the **Presupposition:** banner instead. It **reuses** the ordinary doctrine + person-detail +
+argument types unchanged — **not** a new page type, **one aggregate page**, and it **does not clone** the pages it reads:
+it *links* the existing argument/evidence pages and holds only the *conditional delta* per item. Instances:
+`primeval-scenarios` ("The Flood and the Nephilim: the evidence under competing scenarios", "Primeval history (Genesis
+6–9)"); `divorce-scenarios` (the three historic answers on divorce — A Latin/Catholic indissolubility · B the
+Erasmian–Protestant dissolution reading · C the Eastern Orthodox *oikonomia* practice — over the Gospel/Pauline
+proof-texts, "Marriage, celibacy, and the single life"); `final-state-scenarios` (A eternal conscious torment · B universal
+restoration · C conditional immortality, "The living and the dead"); and `chronology-scenarios` (A Masoretic/Ussher · B
+Septuagint long · C rabbinic *Seder Olam*, "Reckoning sacred time"). The textual/doctrinal ledgers adapt the △ bucket from
+"costs a date" to **"costs a text"** (`chronology-scenarios`, which mixes both kinds of anchor, uses "costs a date or a
+text"). The reusable purpose is comparison of *total frameworks*; `perpetual-virginity` (the Helvidian vs. Epiphanian vs.
+Hieronymian readings) is a natural future instance. It has four defining features:
 
 1. **Scenarios are named, fixed presupposition-bundles, each stating exactly what it commits to.** A scenario is not a
    mood ("the traditional view") but a spelled-out set of commitments with a **bill** — the specific things that must
-   hold true for it, and what would falsify it. E.g. on `primeval-scenarios` the two scored bundles are *(A)* Septuagint
-   long chronology + real antediluvian Watcher-arts inherited *through* the Flood and *(B)* Masoretic short / young-earth
-   literal global Flood; the mainstream naturalistic reading is **not** a scored column there but the neutral baseline the
-   linked premises-open pages already carry, against which A and B are measured (a null may be carried either way — see
-   feature 4). Each scored column carries its own falsifiers, not just its friendly fits.
+   hold true for it, and what would falsify it. E.g. on `primeval-scenarios` the three scored bundles are *(A)* Septuagint
+   long chronology + real antediluvian Watcher-arts inherited *through* the Flood, *(B)* Masoretic short / young-earth
+   literal global Flood, and *(C)* an open antediluvian age (conventional dates accepted, the genealogy read as open) —
+   three rival models inside the wiki's held presupposition of a real Flood and real Nephilim, so no no-Flood column is
+   scored or carried as a baseline there; elsewhere a null may be carried either way (see feature 4). Each scored column carries its own falsifiers, not just its friendly fits.
 2. **One shared evidence shelf, scored per scenario into four buckets.** The rows are the *same* evidence for every
    column (drawn from the linked argument/evidence pages), and each cell places that item, under that scenario, in one
    bucket: **✓ fits / positively predicted**, **○ neutral (consistent, non-discriminating)**, **△ costs a date** (fits
@@ -438,24 +503,27 @@ Epiphanian vs. Hieronymian readings as fixed bundles scored over the same proof-
    a null column for contrast.)
 4. **Confine it to subjects where a presupposition bundle genuinely reorganizes the whole reading.** Requires ≥ 2
    competing bundles and a shared evidence shelf it links rather than restates; the mainstream/naturalistic reading may be
-   carried as one scored column *or* folded into the baseline the linked neutral pages already hold (as `primeval-scenarios`
-   now does, scoring only its two believing bundles A and B against that baseline). Do **not**
+   carried as one scored column *or* folded into the baseline the linked neutral pages already hold — except under a held
+   presupposition, where no null is carried at all (as on `primeval-scenarios`, which scores only rival models of the held
+   history). Do **not**
    spawn scenario ledgers for every doctrine — the value is systems-level accounting where competing *total* frameworks
    read the *same* data differently.
 
 Reader-facing label **"Scenarios" / "the scenario ledger"**; internal term *scenario ledger* with a kebab-case slug per
-instance (`primeval-scenarios`, `divorce-scenarios`). Arguments, argument groups, and the "Related doctrines" cluster convention all apply
+instance (`primeval-scenarios`, `divorce-scenarios`, `final-state-scenarios`, `chronology-scenarios`). Arguments, argument groups, and the "Related doctrines" cluster convention all apply
 unchanged; the base facts and neutral ratings live once on the linked pages, so the ledger's job is the *delta and the
 bill*, kept in one legible place. Skeleton: [`templates/scenario-ledger.html`](templates/scenario-ledger.html).
 
-## Synthesis-narrative pages (a doctrine-page variant)
-A **synthesis narrative** is a doctrine page whose subject is a *whole worldview told as one connected story* — the
-"big picture" that individual doctrines and arguments only ever show a fragment of. Many of the wiki's threads (the
-divine council, the Genesis-6 rebellion, the Nephilim, the Flood, Babel's disinherited nations, the conquest giants,
-the gods-of-the-nations, the modern UFO tail) interlock into a single cohesive account; each leg lives on its own
-timeline/argument page and is weighed there, but nowhere does a reader see the arc *as* an arc. A synthesis narrative
-draws that arc. It **reuses** the ordinary doctrine + person-detail + argument types unchanged — **not** a new page
-type, **one aggregate page** — and it **does not clone** the pages it draws on: it *links* them and holds only the
+## Synthesis-narrative pages (a working-inside granted premise, told as one story)
+A **synthesis narrative** is the *narrative format* of a working-inside granted premise: a doctrine page that grants a
+*whole worldview* and tells it as one connected story — the "big picture" that individual doctrines and arguments only
+ever show a fragment of. It carries the **Granted premise:** banner (naming the worldview and pointing at its cost
+ledger), and everything below is what distinguishes the narrative format from an ordinary premised page. Many of the
+wiki's threads (the divine council, the Genesis-6 rebellion, the Nephilim, the Flood, Babel's disinherited nations, the
+conquest giants, the gods-of-the-nations, the modern UFO tail) interlock into a single cohesive account; each leg lives
+on its own timeline/argument page and is weighed there, but nowhere does a reader see the arc *as* an arc. A synthesis
+narrative draws that arc. It **reuses** the ordinary doctrine + person-detail + argument types unchanged — **not** a new
+page type, **one aggregate page** — and it **does not clone** the pages it draws on: it *links* them and holds only the
 *connective narration*. First (and so far only) instance: `supernatural-worldview` ("The Supernatural Worldview: How
 the Threads Connect"), the Deuteronomy-32 / Heiser "unseen realm" story, under its own "The big picture" family
 (`family-big-picture`). It is defined by four features:
@@ -477,6 +545,10 @@ the Threads Connect"), the Deuteronomy-32 / Heiser "unseen realm" story, under i
    *plausible* legs can have a low joint probability — coherence makes a story feel likelier, conjunction makes it less).
    Order the ledger most-load-bearing / most-fragile first, and be honest that several of these the wiki itself rates
    weak or unsupported. A synthesis narrative that omits or softens this ledger is just apologetics with a disclaimer.
+   Where a leg is one the wiki holds as a **held presupposition** (e.g. that the Flood happened and covered the whole
+   earth), the ledger does not tally the presupposition itself as a cost: it says the wiki holds it (linking the
+   belief-history page) and lists its open puzzles and model-level weaknesses — with their real ratings — as what the
+   picture still has to carry.
 3. **One worldview per page, in its own voice — rivals get their own synthesis pages, never a both-sides treatment.**
    A synthesis narrative tells *one* framework's story straight through; it does **not** stain that story with a rival's
    objections or a comparative panel (that is the scenario ledger's job, and even there the rows are neutral). The
@@ -591,24 +663,9 @@ carries an `id="family-<slug>"` anchor (the generated TOC links to it) but **no*
 `id="cluster-…"` anchor, and the summary breadcrumb's family label stays plain `<em>` text, not a link. Rules: ≥ 2 members; keep each member's
 existing in-prose cross-links — the breadcrumb is the consistent nav handle, the prose is the explanation.
 
-**Current clusters:** "Scripture's text & canon" — `canon`, `ot-canon`, `septuagint-origin`,
-`rabbinic-corruption`, `divine-name`, `nt-use-of-ot`; "The living and the dead (the communion of the saints)" — `intermediate-state`,
-`purgatory`, `prayer-to-saints`; "The Eucharist and the ministry" — `real-presence`,
-`ministerial-priesthood`, `communion-one-kind`, `communion-of-infants`; "The sacraments" — `penance`, `seven-sacraments`, `confirmation`, `anointing-of-the-sick`; "The church and its practice" — `infant-baptism`, `baptist-successionism`,
-`church-buildings`; "Church order and government" — `church-government`, `roman-primacy`; "Marriage, celibacy, and the single life" — `divorce`, `divorce-scenarios` (a scenario ledger), `remarriage`; "Primeval history (Genesis 6–9)" — `nephilim`, `flood`, `primeval-evidence`, `flood-date`, `primeval-scenarios`; "Astrology and the heavens"
-— `astrology`, `pillars-of-seth`; "Hard passages" (`family-hard-passages`, placed right after
-"Scripture's text &amp; canon") — `goliath-slayer`, `goliath-height` (alleged contradictions) + `writing-on-the-ground`
-(a Gospel-text crux); "Controversies among the Fathers" — `origenist-controversy`, `jerome-augustine`,
-`theophilus-chrysostom`, `cyril-nestorius` (relationship topics) and `origen-condemnation` (a reception-history timeline);
-"The Virgin Mary" — `perpetual-virginity`, `mary-new-eve`, `theotokos`,
-`immaculate-conception`, `assumption`; "The nativity of Christ" — `magi`, `birthplace-of-christ`; "Aliens, UFOs & the unseen realm" — `ufo-demonic`, `divine-council`, `serpent-of-eden`; "Sacred images and the veneration of the holy" — `image-veneration`, `relic-veneration`, `cross-veneration`; "The apostasy-and-restoration thesis" — `great-apostasy`, `book-of-mormon-historicity` (an evidential reconstruction),
-`first-vision` (a source-critical timeline of Joseph Smith's multiple First Vision accounts); "Saints, legends, and the
-transmission of holy lives" (`family-hagiography`) — `barlaam-josaphat`, `seven-sleepers`, `saint-christopher`,
-`dhul-qarnayn`, `saint-george`, `saint-guinefort` (all legend-transmission timelines). **Standalone single-doctrine families** (their own `<h2 id="family-…">`,
-no cluster and no breadcrumb): "The big picture" — `supernatural-worldview` (a synthesis narrative; becomes a cluster once a
-rival-worldview synthesis page joins it); "The Christian life &amp; the virtues" (`family-virtues`) — `friendship` (grows into
-a cluster as further virtue pages — almsgiving, hospitality, the virtues proper — join it); "Grace, faith, and
-justification" (`family-grace`) — `justification` (the imputed-vs-infused righteousness dispute + the sola-fide
-proof-texts; the doctrinal root beneath `treasury-of-merit`/`indulgences`, which stay under `family-communion`; grows
-into a cluster if a grace/predestination or works-of-the-law page joins it). (There is no longer an "Other
-doctrines" bucket.)
+**Where membership lives.** Which doctrines belong to which family is recorded in exactly two visible
+places: the concept-family `<h2>` groupings on `index.html` (the source of truth) and each member's
+`Related doctrines:` breadcrumb. This file keeps **no** roster of clusters or families, because a
+hand-kept copy drifts. To see a family, read its `<h2 id="family-…">` block on the index. When a
+family grows from one doctrine to two, it becomes a cluster: add the breadcrumb to both members then.
+When adding a doctrine to an existing cluster, add it to every sibling's breadcrumb.

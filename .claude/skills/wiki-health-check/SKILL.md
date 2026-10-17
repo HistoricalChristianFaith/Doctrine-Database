@@ -50,6 +50,15 @@ Look for genuine cross-page contradictions and drift, not style nits:
   footnote-apparatus linting is `/footnote-check`'s job — flag obvious breaks here, defer the mechanical
   audit to that skill rather than duplicating it.)
 - **Orphans.** A person/argument page not linked from any summary; a summary not reachable from the index.
+- **Granted-premise drift** (CLAUDE.md → "Granted premise"). An argument page under a premised summary that
+  lacks the inherited `<aside class="granted-premise">` banner (or carries one on a summary that has none); a
+  banner whose link to where the premise is weighed doesn't resolve, or quotes a rating that no longer
+  matches that page; a premised doctrine whose one-line index description doesn't name its premise; a page
+  under a held presupposition (CLAUDE.md → "Granted premise", third mode) whose prose frames evidence as testing or
+  falsifying the presupposition itself rather than one model of it (or as an open puzzle); a page
+  whose intro plainly works inside an unstated premise ("granting that …", "on the assumption that …") but
+  carries no banner. Adding or fixing an inherited banner is mechanical; deciding that a page is premised is a
+  judgment call for the report.
 
 For each finding: name the pages, quote the conflicting bits, say which is right (or that it needs
 research), and propose the minimal fix. **Mechanical, unambiguous fixes** (a stale rating label, a

@@ -34,6 +34,10 @@ timeline, so it lives in the summary's "Arguments" section rather than the chron
 Two or more argument pages sharing a proof-text, mechanism, or theme may be grouped into a named
 **argument group** — a grouping convention (shown to readers as **"Related arguments"**)
 surfaced on the summary, index, and member breadcrumbs, not a fourth page type.
+Any page may also carry a **granted premise** banner, marking it as analysed *as if* a stated premise were
+true — to test the premise, to explore a belief structure from inside it, or (a **Presupposition:** banner) because the
+wiki itself holds it, as it does Noah's Flood and the Nephilim. It is a modifier, not a
+page type; the scenario ledgers and the synthesis narrative are built on it. See `CLAUDE.md` ("Granted premise").
 
 See the worked example: the nephilim doctrine — [`docs/doctrines/nephilim.html`](docs/doctrines/nephilim.html)
 (summary timeline), its detail pages under [`docs/doctrines/nephilim/`](docs/doctrines/nephilim/), and its
