@@ -140,7 +140,7 @@ docs/doctrines/
   X (ratings are conditional on X; e.g. `supernatural-worldview`), or a **held presupposition** (label
   **Presupposition:** — the wiki itself holds X and never spends pages arguing it didn't happen; evidence that tells
   against one *model* of X is scoped to that model, and evidence that presses on X itself is an open puzzle with its
-  proposed resolutions weighed; e.g. the Flood, anthropologically universal, and real Nephilim on `primeval-evidence`,
+  proposed resolutions weighed; e.g. a whole-earth Flood and real Nephilim on `primeval-evidence`,
   `flood-date`, `primeval-scenarios`) — and links where X itself is weighed or, for a held presupposition, how the
   Church has held it. Argument pages under a premised summary inherit the banner. It lets the wiki explore belief
   structures whose premises are not mainstream without passing off conditional findings as verdicts. It replaces the

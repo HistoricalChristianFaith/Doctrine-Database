@@ -406,15 +406,14 @@ working inside a **held presupposition** (below) uses the label **Presupposition
   conditional on it, as for working-inside pages. Rule 2's "link where it is weighed" is met by linking the belief-history
   page that records how the Church has held it (e.g. `flood`), not an unconditional test. Evidence still gets weighed
   honestly, sorted three ways: (a) **a claimed trace is not what it is claimed to be** (a silt band, landform, skull) —
-  rate it weak/unsupported as usual; (b) **evidence that tells against one *model* of the event** (a geographically
-  global extent, a young date) — say so, scoped to that model, and group it as a model-choice question (e.g. "global or
-  anthropological? the extent question"); (c) **evidence that presses on the presupposition itself** — present it as an
+  rate it weak/unsupported as usual; (b) **evidence that tells against one *model* of the event** (a given date, a
+  given mechanism) — say so, scoped to that model; (c) **evidence that presses on the presupposition itself** — present it as an
   **open puzzle inside the presupposition**: state the tension plainly without softening the data, and weigh the
   resolutions proposed by those who hold it (noting where a resolution only works by giving up part of the
-  presupposition). Never frame (c) as falsifying the presupposition, and never frame (b) as a test of it. Rival believing
-  models stay (e.g. scenario B, the young-earth global Flood, on `primeval-scenarios`). **Current held presuppositions:**
-  Noah's Flood happened and was *anthropologically* universal — all humanity outside the ark perished; geographic extent
-  and date stay open questions — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
+  presupposition — e.g. a regional Flood, under a whole-earth presupposition). Never frame (c) as falsifying the
+  presupposition, and never frame (b) as a test of it. Rival believing models stay (e.g. scenarios A/B/C, three datings of
+  the Flood, on `primeval-scenarios`). **Current held presuppositions:** Noah's Flood happened, **covered the whole earth**,
+  and destroyed all humanity outside the ark — its *date* stays open — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
   their argument pages). Extend the list only when the site owner adopts a new one.
 
 **Rules.**
@@ -444,8 +443,8 @@ working inside a **held presupposition** (below) uses the label **Presupposition
    prediction in the set so it is not rigged toward debunking. (On a held-presupposition page, a failed prediction sorts
    into model-choice (b) or open puzzle (c) above, never into a test of the presupposition.)
 
-**Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (the Flood,
-anthropologically universal, and real Nephilim). Testing: `book-of-mormon-historicity` (the Book of Mormon as history).
+**Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (a whole-earth
+Flood that destroyed all humanity outside the ark, and real Nephilim). Testing: `book-of-mormon-historicity` (the Book of Mormon as history).
 Working inside: `conquest-as-written` (the conquest of Canaan on the
 Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill at the foot) and
 `supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
