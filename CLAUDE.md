@@ -416,7 +416,10 @@ working inside a **held presupposition** (below) uses the label **Presupposition
   presupposition, and never frame (b) as a test of it. Rival believing models stay (e.g. scenarios A/B/C, three datings of
   the Flood, on `primeval-scenarios`). **Current held presuppositions:** Noah's Flood happened, **covered the whole earth**,
   and destroyed all humanity outside the ark — its *date* stays open — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
-  their argument pages). Extend the list only when the site owner adopts a new one.
+  their argument pages); and Israel took Canaan as Joshua and Judges tell it — its *date* stays open, the early (c. 1406 BC)
+  and late (c. 1250 BC) datings being rival models, and no "no invasion" reading is carried (`conquest-of-canaan`,
+  `conquest-as-written`, and their argument pages; no belief-history page records it yet, so their banners cite Acts 7:45,
+  13:19, Hebrews 11:30–31 and the *ḥerem* argument meanwhile). Extend the list only when the site owner adopts a new one.
 
 **Rules.**
 1. **Conditional ratings say so.** On a working-inside page every `Assessment:` means "given the premise." The banner
@@ -448,10 +451,11 @@ working inside a **held presupposition** (below) uses the label **Presupposition
    into model-choice (b) or open puzzle (c) above, never into a test of the presupposition.)
 
 **Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (a whole-earth
-Flood that destroyed all humanity outside the ark, and real Nephilim). Testing: none at present.
-Working inside: `conquest-as-written` (the conquest of Canaan on the
-Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill at the foot) and
-`supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
+Flood that destroyed all humanity outside the ark, and real Nephilim); `conquest-of-canaan` (the conquest as Joshua tells
+it, date open; Jericho's date, Ai's empty mound and the highland pottery as open puzzles) and `conquest-as-written` (one
+dating model inside it, the Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill
+at the foot). Testing: none at present. Working inside: `supernatural-worldview` (the unseen-realm reading, in the
+narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
 inside the held presupposition, under the **Presupposition:** label).
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
