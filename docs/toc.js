@@ -97,6 +97,7 @@
     "roman-primacy": "The Primacy of Rome",
     "infant-baptism": "Infant Baptism",
     "church-buildings": "The Place of Christian Worship",
+    "lex-orandi": "Lex Orandi, Lex Credendi",
     "penance": "Penance & Confession",
     "seven-sacraments": "The seven sacraments",
     "confirmation": "Confirmation & Chrismation",
