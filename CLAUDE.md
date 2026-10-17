@@ -422,7 +422,9 @@ working inside a **held presupposition** (below) uses the label **Presupposition
    and the page's one-line description on the index must name the premise it grants.
 2. **The banner links where the premise is weighed, with its real assessment** (or, for a testing page, its own
    Arguments). A premise that is weighed nowhere yet is a lead to create that page first: a premised page may never be
-   the *sole* home of its premise (no laundering an unrated premise by assuming it).
+   the *sole* home of its premise (no laundering an unrated premise by assuming it). A **held presupposition** is the one
+   exception: it is held, not weighed, so its banner links the belief-history page that records how the Church has held it
+   (see the third mode above), and no page is created to test it.
 3. **Argument pages inherit.** Each argument page under a premised summary carries a one-line inherited banner,
    `<aside class="granted-premise"><p><strong>Granted premise:</strong> inherited from <a href="../../<slug>.html">…</a>
    — …</p></aside>`, so a reader who lands there directly sees the scope. Person-detail pages under a premised summary
@@ -454,7 +456,8 @@ Arguments, argument groups, and the "Related doctrines" cluster convention all a
 ## Comparative scenario-ledger pages (several granted premises side by side)
 A **scenario ledger** is a doctrine page that grants **two or more competing premises at once** and reads one shared
 body of evidence under each. Each premise is a fixed presupposition-bundle — a "scenario" — and the page carries the
-plural **Granted premises:** banner (see "Granted premise" above). It **reuses** the ordinary doctrine + person-detail +
+plural **Granted premises:** banner (see "Granted premise" above) — or, when its scenarios are rival models inside a held
+presupposition (as on `primeval-scenarios`), the **Presupposition:** banner instead. It **reuses** the ordinary doctrine + person-detail +
 argument types unchanged — **not** a new page type, **one aggregate page**, and it **does not clone** the pages it reads:
 it *links* the existing argument/evidence pages and holds only the *conditional delta* per item. Instances:
 `primeval-scenarios` ("The Flood and the Nephilim: the evidence under competing scenarios", "Primeval history (Genesis
@@ -536,6 +539,10 @@ the Threads Connect"), the Deuteronomy-32 / Heiser "unseen realm" story, under i
    *plausible* legs can have a low joint probability — coherence makes a story feel likelier, conjunction makes it less).
    Order the ledger most-load-bearing / most-fragile first, and be honest that several of these the wiki itself rates
    weak or unsupported. A synthesis narrative that omits or softens this ledger is just apologetics with a disclaimer.
+   Where a leg is one the wiki holds as a **held presupposition** (e.g. that the Flood happened and covered the whole
+   earth), the ledger does not tally the presupposition itself as a cost: it says the wiki holds it (linking the
+   belief-history page) and lists its open puzzles and model-level weaknesses — with their real ratings — as what the
+   picture still has to carry.
 3. **One worldview per page, in its own voice — rivals get their own synthesis pages, never a both-sides treatment.**
    A synthesis narrative tells *one* framework's story straight through; it does **not** stain that story with a rival's
    objections or a comparative panel (that is the scenario ledger's job, and even there the rows are neutral). The
