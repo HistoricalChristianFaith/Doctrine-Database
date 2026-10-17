@@ -136,7 +136,7 @@ docs/doctrines/
 
 - **Granted premise** = a *modifier*, not a page type: an `<aside class="granted-premise">` banner directly under the
   `<h1>` of any summary, person-detail, or argument page, saying the page is analysed *as if* premise X were true. It
-  states its mode — **testing** X (the page's verdicts bear on X; e.g. `book-of-mormon-historicity`), **working inside**
+  states its mode — **testing** X (the page's verdicts bear on X; no page uses this mode at present), **working inside**
   X (ratings are conditional on X; e.g. `supernatural-worldview`), or a **held presupposition** (label
   **Presupposition:** — the wiki itself holds X and never spends pages arguing it didn't happen; evidence that tells
   against one *model* of X is scoped to that model, and evidence that presses on X itself is an open puzzle with its

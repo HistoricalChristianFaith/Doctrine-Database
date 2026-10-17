@@ -394,9 +394,11 @@ A page that grants several premises side by side (a scenario ledger) uses the pl
 working inside a **held presupposition** (below) uses the label **Presupposition:** instead, in the same `<aside>`.
 
 **Three modes — the banner must say which.**
-- **Testing** — the page grants the premise to see what it predicts and whether the evidence bears it out (a Flood and
-  real Nephilim; the Book of Mormon as history). Its verdicts bear on the premise itself, so the page *is* where the
-  premise is weighed and the banner points at its own Arguments section.
+- **Testing** — the page grants the premise to see what it predicts and whether the evidence bears it out. Its verdicts
+  bear on the premise itself, so the page *is* where the premise is weighed and the banner points at its own Arguments
+  section. No page uses this mode at present. Use it only where a page must reason *inside* a premise to derive what it
+  predicts; a page that simply gathers the evidence for and against a claim (e.g. `book-of-mormon-historicity`) is an
+  ordinary evidence page and carries no banner.
 - **Working inside** — the page assumes the premise to explore what follows from it (the "unseen realm" told as one
   story). Its ratings are **conditional** on the premise, and the banner links the page that weighs the premise
   unconditionally.
@@ -446,7 +448,7 @@ working inside a **held presupposition** (below) uses the label **Presupposition
    into model-choice (b) or open puzzle (c) above, never into a test of the presupposition.)
 
 **Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (a whole-earth
-Flood that destroyed all humanity outside the ark, and real Nephilim). Testing: `book-of-mormon-historicity` (the Book of Mormon as history).
+Flood that destroyed all humanity outside the ark, and real Nephilim). Testing: none at present.
 Working inside: `conquest-as-written` (the conquest of Canaan on the
 Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill at the foot) and
 `supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
