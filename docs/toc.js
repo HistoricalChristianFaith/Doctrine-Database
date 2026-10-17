@@ -89,6 +89,7 @@
     "cain": "Cain",
     "conquest-of-canaan": "The Conquest of Canaan",
     "conquest-as-written": "The Conquest as Joshua Tells It",
+    "conquest-in-tradition": "The Conquest in Christian Tradition",
     "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",

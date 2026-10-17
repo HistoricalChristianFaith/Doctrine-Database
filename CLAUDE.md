@@ -418,8 +418,8 @@ working inside a **held presupposition** (below) uses the label **Presupposition
   and destroyed all humanity outside the ark — its *date* stays open — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
   their argument pages); and Israel took Canaan as Joshua and Judges tell it — its *date* stays open, the early (c. 1406 BC)
   and late (c. 1250 BC) datings being rival models, and no "no invasion" reading is carried (`conquest-of-canaan`,
-  `conquest-as-written`, and their argument pages; no belief-history page records it yet, so their banners cite Acts 7:45,
-  13:19, Hebrews 11:30–31 and the *ḥerem* argument meanwhile). Extend the list only when the site owner adopts a new one.
+  `conquest-as-written`, and their argument pages; their banners link the belief-history page `conquest-in-tradition`, as
+  the Flood pages link `flood`). Extend the list only when the site owner adopts a new one.
 
 **Rules.**
 1. **Conditional ratings say so.** On a working-inside page every `Assessment:` means "given the premise." The banner
