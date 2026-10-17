@@ -54,6 +54,8 @@ Look for genuine cross-page contradictions and drift, not style nits:
   lacks the inherited `<aside class="granted-premise">` banner (or carries one on a summary that has none); a
   banner whose link to where the premise is weighed doesn't resolve, or quotes a rating that no longer
   matches that page; a premised doctrine whose one-line index description doesn't name its premise; a page
+  under a held presupposition (CLAUDE.md → "Granted premise", third mode) whose prose frames evidence as testing or
+  falsifying the presupposition itself rather than one model of it (or as an open puzzle); a page
   whose intro plainly works inside an unstated premise ("granting that …", "on the assumption that …") but
   carries no banner. Adding or fixing an inherited banner is mechanical; deciding that a page is premised is a
   judgment call for the report.

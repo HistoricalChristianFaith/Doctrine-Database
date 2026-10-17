@@ -48,7 +48,8 @@ realized in visible content (a sub-heading on the summary + index and a `Related
 each member), **not** a fourth page type and **not** a new file. ("Argument group" is the internal term;
 the reader-facing label is **"Related arguments"**.) See "Argument groups" under Assessments below.
 Any of the three page types may also carry a **granted premise** banner: the page is analysed *as if* a stated premise
-were true (testing it, or working inside it). It is a modifier, not a page type; see "Granted premise" below.
+were true (testing it, or working inside it), or — for a **held presupposition** — the wiki simply holds it and the page
+works inside it. It is a modifier, not a page type; see "Granted premise" below.
 
 ## Source databases (prefer over web, but still use web)
 - `~/Desktop/Commentaries-Database/<Father>/<Book Ch_Vs>.toml` → `[[commentary]]` blocks
@@ -389,15 +390,32 @@ content, not hidden frontmatter: a page *is* premised exactly when it carries th
 itself is weighed, with its real assessment>.</p>
 </aside>
 ```
-A page that grants several premises side by side (a scenario ledger) uses the plural label **Granted premises:**.
+A page that grants several premises side by side (a scenario ledger) uses the plural label **Granted premises:**. A page
+working inside a **held presupposition** (below) uses the label **Presupposition:** instead, in the same `<aside>`.
 
-**Two modes — the banner must say which.**
+**Three modes — the banner must say which.**
 - **Testing** — the page grants the premise to see what it predicts and whether the evidence bears it out (a Flood and
   real Nephilim; the Book of Mormon as history). Its verdicts bear on the premise itself, so the page *is* where the
   premise is weighed and the banner points at its own Arguments section.
-- **Working inside** — the page assumes the premise to explore what follows from it (granting a Flood, *when* was it?;
-  the "unseen realm" told as one story). Its ratings are **conditional** on the premise, and the banner links the page
-  that weighs the premise unconditionally.
+- **Working inside** — the page assumes the premise to explore what follows from it (the "unseen realm" told as one
+  story). Its ratings are **conditional** on the premise, and the banner links the page that weighs the premise
+  unconditionally.
+- **Held presupposition** — the wiki itself *holds* the premise, as the site owner's working presupposition, and does not
+  spend pages testing whether it is true: no page argues that it did not happen, and none is kept "for balance." The
+  banner (label **Presupposition:**) says "this wiki holds that …" and states what the page asks *inside* it. Ratings are
+  conditional on it, as for working-inside pages. Rule 2's "link where it is weighed" is met by linking the belief-history
+  page that records how the Church has held it (e.g. `flood`), not an unconditional test. Evidence still gets weighed
+  honestly, sorted three ways: (a) **a claimed trace is not what it is claimed to be** (a silt band, landform, skull) —
+  rate it weak/unsupported as usual; (b) **evidence that tells against one *model* of the event** (a geographically
+  global extent, a young date) — say so, scoped to that model, and group it as a model-choice question (e.g. "global or
+  anthropological? the extent question"); (c) **evidence that presses on the presupposition itself** — present it as an
+  **open puzzle inside the presupposition**: state the tension plainly without softening the data, and weigh the
+  resolutions proposed by those who hold it (noting where a resolution only works by giving up part of the
+  presupposition). Never frame (c) as falsifying the presupposition, and never frame (b) as a test of it. Rival believing
+  models stay (e.g. scenario B, the young-earth global Flood, on `primeval-scenarios`). **Current held presuppositions:**
+  Noah's Flood happened and was *anthropologically* universal — all humanity outside the ark perished; geographic extent
+  and date stay open questions — and the Nephilim were real (`primeval-evidence`, `flood-date`, `primeval-scenarios`, and
+  their argument pages). Extend the list only when the site owner adopts a new one.
 
 **Rules.**
 1. **Conditional ratings say so.** On a working-inside page every `Assessment:` means "given the premise." The banner
@@ -410,22 +428,28 @@ A page that grants several premises side by side (a scenario ledger) uses the pl
    `<aside class="granted-premise"><p><strong>Granted premise:</strong> inherited from <a href="../../<slug>.html">…</a>
    — …</p></aside>`, so a reader who lands there directly sees the scope. Person-detail pages under a premised summary
    report a source and need no banner unless their own prose works inside the premise.
-4. **Granting is not assuming the conclusion.** The intro still says so plainly; each line of evidence is rated on its
-   own merits, **possibility ≠ proof**, and a premised page may (and often should) report that the evidence does not
-   bear the premise out. This is the anti-apologetics guard, the direct extension of "don't rule out the supernatural a
-   priori," and it is load-bearing: without it a granted premise is just apologetics with a label.
-5. **Testing pages: evidence-dated timelines and two argument modes.** Where a testing page's timeline "witnesses" are
+4. **Granting is not assuming the conclusion.** On a testing or working-inside page the intro still says so plainly;
+   each line of evidence is rated on its own merits, **possibility ≠ proof**, and such a page may (and often should)
+   report that the evidence does not bear the premise out. This is the anti-apologetics guard, the direct extension of
+   "don't rule out the supernatural a priori," and it is load-bearing: without it a granted premise is just apologetics
+   with a label. On a **held-presupposition** page the guard applies to every *claimed trace and model* (possibility ≠
+   proof; a misidentified artifact stays misidentified; tensions are stated, not buried), but not to the presupposition
+   itself, which the page holds rather than tests (see the third mode above).
+5. **Testing and held-presupposition pages: evidence-dated timelines and two argument modes.** Where such a page's timeline "witnesses" are
    datable evidence-sources (a stratum, tablet, king-list, megalith, hoax, genome study), order them by the age of the
    *evidence*, not of the event it reports, and flag that ordering in the intro. Arguments run *retrospective* ("here is
    an artifact — does it fit?") and *predictive* ("the premise requires X — is X there?"); a predictive page commits to
    what would falsify it and **scopes any failure to the specific model that made it** (a young single-date global
    deluge, a literal eight-person survival), not to the bare premise. Keep at least one honestly-*successful*
-   prediction in the set so it is not rigged toward debunking.
+   prediction in the set so it is not rigged toward debunking. (On a held-presupposition page, a failed prediction sorts
+   into model-choice (b) or open puzzle (c) above, never into a test of the presupposition.)
 
-**Current premised pages.** Testing: `primeval-evidence` (a Flood and real Nephilim) and `book-of-mormon-historicity`
-(the Book of Mormon as history). Working inside: `flood-date` (that a Flood happened), `conquest-as-written` (the conquest of Canaan on the
+**Current premised pages.** Held presupposition: `primeval-evidence`, `flood-date` and `primeval-scenarios` (the Flood,
+anthropologically universal, and real Nephilim). Testing: `book-of-mormon-historicity` (the Book of Mormon as history).
+Working inside: `conquest-as-written` (the conquest of Canaan on the
 Bible's own dates, c. 1406 BC, with its fits marked in the scenario-ledger buckets and its bill at the foot) and
-`supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the four scenario ledgers below.
+`supernatural-worldview` (the unseen-realm reading, in the narrative format below). Several premises side by side: the other three scenario ledgers below (`primeval-scenarios` compares three models
+inside the held presupposition, under the **Presupposition:** label).
 Arguments, argument groups, and the "Related doctrines" cluster convention all apply unchanged.
 
 ## Comparative scenario-ledger pages (several granted premises side by side)
@@ -448,10 +472,9 @@ Hieronymian readings) is a natural future instance. It has four defining feature
    mood ("the traditional view") but a spelled-out set of commitments with a **bill** — the specific things that must
    hold true for it, and what would falsify it. E.g. on `primeval-scenarios` the three scored bundles are *(A)* Septuagint
    long chronology + real antediluvian Watcher-arts inherited *through* the Flood, *(B)* Masoretic short / young-earth
-   literal global Flood, and *(C)* an open antediluvian age (conventional dates accepted, the genealogy read as open);
-   the mainstream naturalistic reading is **not** a scored column there but the neutral baseline the linked
-   premises-open pages already carry, against which the bundles are measured (a null may be carried either way — see
-   feature 4). Each scored column carries its own falsifiers, not just its friendly fits.
+   literal global Flood, and *(C)* an open antediluvian age (conventional dates accepted, the genealogy read as open) —
+   three rival models inside the wiki's held presupposition of a real Flood and real Nephilim, so no no-Flood column is
+   scored or carried as a baseline there; elsewhere a null may be carried either way (see feature 4). Each scored column carries its own falsifiers, not just its friendly fits.
 2. **One shared evidence shelf, scored per scenario into four buckets.** The rows are the *same* evidence for every
    column (drawn from the linked argument/evidence pages), and each cell places that item, under that scenario, in one
    bucket: **✓ fits / positively predicted**, **○ neutral (consistent, non-discriminating)**, **△ costs a date** (fits
@@ -472,8 +495,9 @@ Hieronymian readings) is a natural future instance. It has four defining feature
    a null column for contrast.)
 4. **Confine it to subjects where a presupposition bundle genuinely reorganizes the whole reading.** Requires ≥ 2
    competing bundles and a shared evidence shelf it links rather than restates; the mainstream/naturalistic reading may be
-   carried as one scored column *or* folded into the baseline the linked neutral pages already hold (as `primeval-scenarios`
-   now does, scoring only its believing bundles against that baseline). Do **not**
+   carried as one scored column *or* folded into the baseline the linked neutral pages already hold — except under a held
+   presupposition, where no null is carried at all (as on `primeval-scenarios`, which scores only rival models of the held
+   history). Do **not**
    spawn scenario ledgers for every doctrine — the value is systems-level accounting where competing *total* frameworks
    read the *same* data differently.
 

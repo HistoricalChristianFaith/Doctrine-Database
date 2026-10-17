@@ -83,7 +83,10 @@ Cite every source you actually consulted, with URLs where you have them (rule 10
   `granted-premise` banner in *working inside* mode, its rating means "given the premise": steelman and rate
   the interpretation *conditional on* that premise, and don't let the re-rate drift into re-judging the
   premise itself (that lives on the page the banner links). On a *testing* page the verdict bears on the
-  premise, so rate as usual. Never change a page's mode silently; flag it in the report.
+  premise, so rate as usual. On a *held-presupposition* page (banner label **Presupposition:**) steelman inside the
+  presupposition as for working-inside pages, and never reframe the page as testing it: a failure scoped to one
+  *model* stays model-scoped, and evidence pressing on the presupposition itself is an open puzzle whose proposed
+  resolutions get the steelman. Never change a page's mode silently; flag it in the report.
 - If the rating is a **genuine judgment call** (e.g. `plausible` vs `contested`), pick the one you can
   best defend, make the change, and **flag the alternative** to the user in your report — don't block.
 

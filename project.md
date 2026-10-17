@@ -136,9 +136,13 @@ docs/doctrines/
 
 - **Granted premise** = a *modifier*, not a page type: an `<aside class="granted-premise">` banner directly under the
   `<h1>` of any summary, person-detail, or argument page, saying the page is analysed *as if* premise X were true. It
-  states its mode — **testing** X (the page's verdicts bear on X; e.g. `primeval-evidence`, `book-of-mormon-historicity`)
-  or **working inside** X (ratings are conditional on X; e.g. `flood-date`, `supernatural-worldview`) — and links where X
-  itself is weighed. Argument pages under a premised summary inherit the banner. It lets the wiki explore belief
+  states its mode — **testing** X (the page's verdicts bear on X; e.g. `book-of-mormon-historicity`), **working inside**
+  X (ratings are conditional on X; e.g. `supernatural-worldview`), or a **held presupposition** (label
+  **Presupposition:** — the wiki itself holds X and never spends pages arguing it didn't happen; evidence that tells
+  against one *model* of X is scoped to that model, and evidence that presses on X itself is an open puzzle with its
+  proposed resolutions weighed; e.g. the Flood, anthropologically universal, and real Nephilim on `primeval-evidence`,
+  `flood-date`, `primeval-scenarios`) — and links where X itself is weighed or, for a held presupposition, how the
+  Church has held it. Argument pages under a premised summary inherit the banner. It lets the wiki explore belief
   structures whose premises are not mainstream without passing off conditional findings as verdicts. It replaces the
   former "evidential reconstruction" variant. See `CLAUDE.md` ("Granted premise") for the full rules.
 
