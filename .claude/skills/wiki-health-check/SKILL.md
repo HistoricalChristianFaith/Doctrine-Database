@@ -1,112 +1,94 @@
 ---
 name: wiki-health-check
-description: Do a consistency-and-connections pass over the whole wiki — surface cross-page inconsistencies (contradictory facts/dates/ratings, stale cross-links, index-vs-summary drift, orphaned pages) and spot latent connections between pages worth teeing up as new research leads. Use when the user invokes /wiki-health-check, or asks for a wiki audit / consistency pass / "anything worth researching" sweep.
+description: Do a consistency pass over the whole ledger (or one doctrine) — run the neutral-voice lint and the footnote check, then look for cross-page inconsistencies (conflicting dates, quotes or attributions, timeline order, broken or non-reciprocal links, index-vs-timeline drift, orphaned pages, plumbing leaks) and for coverage gaps worth queuing as todo/ leads. Use when the user invokes /wiki-health-check, or asks for a ledger audit, consistency pass or "anything worth researching" sweep.
 ---
 
-Do a health-check pass over the wiki: **find inconsistencies across pages**, and **spot connections
-worth teeing up as new research leads**. This is a survey-and-report skill — it does *not* author
-timeline/person/argument pages on the spot (that's what the leads are for), and it does *not* commit
-unless the user asks. Its two deliverables are (1) a report of inconsistencies (with fixes proposed,
-and mechanical ones optionally applied) and (2) new `todo/` files for the research leads it surfaces.
+A survey-and-report pass over the ledger. It **finds inconsistencies** and **queues research leads**. It does not
+author pages, it does not judge any reading, and it does not commit unless the user asks. Everything below is a
+check against the rules in `CLAUDE.md`; read that file first.
 
-Ground everything in `CLAUDE.md` (the operating schema) — the checks below are all violations of, or
-opportunities within, that schema.
+`$ARGUMENTS` sets the scope: empty for all of `docs/`, or a doctrine slug for `docs/doctrines/<slug>.html` plus
+`docs/doctrines/<slug>/`. For a whole-site pass, fan out with subagents (one per concept family or per check) and
+keep their conclusions, not their file dumps.
 
-## 0. Orient
+## 1. Run the mechanical checks
 
-Read the shape of the site before judging it:
+```
+python3 -I scripts/ledger/lint.py <scope>
+python3 -I .claude/skills/footnote-check/check.py <scope> --errors-only
+```
 
-- `docs/index.html` — the concept-family `<h2>` groups, each doctrine's `<h3>` block, its one-liner,
-  and its arguments (grouped `<h4>` "Related arguments" clusters first, then standalone `<ul>`).
-- Every `docs/doctrines/<slug>.html` summary — the intro, the `Related doctrines:` breadcrumb, the
-  chronological witness blocks, and the "Arguments" section.
-- Spot-read the person-detail and argument pages a check points you at (don't pre-read all of them).
-- `people.md`, `log.md`, and `todo/` (existing leads — so you don't file a duplicate).
+- **Lint errors** are always findings. **Lint warnings** need a judgement: a plain-English "contested" or an
+  attributed "Aland judged it weak" is fine; a narrator's verdict is not. Report only the warnings you judge to be
+  real problems, with the line.
+- **Footnote errors** are findings; leave the repairs to `/footnote-check` unless they are trivial.
+- **Broken relative links.** Check that every relative `href` in scope resolves:
 
-Fan this out with subagents (e.g. one per doctrine, or one per check category) when the site is large;
-you keep the conclusions, not the file dumps.
+  ```
+  python3 -I - <<'EOF'
+  import os, re, sys
+  bad = 0
+  for d, _, fs in os.walk("docs"):
+      for f in fs:
+          if not f.endswith(".html"): continue
+          p = os.path.join(d, f)
+          doc = re.sub(r"<!--.*?-->", "", open(p, encoding="utf-8").read(), flags=re.S)
+          for h in re.findall(r'href="([^"#:]+)(?:#[^"]*)?"', doc):
+              if not os.path.exists(os.path.normpath(os.path.join(d, h))):
+                  bad += 1; print(f"{p}: {h}")
+  print(bad, "broken")
+  EOF
+  ```
 
-## 1. Inconsistency checks (things that are *wrong* and should be reconciled)
+## 2. Consistency checks (things that are wrong and should be reconciled)
 
-Look for genuine cross-page contradictions and drift, not style nits:
+- **Dates and order.** A person's `Dates: c. <year>` against their slot on the timeline (earliest first), against
+  `people.md` or `default_year` in the database's `metadata.toml`, and against the same person's page under
+  another doctrine.
+- **Quotes and attributions.** The same passage quoted differently in two places, or attributed to different
+  works, editions or authors. Check against the cited source before saying which is right.
+- **Readings across pages.** A scholar or tradition filed under one reading on an interpretation page and
+  described as holding the opposite on a person page or timeline entry; a timeline blurb that summarizes an
+  interpretation page with only some of its readings, or in one side's terms; a `Held by:` name with no footnote.
+- **Index ↔ timeline drift.** Every doctrine on the index has a timeline, and every timeline is on the index under
+  its family; every interpretation page listed in a timeline's Disputed readings section is listed on the index
+  and vice versa, with the same question as link text; no index entry carries a rating, verdict or count.
+- **Clusters and breadcrumbs.** `Related doctrines:` lines are reciprocal and match the family on the index;
+  `Related readings:` links resolve; every doctrine has its `DOCTRINE_NAMES` entry in `docs/toc.js`.
+- **Orphans.** A person or interpretation page linked from no timeline; a timeline not reachable from the index.
+- **Plumbing leaks.** A published page that mentions `todo/`, `log.md`, `people.md`, the rule files, or the
+  source databases as infrastructure; a timeline claim with no footnote.
+- **Leftovers of the evaluative format.** Any rating, assessment line, premise or presupposition banner,
+  "What holds" or "What is overstated" heading, scenario table, or "on balance" conclusion (the lint catches most
+  of these; also look for paraphrases it misses, such as "the likelier reading" or "this cannot bear the weight").
 
-- **Fact/date contradictions.** A person's `Dates: c. <year>` on their detail page vs. the year implied
-  by their slot in the summary timeline (rule 1: earliest-first); a date or claim on a person page that
-  contradicts `people.md` or the same person's page under another doctrine; a quote attributed
-  differently in two places.
-- **Assessment drift.** An argument's `assessment` on its own page vs. the `(assessment: <rating>)` label
-  on the home summary, the `<strong>rating</strong>` on the index, and **every cross-doctrine cross-ref**
-  to it. These must agree (or be deliberately *scoped* — see `steelman-framing` step 5). Grep each
-  argument slug across `docs/` and compare the rating wherever it appears.
-- **Index ↔ summary drift.** Every doctrine/argument on a summary should be surfaced on the index under
-  the right family, and vice-versa; argument-group `<h4>` clusters and their order (groups first, then
-  standalone) should match between index and summary; a new argument missing its index `<li>`.
-- **Broken or stale cross-links.** Relative-link targets that don't resolve (wrong depth, renamed file,
-  typo'd slug); `Related doctrines:` / `Related arguments:` breadcrumbs that aren't reciprocal (member A
-  links B but B doesn't link A); a `DOCTRINE_NAMES` entry missing in `toc.js` for a doctrine (breadcrumb
-  label gap); an argument group with fewer than 2 members actually present on a summary (rule 3).
-- **Schema/plumbing leaks.** Reader-facing pages that name the source DBs as infrastructure, the meta
-  files, or the `todo/` queue (hard rules 8–9); a summary claim without a footnote (rule 2). (Deep
-  footnote-apparatus linting is `/footnote-check`'s job — flag obvious breaks here, defer the mechanical
-  audit to that skill rather than duplicating it.)
-- **Orphans.** A person/argument page not linked from any summary; a summary not reachable from the index.
-- **Granted-premise drift** (CLAUDE.md → "Granted premise"). An argument page under a premised summary that
-  lacks the inherited `<aside class="granted-premise">` banner (or carries one on a summary that has none); a
-  banner whose link to where the premise is weighed doesn't resolve, or quotes a rating that no longer
-  matches that page; a premised doctrine whose one-line index description doesn't name its premise; a page
-  under a held presupposition (CLAUDE.md → "Granted premise", third mode) whose prose frames evidence as testing or
-  falsifying the presupposition itself rather than one model of it (or as an open puzzle); a page
-  whose intro plainly works inside an unstated premise ("granting that …", "on the assumption that …") but
-  carries no banner. Adding or fixing an inherited banner is mechanical; deciding that a page is premised is a
-  judgment call for the report.
+For each finding give the pages, quote the conflicting text, and propose the minimal fix. **Mechanical,
+unambiguous fixes** (a broken relative link, a missing `DOCTRINE_NAMES` entry, a non-reciprocal breadcrumb, a
+timeline entry out of date order) you may apply directly, following the hard rules, then rerun both checks on the
+files you touched. **Substantive questions** (which of two dates is right, whether a quote is accurate, how a
+reading should be put) become `todo/` leads, not silent edits. Never resolve a dispute between readings.
 
-For each finding: name the pages, quote the conflicting bits, say which is right (or that it needs
-research), and propose the minimal fix. **Mechanical, unambiguous fixes** (a stale rating label, a
-broken relative link, a missing `DOCTRINE_NAMES` entry, a non-reciprocal breadcrumb) you may apply
-directly, respecting all hard rules (verbatim quotes, exact footnote markup, depth-relative links,
-append-don't-overwrite) — then run `python3 .claude/skills/footnote-check/check.py <file>` on anything
-touched. **Substantive fixes** (which of two dates is correct, whether a rating should change) become
-research leads, not silent edits.
+## 3. Coverage checks (things worth researching)
 
-## 2. Connection checks (things worth *researching* — tee up as leads)
+- **Tradition balance on a timeline.** Witnesses that skew to one tradition's genealogy (for example, no Catholic
+  or Orthodox witness after a given century, or no Syriac, Coptic or Armenian witness where the record has them).
+- **Missing standard readings.** An interpretation page on which a tradition with a stake has no reading, or only
+  ancient witnesses and no modern scholar, or only popular holders without the "academic literature not located"
+  note.
+- **Shared witnesses.** A writer on one timeline who wrote on a neighbouring doctrine but is absent there.
+- **`⚠ unverified` claims** whose primary looks locatable (a primary-hunt lead).
+- **Long silences** on a timeline that the record does not explain.
 
-Hunt for latent structure the wiki hasn't yet captured:
+## 4. File the leads
 
-- **Shared witnesses across doctrines.** A father who appears on doctrine A's timeline and is relevant to
-  doctrine B but absent there — a lead to survey his corpus for B.
-- **Shared proof-texts / mechanisms.** The same verse or the same interpretive move doing work in two
-  doctrines or two arguments — a candidate **argument group** (≥2 members, one doctrine) or **doctrine
-  cluster**, or a lead to check whether a witness on one applies to the other.
-- **Ungrouped clusters.** Two+ existing argument pages under one doctrine sharing a proof-text/theme that
-  aren't yet an argument group; two+ summaries sharing witnesses/texts not yet a doctrine cluster.
-- **Thin or one-sided spots.** A doctrine with a lone early witness and a long silence; an argument rated
-  without its strongest counter-witness considered; a `⚠ unverified` claim whose primary is locatable — a
-  primary-hunt lead (rule 4).
-- **Absent obvious voices.** A major father who *should* have said something on a doctrine and isn't
-  there — a lead to check the Commentaries/Writings DBs (and the web) for him.
+One `todo/` file per lead, named `YYYY-MM-DD-HHMM-<slug>.md` with the real time from `date` (stagger the minutes so
+they sort). Check `ls todo` first so you don't duplicate a pending lead. Each file says what is missing and why,
+which pages raised it, the lead type (primary-hunt, coverage, correction, dispute), and candidate witnesses or
+sources from every side, each marked opened or unverified. Point at sources; don't dictate the edit.
 
-## 3. File the leads
+## 5. Report
 
-Turn each connection/research item into a `todo/` file per `CLAUDE.md` ("Import X" conventions + hard
-rules on `todo/`):
-
-- One file per lead, named `YYYY-MM-DD-HHMM-<slug>.md` (real current date; stagger the `HHMM` so they
-  sort). Get the timestamp from `date`.
-- Say enough to be actioned cold: the pages that sparked it, the specific `(person/claim, source)` pair
-  or the grouping/cluster hypothesis, **where to look** (verse URLs, `Commentaries-Database` /
-  `Writings-Database` paths, or web), and the lead type (**primary-hunt** vs **argument** vs
-  structural/grouping). Point at sources; **don't dictate the exact page edits** — the executing agent
-  investigates and decides for itself (per the "Import X" rule).
-- Check existing `todo/` files first so you don't duplicate a pending lead.
-
-## 4. Report
-
-Give the user a tight summary, not a wall of text:
-
-- **Inconsistencies** — grouped by severity, each with the pages, the conflict, and whether you *fixed it*
-  (mechanical) or *filed it* (substantive). List every file you edited.
-- **Connections / leads filed** — each new `todo/` file with a one-line hook.
-- **Judgment calls** — anything ambiguous you want the user to weigh in on.
-
-Don't commit unless asked. If you applied mechanical fixes, note that `log.md` should get an entry (append
-one per rule 7 if you made real edits; skip it for a pure read-only report).
+A tight summary: the check results (lint errors, footnote errors, broken links); inconsistencies grouped by
+severity, each marked fixed (mechanical) or filed (substantive), with every file you edited; the leads filed, one
+line each; and any judgement calls for the user. If you edited pages, append a `log.md` entry. Don't commit unless
+asked.

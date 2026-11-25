@@ -1,6 +1,6 @@
 ---
 name: footnote-check
-description: Healthcheck the footnote apparatus on the wiki's pages — runs a deterministic checker over docs/ (inline fnref ↔ Sources fn pairing, numbering, hrefs, backrefs, source URLs), then fixes the flagged defects by hand. Use when the user invokes /footnote-check, or asks to lint/healthcheck/audit footnotes or find broken footnote links.
+description: Healthcheck the footnote apparatus on the site's pages — runs a deterministic checker over docs/ (inline fnref ↔ Sources fn pairing, numbering, hrefs, backrefs, source URLs), then fixes the flagged defects by hand. Use when the user invokes /footnote-check, or asks to lint/healthcheck/audit footnotes or find broken footnote links.
 ---
 
 Lint and repair the footnote apparatus on the static HTML pages under `docs/`.
@@ -14,11 +14,11 @@ clean. The script is the eyes; you are the hands.
 Run the checker (stdlib Python, no deps):
 
 ```
-python3 .claude/skills/footnote-check/check.py [PATH]
+python3 -I .claude/skills/footnote-check/check.py [PATH]
 ```
 
-- **No argument** → sweeps all of `docs/` (the default full health pass; ~225 pages with footnotes,
-  runs in well under a second).
+- **No argument** → sweeps all of `docs/` (the default full health pass; about 1,400 pages with footnotes,
+  runs in a few seconds).
 - **A slug** like `ot-canon` → resolve it to `docs/doctrines/ot-canon.html` and pass that.
 - **A path** (file or directory) → passed through as-is. Flags: `--errors-only`, `--quiet`.
 
@@ -36,7 +36,7 @@ What the codes mean:
 | **E5** | error | numbering: a source cited under two different visible numbers, two sources sharing one number, or the numbers not forming a contiguous `1..N` |
 | **E6** | error | a `href="#fn:…"`/`href="#fnref…:…"` anchor whose id doesn't exist on the page |
 | **E7** | error | a source `<li id="fn:X">`'s backref points to `#fnref…:Y` with `X ≠ Y` |
-| **W1** | warn | a source `<li>` with no external source URL (only its backref / `#` fragments) — wants a real link per the wiki's rule 10 |
+| **W1** | warn | a source `<li>` with no external source URL (only its backref / `#` fragments) — wants a real link (CLAUDE.md: link every citation you have a URL for) |
 | **W2** | warn | a backref `title="… footnote N …"` whose N disagrees with the source's actual number |
 
 Conventions the checker already understands (so it does **not** flag them):
@@ -69,10 +69,10 @@ and correct it by hand. The right fix depends on intent, so use judgment:
   together — re-sequence the whole page, don't patch one number.
 - **W1 missing source URL** — link the actual edition/work if you can find it quickly (prefer a stable,
   specific URL). If it needs real research, **leave the claim and surface it to the user** — never
-  fabricate a link (rule 10). A bare bibliographic citation is the only acceptable URL-less form.
+  fabricate a link. A bare bibliographic citation is the only acceptable URL-less form.
 - **W2 backref title** — mechanical: set the title number to the source's real number.
 
-Respect the wiki's hard rules while editing (verbatim quotes inside `<blockquote>`, append-don't-
+Respect the hard rules in CLAUDE.md while editing (verbatim quotes inside `<blockquote>`, append-don't-
 overwrite, depth-relative links, etc. — see `CLAUDE.md`).
 
 ## 3. Verify

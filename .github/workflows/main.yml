@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.ftp_pass }}
         protocol: ftps
         # Only the published site is reader-facing; the repo's meta files
-        # (CLAUDE.md, project.md, log.md, todo/, etc.) must never hit the server.
+        # (CLAUDE.md, README.md, log.md, todo/, etc.) must never hit the server.
         local-dir: ./docs/
         server-dir: /
         exclude: |

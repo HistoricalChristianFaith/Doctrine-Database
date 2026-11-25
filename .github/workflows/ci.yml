@@ -1,0 +1,30 @@
+name: Checks
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Footnotes and neutral-voice lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Footnote check (errors fail; warnings are reported)
+        run: python3 -I .claude/skills/footnote-check/check.py docs
+
+      - name: Neutral-voice lint (errors fail; warnings are for a human to judge)
+        run: |
+          set +e
+          python3 -I scripts/ledger/lint.py docs > lint-report.txt
+          status=$?
+          set -e
+          grep -E '^(ERROR|--)' lint-report.txt || true
+          echo "Warnings are not failures; the full report lists them."
+          echo "::group::Full lint report"
+          cat lint-report.txt
+          echo "::endgroup::"
+          exit $status

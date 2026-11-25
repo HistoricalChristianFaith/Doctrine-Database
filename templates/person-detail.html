@@ -10,17 +10,23 @@
 <body>
 <h1><!-- Person Name --> on <!-- Doctrine Name --></h1>
 
-<p><strong>Dates:</strong> c. <!-- year --> · <a href="<wiki URL from metadata.toml>">Wikipedia</a><br>
-<strong>Summary:</strong> <!-- 1–2 sentence statement of this person's position on the doctrine. --></p>
+<!-- Head line. The year on the Dates: line is the timeline sort key. The Wikipedia link (from
+     Writings-Database/<Name>/metadata.toml "wiki", or people.md for other figures) is a biography
+     link only, never a source for a doctrinal claim. The Summary: describes what the person wrote,
+     by their dates, office and works; no "heretic"/"orthodox" labels, no praise or blame. -->
+<p><strong>Dates:</strong> c. <!-- year --> · <a href="<wiki URL>">Wikipedia</a><br>
+<strong>Summary:</strong> <!-- 1–2 neutral sentences on this person's position on the doctrine. --></p>
 
 <h2>Claims &amp; evidence</h2>
 
-<h3><!-- Claim 1, stated plainly --></h3>
+<!-- Each <h3> describes what the passage says or where it comes from; it never argues. -->
+<h3><!-- Claim 1, described, e.g. "Baptism of 'little ones' in the Apostolic Tradition" --></h3>
 <blockquote>
-<p><!-- Verbatim quote from the source. --></p>
+<p><!-- Verbatim quote from the source. Never paraphrase or shorten inside a blockquote. --></p>
 </blockquote>
 <p>— <em><!-- source_title --></em>, <a href="<source_url>">source</a>.
-<!-- Optional: surrounding context / why this supports the claim. --></p>
+<!-- Optional: the surrounding context, the edition or translation, and any dating or authenticity
+     dispute with its named parties. --></p>
 
 <h3><!-- Claim 2 … --></h3>
 <blockquote>
@@ -28,14 +34,17 @@
 </blockquote>
 <p>— <em><!-- source_title --></em>, <a href="<source_url>">source</a>.</p>
 
-<!-- If a claim is secondhand only (no primary located), mark it ⚠ unverified and cite the
-     secondary work only — never name TODO.md on a published page: -->
+<!-- A claim known only from a secondary report (no primary located) is marked ⚠ unverified and cites
+     the secondary work only. Never mention the todo/ queue on a published page. -->
 <h3><!-- Claim N --> — ⚠ unverified</h3>
-<p>Asserted by <!-- secondary author/work --> that <!-- person --> believed <!-- X -->. No primary source located yet.</p>
+<p>Asserted by <!-- secondary author, work, year --> that <!-- person --> held <!-- X -->. No primary source located yet.</p>
 
-<h2>Notes</h2>
+<h2>Reception and debate</h2>
+<!-- Optional. How later writers have read this person on this doctrine, each view attributed to a
+     named, footnoted party; cross-links to the timeline, sibling witnesses and interpretation pages.
+     No narrator's verdict and no hindsight ("would later", "the seed of"). -->
 <ul>
-<li><!-- Open questions, tensions with other figures, cross-links to related pages. --></li>
+<li><!-- e.g. "A (tradition, work, year) reads the passage as P; B (…) reads it as Q." --></li>
 </ul>
 </body>
 </html>

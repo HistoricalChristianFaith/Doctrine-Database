@@ -10,53 +10,50 @@
 <body>
 <h1><!-- Doctrine Name --></h1>
 
-<!-- OPTIONAL granted-premise banner (see CLAUDE.md → "Granted premise"). Include ONLY when this page is analysed
-     as if a stated premise were true. Say which mode: TESTING (the page weighs the premise; point at #arguments)
-     or WORKING INSIDE (ratings are conditional; link the page that weighs the premise, with its real assessment),
-     or HELD PRESUPPOSITION (label "Presupposition:" — the wiki holds it and the page works inside it; link the
-     belief-history page that records how the Church has held it).
-     Omit entirely on an ordinary page. -->
-<aside class="granted-premise">
-<p><strong>Granted premise:</strong> that <!-- premise -->. <!-- mode sentence + link to where the premise is weighed --></p>
-</aside>
-
-<!-- Optional 1–3 sentence orientation: what the doctrine is and the main axes on which views differ. -->
+<!-- Intro, 1–3 sentences: what the doctrine is, the terms each communion uses for it (its own
+     self-designations), and the axes on which views differ. Say that the timeline runs earliest
+     extant attestation first. Neutral voice: no verdicts, no "the Church" when a specific communion
+     is meant, no framing from any one tradition. -->
 <p><!-- orientation --></p>
 
+<!-- OPTIONAL, only when the doctrine's concept family on docs/index.html has two or more members.
+     The family name is plain <em> text, not a link; every member lists all the others. -->
+<p><strong>Related doctrines:</strong> <em><!-- family name --></em> — see also
+<a href="<sibling-slug>.html"><!-- sibling title --></a> · <a href="<sibling-slug>.html"><!-- sibling title --></a></p>
+
 <h2>Timeline</h2>
-<!-- One block per person, EARLIEST YEAR FIRST. Every claim ends in a footnote.
-     Link the person's name to their detail page. Keep each block to 2–5 sentences. -->
+<!-- One block per witness, EARLIEST YEAR FIRST (order kept by hand). Every claim ends in a footnote.
+     Link the witness's name to their detail page. Keep each block to 2–5 sentences. Report what the
+     witness wrote; never say a witness "anticipates" or "prepares" a later teaching. A disputed
+     authorship or date sits at its conventionally cited date, with the dispute and its parties named. -->
 
-<h3><!-- Person Name --> (c. <!-- year -->)</h3>
-<p><a href="<doctrine-slug>/<person-slug>.html"><!-- Person Name --></a> held that …<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup> He also …<sup id="fnref:<person-slug>-2"><a class="footnote-ref" href="#fn:<person-slug>-2">2</a></sup></p>
+<h3><a href="<doctrine-slug>/<person-slug>.html"><!-- Person Name --></a> (c. <!-- year -->)</h3>
+<p><!-- Person Name --> wrote that …<sup id="fnref:<person-slug>-1"><a class="footnote-ref" href="#fn:<person-slug>-1">1</a></sup> He also …<sup id="fnref:<person-slug>-2"><a class="footnote-ref" href="#fn:<person-slug>-2">2</a></sup></p>
 
-<h3><!-- Next Person --> (<!-- year -->)</h3>
-<p>…<sup id="fnref:<next-person-slug>-1"><a class="footnote-ref" href="#fn:<next-person-slug>-1">3</a></sup></p>
+<h3><a href="<doctrine-slug>/<next-person-slug>.html"><!-- Next Person --></a> (<!-- year -->)</h3>
+<p>… How this passage is to be read is disputed; see <a href="<doctrine-slug>/arguments/<page-slug>.html"><!-- the interpretation page's question --></a>.<sup id="fnref:<next-person-slug>-1"><a class="footnote-ref" href="#fn:<next-person-slug>-1">3</a></sup></p>
 
-<h2>Arguments</h2>
-<!-- Off-timeline sub-claims (argument pages), each with its one-line assessment. On a SUMMARY page each
-     argument is an <h3> heading + <p> blurb ending in a footnote; standalone arguments stay flat <h3>. When
-     two or more arguments share a proof-text/mechanism/theme, group them as an ARGUMENT GROUP (internal term
-     only — printed to readers as "Related arguments"): a wrapping <h3 id="group-<slug>"> + 1–2 sentence
-     framing <p>, with the members demoted to <h4>. The heading reads "Related arguments — <theme>". Argument
-     groups LEAD the section; standalone <h3> arguments follow (matching the index). (The simple <ul> form
-     below is the index/listing shape; on the summary use the heading-per-argument form.) -->
+<h2 id="disputed-readings">Disputed readings</h2>
+<!-- OPTIONAL: only when the doctrine has interpretation pages (docs/doctrines/<slug>/arguments/).
+     A one-sentence neutral intro, then one entry per page: the page's question as link text, and a
+     short neutral blurb saying what turns on it and whose readings the page sets out. No verdicts.
+     Pages that share a passage or theme may sit under a plain themed <h3 id="group-<theme>">, with
+     the members as <h4>; groups come first, standalone entries after. -->
+<p>How particular texts and stages of this history have been read by the different traditions.</p>
 
-<!-- Argument group (≥ 2 members sharing a proof-text / mechanism / theme) — leads the section: -->
-<h3 id="group-<slug>"><!-- Related arguments — the <theme> --></h3>
-<p><em><!-- 1–2 sentence framing: what the members share and why they're read together. --></em></p>
-<h4><!-- member argument question --> (assessment: <!-- … -->)</h4>
-<p><a href="<doctrine-slug>/arguments/<member-slug>.html"><!-- name --></a> — <!-- blurb -->.<sup id="fnref:arg-<member-slug>"><a class="footnote-ref" href="#fn:arg-<member-slug>">N</a></sup></p>
-<!-- …more <h4> members… -->
+<h3 id="group-<theme>"><!-- plain theme, e.g. The patristic witness --></h3>
+<p><!-- one neutral sentence on what the grouped pages share --></p>
+<h4><a href="<doctrine-slug>/arguments/<page-slug>.html"><!-- the interpretation page's question --></a></h4>
+<p><!-- neutral blurb, e.g. "X's phrase, as read by Catholic, Orthodox and Reformed writers." --><sup id="fnref:arg-<page-slug>"><a class="footnote-ref" href="#fn:arg-<page-slug>">4</a></sup></p>
 
-<!-- Standalone argument (not in any group) — follows the argument group(s): -->
-<h3><!-- argument question --> (assessment: <!-- sound|plausible|contested|weak|unsupported -->)</h3>
-<p><a href="<doctrine-slug>/arguments/<arg-slug>.html"><!-- argument name --></a> — <!-- blurb, core first -->.<sup id="fnref:arg-<arg-slug>"><a class="footnote-ref" href="#fn:arg-<arg-slug>">N</a></sup></p>
+<h3><a href="<doctrine-slug>/arguments/<other-page-slug>.html"><!-- standalone page's question --></a></h3>
+<p><!-- neutral blurb --><sup id="fnref:arg-<other-page-slug>"><a class="footnote-ref" href="#fn:arg-<other-page-slug>">5</a></sup></p>
 
 <h2>Sources</h2>
-<!-- One <li> per footnote, ordered by first appearance above. Visible numbers are sequential;
-     ids use the person-slug. Target priority: primary historicalchristian.faith URL > the
-     person-detail page > (for unverified) the secondary work + an inline ⚠ unverified on the claim. -->
+<!-- One <li> per footnote, ordered by first appearance above. Visible numbers run 1..N; ids use the
+     person-slug. Target priority: the primary historicalchristian.faith verse or work URL, then the
+     person-detail page, then (for an unverified claim only) the secondary work, with ⚠ unverified on
+     the claim. A repeat citation of one source uses fnref2:, fnref3:, … and adds a backref here. -->
 <div class="footnote">
 <hr>
 <ol>
@@ -65,6 +62,15 @@
 </li>
 <li id="fn:<person-slug>-2">
 <p><a href="<source URL>">source title</a> — ⚠ unverified.&#160;<a class="footnote-backref" href="#fnref:<person-slug>-2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:<next-person-slug>-1">
+<p><a href="<source URL>">source title</a>&#160;<a class="footnote-backref" href="#fnref:<next-person-slug>-1" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:arg-<page-slug>">
+<p><a href="<doctrine-slug>/arguments/<page-slug>.html">the interpretation page (and the sources it cites)</a>&#160;<a class="footnote-backref" href="#fnref:arg-<page-slug>" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:arg-<other-page-slug>">
+<p><a href="<doctrine-slug>/arguments/<other-page-slug>.html">the interpretation page</a>&#160;<a class="footnote-backref" href="#fnref:arg-<other-page-slug>" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

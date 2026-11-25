@@ -51,25 +51,18 @@
     "eternal-conscious-torment": "Eternal Conscious Torment",
     "apokatastasis": "Universal Restoration (Apokatastasis)",
     "conditional-immortality": "Conditional Immortality (Annihilationism)",
-    "final-state-scenarios": "The Final State of the Lost: the scenario ledger",
     "discernment-of-dreams": "The Discernment of Dreams",
     "star-prophecy": "The Star Prophecy",
-    "messianic-claimants": "The Messianic Claimants",
     "real-presence": "The Real Presence in the Eucharist",
     "ministerial-priesthood": "The Ministerial Priesthood",
     "communion-one-kind": "Communion under one kind",
     "communion-of-infants": "The communion of infants",
     "nephilim": "The Sons of God and the Nephilim",
-    "ufo-demonic": "Aliens, UFOs, and the Demonic",
     "divine-council": "The Divine Council and the Sons of God",
     "serpent-of-eden": "The Serpent of Eden",
     "flood": "Noah's Flood",
-    "primeval-evidence": "The Flood and the Nephilim in the Material Record",
     "flood-date": "The Dating of Noah's Flood",
-    "primeval-scenarios": "The Flood and the Nephilim Under Competing Scenarios",
     "biblical-chronology": "Reckoning the Age of the World",
-    "chronology-scenarios": "Biblical Chronology Under Competing Systems",
-    "supernatural-worldview": "The Supernatural Worldview",
     "balaam": "Balaam son of Beor",
     "melchizedek": "Melchizedek",
     "nimrod": "Nimrod",
@@ -87,10 +80,7 @@
     "curse-of-ham": "The Curse of Ham",
     "shem": "Shem son of Noah",
     "cain": "Cain",
-    "conquest-of-canaan": "The Conquest of Canaan",
-    "conquest-as-written": "The Conquest as Joshua Tells It",
     "conquest-in-tradition": "The Conquest in Christian Tradition",
-    "sennacherib-siege": "Sennacherib's Siege of Jerusalem",
     "first-language": "The First Language of Mankind",
     "baptist-successionism": "Baptist Successionism",
     "church-government": "The Government of the Church",
@@ -104,7 +94,6 @@
     "anointing-of-the-sick": "Anointing of the Sick",
     "perpetual-virginity": "The Perpetual Virginity of Mary",
     "divorce": "Divorce and remarriage",
-    "divorce-scenarios": "Divorce: the scenario ledger",
     "remarriage": "Remarriage (the deprecation of digamy)",
     "mary-new-eve": "Mary as the New Eve",
     "theotokos": "Theotokos (Mother of God)",
@@ -164,17 +153,7 @@
     "jerome-augustine": "Jerome and Augustine: a correspondence across the Mediterranean",
     "theophilus-chrysostom": "Theophilus of Alexandria and John Chrysostom",
     "cyril-nestorius": "Cyril of Alexandria and Nestorius",
-    "great-apostasy": "The Great Apostasy",
-    "book-of-mormon-historicity": "The Book of Mormon and the Material Record",
-    "first-vision": "The First Vision (the multiple accounts)",
-    "quranic-tahrif": "Tahrif and the Islamic Restoration",
-    "old-world-in-america": "Old-World Peoples in the Pre-Columbian Americas",
-    "british-israelism": "British Israelism: the Anglo-Saxons as the Lost Tribes",
-    "beta-israel": "The Beta Israel of Ethiopia: a lost tribe of Dan?",
-    "pashtun-bani-israel": "The Pashtun Bani Israel: an Afghan lost tribe?",
-    "bene-israel": "The Bene Israel of India: a lost tribe of Israel?",
-    "japanese-israelite": "The Japanese-Israelite theory: a lost tribe in the East?",
-    "lemba": "The Lemba of southern Africa: a lost tribe with a genetic signal?"
+    "great-apostasy": "The Great Apostasy"
   };
 
   // The page's depth-relative path prefix ("", "../", "../../", "../../../"), read from its
@@ -282,11 +261,7 @@
   }
 
   function insertAfterH1(node) {
-    var h1 = document.querySelector("h1");
-    // A granted-premise banner belongs directly under the title, so slot in after it.
-    var anchor = h1;
-    var next = h1 && h1.nextElementSibling;
-    if (next && next.classList.contains("granted-premise")) anchor = next;
+    var anchor = document.querySelector("h1");
     if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(node, anchor.nextSibling);
     else document.body.insertBefore(node, document.body.firstChild);
   }
